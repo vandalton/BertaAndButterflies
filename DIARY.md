@@ -17,3 +17,11 @@ I almost failed on the first day. Contest's rules says at least one commit by th
 I spent night reading Batari Basic documentation and "kernels" descriptions here: [https://www.randomterrain.com/atari-2600-memories-batari-basic-commands.html](https://www.randomterrain.com/atari-2600-memories-batari-basic-commands.html)
 
 It looks like that limitations are everywhere. I started to think how to workaround them, for example, how to make a bigger player sprite.
+
+Few examples of limitations:
+
+1. Atari 2600 has 128 bytes of RAM, but only 26 of them are available. Other are already used for different purposes.
+2. You can draw only a few moveable objects: 2 player sprintes, 2 missiles (which are always square) and one ball.
+3. If you want your sprite to have more than one color, you cannot use missile.
+4. There is no simple way to print text (so I can't even start with "hello world!" program).
+5. Binary program should be 4KB at most. If you want more, you can use bankswitching, but Atari has access to only one 4KB bank at one moment.

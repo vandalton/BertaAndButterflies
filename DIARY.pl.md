@@ -17,3 +17,11 @@ Prawie zlamiłem pierwszego dnia! Zasady konkursu wymagają co najmniej jednego 
 Spędziłem noc czytając dokumentację języka Batari Basic, opisy "kerneli" stąd: [https://www.randomterrain.com/atari-2600-memories-batari-basic-commands.html](https://www.randomterrain.com/atari-2600-memories-batari-basic-commands.html)
 
 Wygląda na to, że ograniczenia są dosłownie na każdym kroku. Zastanawiam się, jak je obejść, aby np. zrobić "dużego ludzika" w grze.
+
+Kilka przykładów ograniczeń:
+
+1. Atari 2600 ma 128 bajtów RAMu, ale tylko 26 jest dostępnych. Pozostałe są domyślnie użyte dla różnych celów.
+2. Możesz narysować pięć poruszających się obiektów: 2 sprite'y graczy, 2 pociski (muszą być kwadratowe) i jedną piłkę.
+3. Jeśli sprite ma używać więcej niż jednego koloru, nie użyjesz pocisku.
+4. Nie ma prostej metody wyświetlenia tekstu (nie zacznę standardowym programem "hello world!").
+5. Wersja binarna programu powinna mieć maksymalnie 4KB. Jeśli potrzeba więcej, można wykorzystać technikę przełączania banków pamięci, ale Atari w danym momencie ma dostęp tylko do jednego, 4-kilobajtowego banku.

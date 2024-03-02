@@ -14,4 +14,4 @@ Recently I was fascinated by Atari 2600 console and I wanted to write a program 
 
 I want to check how hard it really is. I have no prior experience with 6502/6507 assembler, Batari Basic etc. The competition motivates me to learn it :)
 
-More details [diary](./DIARY.md).
+More details in [diary](./DIARY.md).
