@@ -34,7 +34,11 @@ While it's simple, elegant and battle-tested, I want to simplify it even more. C
 
 # 2024-03-03 - Dzień #003
 
-Today I played a little bit with sprite editor and created preliminary version of player sprite. I'm not sure if I would be able to use it because of the used colors.
+Today I played a little bit with sprite editor and created preliminary version of player sprite. Please, welcome Berta!
+
+![Berta](./DIARY/berta.png)
+
+I'm not sure if I would be able to use it because of the used colors.
 
 I also checked if the inverter made from transistor and two resistor works as it should. Yes, it works!
 
