@@ -31,3 +31,11 @@ I started working on the cartridge PCB. Why, if I have no single line of the gam
 However, I did more complicated cartridges before - for example [128-in-1 cartridge clone](https://youtu.be/PjKU597y_PI). I'm pretty convinced that my design of the simple 4KB cart will work too. You can find similiar designs here and there, for example: [https://grandideastudio.com/portfolio/gaming/pixels-past/](https://grandideastudio.com/portfolio/gaming/pixels-past/).
 
 While it's simple, elegant and battle-tested, I want to simplify it even more. Currently I'm using a 74S04 inverter and I'm using only one of its 6 gates. I don't need a integrated circuit to invert one bit and I'm going to replace it with inverter made from transistor and two resistors.
+
+# 2024-03-03 - Dzień #003
+
+Today I played a little bit with sprite editor and created preliminary version of player sprite. I'm not sure if I would be able to use it because of the used colors.
+
+I also checked if the inverter made from transistor and two resistor works as it should. Yes, it works!
+
+![Inverter](./DIARY/inverter.jpeg)
