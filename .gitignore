@@ -31,4 +31,6 @@
 *.info
 *.eps
 *.lck
+# batari Basic
+software/bin
 
