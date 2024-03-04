@@ -32,7 +32,7 @@ However, I did more complicated cartridges before - for example [128-in-1 cartri
 
 While it's simple, elegant and battle-tested, I want to simplify it even more. Currently I'm using a 74S04 inverter and I'm using only one of its 6 gates. I don't need a integrated circuit to invert one bit and I'm going to replace it with inverter made from transistor and two resistors.
 
-# 2024-03-03 - Dzień #003
+# 2024-03-03 - Day #003
 
 Today I played a little bit with sprite editor and created preliminary version of player sprite. Please, welcome Berta!
 
@@ -43,3 +43,7 @@ I'm not sure if I would be able to use it because of the used colors.
 I also checked if the inverter made from transistor and two resistor works as it should. Yes, it works!
 
 ![Inverter](./DIARY/inverter.jpeg)
+
+# 2024-03-04 - Day #004
+
+OK, so I replaced the inverter IC with transistor based inverter on the board design and I ordered PCBs.

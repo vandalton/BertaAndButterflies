@@ -43,3 +43,7 @@ Nie jestem pewien, czy będę mógł go użyć w takiej formie ze względu na u�
 Sprawdziłem też, czy inwerter z tranzystora i dwóch rezystorów zadziała zgodnie z planem. Zadziałał!
 
 ![Inverter](./DIARY/inverter.jpeg)
+
+# 2024-03-04 - Dzień #004
+
+Dobra, wymieniłem układ scalony inwertera na inwerter bazujący na tranzystorze i zamówiłem płytki drukowane.
