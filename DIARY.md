@@ -36,10 +36,10 @@ While it's simple, elegant and battle-tested, I want to simplify it even more. C
 
 Today I played a little bit with sprite editor and created preliminary version of player sprite. Please, welcome Berta!
 
-![Berta](./DIARY/berta.png)
+![Berta](./static/berta.png)
 
 I'm not sure if I would be able to use it because of the used colors.
 
 I also checked if the inverter made from transistor and two resistor works as it should. Yes, it works!
 
-![Inverter](./DIARY/inverter.jpeg)
+![Inverter](./static/inverter.jpeg)

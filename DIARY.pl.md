@@ -36,10 +36,10 @@ Projekt jest prosty, elegancki i sprawdzony w boju, ale chcę go jeszcze uprośc
 
 Dziś pobawiłem się trochę edytorami sprite'ów i stworzyłem - na razie wstępną - wersję sprite'a postaci. Przywitajcie Bertę!
 
-![Berta](./DIARY/berta.png)
+![Berta](./static/berta.png)
 
 Nie jestem pewien, czy będę mógł go użyć w takiej formie ze względu na użyte kolory.
 
 Sprawdziłem też, czy inwerter z tranzystora i dwóch rezystorów zadziała zgodnie z planem. Zadziałał!
 
-![Inverter](./DIARY/inverter.jpeg)
+![Inverter](./static/inverter.jpeg)
