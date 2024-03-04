@@ -21,7 +21,7 @@ It looks like that limitations are everywhere. I started to think how to workaro
 Few examples of limitations:
 
 1. Atari 2600 has 128 bytes of RAM, but only 26 of them are available. Other are already used for different purposes.
-2. You can draw only a few moveable objects: 2 player sprintes, 2 missiles (which are always square) and one ball.
+2. You can draw only a few moveable objects: 2 player sprites, 2 missiles (which are always square) and one ball.
 3. If you want your sprite to have more than one color, you cannot use missile.
 4. There is no simple way to print text (so I can't even start with "hello world!" program).
 5. Binary program should be 4KB at most. If you want more, you can use bankswitching, but Atari has access to only one 4KB bank at one moment.
@@ -36,13 +36,13 @@ While it's simple, elegant and battle-tested, I want to simplify it even more. C
 
 Today I played a little bit with sprite editor and created preliminary version of player sprite. Please, welcome Berta!
 
-![Berta](./DIARY/berta.png)
+![Berta](./static/berta.png)
 
 I'm not sure if I would be able to use it because of the used colors.
 
 I also checked if the inverter made from transistor and two resistor works as it should. Yes, it works!
 
-![Inverter](./DIARY/inverter.jpeg)
+![Inverter](./static/inverter.jpeg)
 
 # 2024-03-04 - Day #004
 
