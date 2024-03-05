@@ -47,3 +47,12 @@ I also checked if the inverter made from transistor and two resistor works as it
 # 2024-03-04 - Day #004
 
 OK, so I replaced the inverter IC with transistor based inverter on the board design and I ordered PCBs.
+
+# 2024-03-05 - Day #005
+
+Today I experimented with sprites. And I revealed the idea for the game :)
+I displayed some sprites. Because the game is quite static, I don't need to animate the sprites. I want the game to be colorful (such games appeal to me more than these with black background), so I tried to combine sprite with playground to display big Berta:
+
+![Playfield and Sprite combined](./static/pf_sprite_combined.png)
+
+It's far from perfect, but I'm pretty convinced that I'll be able to display what I want.

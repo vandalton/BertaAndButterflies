@@ -6,6 +6,20 @@
 Mam nadzieję, że w tym repozytorium pewnego dnia znajdzie się gra na Atari 2600.
 Projekt będzie się składał nie tylko z kodu, ale także z płytki kartridża, etykiet, pudełka - wszystkiego, co potrzebne, aby stworzyć grę możliwą do uruchomienia na prawdziwej konsoli.
 
+Pomysł polega na przeniesieniu gry z konsoli LCD z oryginalnej serii ["Game & Watch"](https://nintendo.fandom.com/wiki/Egg) z lat 80'.
+
+W Polsce oryginalne konsole Nintendo były właściwie nieznane, ale bardzo popularne były sowieckie klony produkcji firmy [Elektronika](https://en.wikipedia.org/wiki/Elektronika):
+
+![Elektronika game](./static/elektronika.jpg)
+
+Mój główny cel to napisanie gry na Atari 2600. Wiem, że ta konsola ma bardzo ograniczone możliwości. Z kolei ta gra jest bardzo prosta, ale wciągająca i dająca dużo frajdy. Wydaje się dobrym kandydatem na przeportowanie na Atari.
+
+Jako postać w grze chcę wykorzystać ulubioną maskotkę z dzieciństwa mojej żony, Alicji - małą słonicę o imieniu Berta.
+
+| Prawdziwa Berta | Cyfrowa Berta |
+|----------------|---------------|
+|![Original Berta](./static/berta_orig.jpg)|![Digital Berta](./static/berta_digital.png)|
+
 ## Historia
 
 Rozpocząłem ten projekt, aby wziąć udział w konkursie [100 Commitów](https://100commitow.pl/).

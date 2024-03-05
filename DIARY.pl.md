@@ -47,3 +47,13 @@ Sprawdziłem też, czy inwerter z tranzystora i dwóch rezystorów zadziała zgo
 # 2024-03-04 - Dzień #004
 
 Dobra, wymieniłem układ scalony inwertera na inwerter bazujący na tranzystorze i zamówiłem płytki drukowane.
+
+# 2024-03-05 - Dzień #005
+
+Dziś eksperymentowałem ze sprite'ami. I wyjawiłem pomysł na grę :)
+Wyświetliłem kilka sprite'ów. Gra jest dość statyczna, więc nie muszę ich animować. Chciałbym, aby gra była bardzo kolorowa (takie gry przemawiają do mnie bardziej, niż te z czarnym tłem), więc spróbowałem połączyć sprite'a z "polem gry", aby wyświetlić dużą Bertę:
+
+![Playfield and Sprite combined](./static/pf_sprite_combined.png)
+
+Efekt jest jeszcze daleki od ideału, ale jestem właściwie przekonany, że zdołam wyświetlić to, co chcę.
+
