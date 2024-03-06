@@ -56,3 +56,13 @@ I displayed some sprites. Because the game is quite static, I don't need to anim
 ![Playfield and Sprite combined](./static/pf_sprite_combined.png)
 
 It's far from perfect, but I'm pretty convinced that I'll be able to display what I want.
+
+# 2024-03-06 - Day #006
+
+I deceided to use more traditional way when comes to the game visual design. I'm drawing sprites and playfield by hand, using pencil. Ok, I'm using reMarkable tablet, not a real paper, so let's say it's a semi-traditional way ;)
+
+I already know that I need to combine playfield with sprite, to create a multi-color, big character. The main difficulty is that "playfield pixels" are rectangular, while "sprite pixels" are square and sometimes it is hard to achieve desired effect. Here Berta's neck is too long, but I cannot make it smaller, because I cannot split "playfield pixel":
+
+![Berta drawing](./static/berta_drawing.png)
+
+Now when I see other game for the Atari 2600, I'm automatically thinking how it was done. For example, [Combat](https://youtu.be/3m86ftny1uY) game is an example of how to use console's abilities in the most direct way: display two sprites and two missiles, and a playfield. [Breakout](https://youtu.be/tT70Tv6D41o) apparently has one sprite for paddle, the ball and bricks made out of the "playfield pixels".
