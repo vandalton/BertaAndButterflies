@@ -66,3 +66,9 @@ I already know that I need to combine playfield with sprite, to create a multi-c
 ![Berta drawing](./static/berta_drawing.png)
 
 Now when I see other game for the Atari 2600, I'm automatically thinking how it was done. For example, [Combat](https://youtu.be/3m86ftny1uY) game is an example of how to use console's abilities in the most direct way: display two sprites and two missiles, and a playfield. [Breakout](https://youtu.be/tT70Tv6D41o) apparently has one sprite for paddle, the ball and bricks made out of the "playfield pixels".
+
+# 2024-03-07 - Day #007
+
+I carried on with manual designing. I also coded the sprite and the playfield to display Berta in appropriate form for the first time!
+
+![Berta for the first time](./static//berta_displayed_for_the_first_time.png)
