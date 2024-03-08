@@ -79,3 +79,5 @@ Today I take a break :)
 I can show you a render of PCB, which is in production already:
 
 ![PCB](./static//pcb.png)
+
+Ok, I did some experiments with joystick handling.

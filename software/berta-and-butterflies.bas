@@ -4,7 +4,9 @@
     const _blue=$B8
     const _red=$64
     const _white=$1E
+    const _yellow=$28
 
+main
     playfield:
     ................................
     ................................
@@ -17,9 +19,9 @@
     .............XXXX...............
     ................................
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 end
 
-main
     COLUBK=_blue
     COLUP0=_white
 
@@ -105,13 +107,21 @@ end
     _red
     _red
     _red
+    _yellow
 end
 
     player0x=60
     player0y=80
 
-    pfpixel 27 5 on
-    pfpixel 28 6 on
+    if joy0right then a{0}=1
+    if joy0left then a{0}=0
+    if joy0up then a{1}=1
+    if joy0down then a{1}=0
+
+    if a{0} && a{1} then pfpixel 26 3 on
+    if a{0} && !a{1} then pfpixel 26 6 on
+    if !a{0} && a{1} then pfpixel 4 3 on
+    if !a{0} && !a{1} then pfpixel 4 6 on
 
     drawscreen
     goto main

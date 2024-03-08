@@ -79,3 +79,5 @@ Dziś przerwa :)
 Mogę wrzucić widok płytki PCB, która się aktualnie produkuje:
 
 ![PCB](./static//pcb.png)
+
+No dobra, poeksperymentowałem troszkę z obsługą joysticka.
