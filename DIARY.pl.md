@@ -72,3 +72,10 @@ Gdy widzę inną grę na Atari 2600, automatycznie myślę o tym, jak była zrob
 Kontynuowałem ręczne projektowanie. Zakodowałem też sprite i "pole gry", aby po raz pierwszy wyświetlić Bertę we właściwej postaci!
 
 ![Berta for the first time](./static//berta_displayed_for_the_first_time.png)
+
+# 2024-03-08 - Dzień #008
+
+Dziś przerwa :)
+Mogę wrzucić widok płytki PCB, która się aktualnie produkuje:
+
+![PCB](./static//pcb.png)

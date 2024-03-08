@@ -72,3 +72,10 @@ Now when I see other game for the Atari 2600, I'm automatically thinking how it 
 I carried on with manual designing. I also coded the sprite and the playfield to display Berta in appropriate form for the first time!
 
 ![Berta for the first time](./static//berta_displayed_for_the_first_time.png)
+
+# 2024-03-08 - Day #008
+
+Today I take a break :)
+I can show you a render of PCB, which is in production already:
+
+![PCB](./static//pcb.png)
