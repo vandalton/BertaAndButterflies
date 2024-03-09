@@ -81,3 +81,10 @@ Mogę wrzucić widok płytki PCB, która się aktualnie produkuje:
 ![PCB](./static//pcb.png)
 
 No dobra, poeksperymentowałem troszkę z obsługą joysticka.
+
+# 2024-03-09 - Dzień #009
+
+Dodałem drugi sprite - na siatkę na motyle. To ostatni sprite jaki mogę użyć :)
+
+Zacząłem myśleć o sterowaniu joystickiem. Na oryginalnej grze G&W potrzeba tylko jednego wciśnięcia przycisku, aby poruszyć postać w zadanym kierunku (góra-lewo, góra-prawo, dół-lewo, dół-prawo). Na Atari czasami będą potrzebne dwa ruchy joysticka. Na przykład, aby poruszyć Bertę z kierunku dół-lewo do góra-prawo, potrzeba poruszyć joystick w prawo i w górę. Inny kontroler, na przykład z Playstation czy Xboxa, byłby lepszy. Mógłbym wykorzystać strzałkę w górę, strzałkę w dół, trójkąt oraz krzyżyk. Być może zrobię specjalny adapter dla tej gry (albo nawet specjalny kontroler).
+

@@ -81,3 +81,9 @@ I can show you a render of PCB, which is in production already:
 ![PCB](./static//pcb.png)
 
 Ok, I did some experiments with joystick handling.
+
+# 2024-03-09 - Day #009
+
+I added second sprite - for butterfly net. It's the last sprite I can use :)
+
+I started thinking about joystick control. On the original G&W console only one button press is needed to move the character to the given position (top-left, top-right, bottom-left, bottom right). On Atari you'll need two joystick moves sometimes - for example, to move Berta from bottom left to the top right, you need to move joystick to the right and to the top. A different gamepad, like from Playstation or Xbox would be better. I could use top and bottom arrows and triangle and cross keys. Maybe I'll make a special adapter for this game (or even the special controller).
