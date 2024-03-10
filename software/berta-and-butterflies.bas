@@ -46,7 +46,7 @@ main
     COLUP1=_brown
 
     NUSIZ0=$07
-    rem NUSIZ1=$07
+    NUSIZ1=$05
 
     /* top */
     if a{1} then playfield:
@@ -226,13 +226,13 @@ end
 
     REFP0=0
     REFP1=0
-    player1x=93
+    player1x=92
 
     if a{0} then goto __leftrightset
 
     REFP0=8
     REFP1=8
-    player1x=53
+    player1x=44
 
 __leftrightset
 
