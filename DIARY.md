@@ -87,3 +87,11 @@ Ok, I did some experiments with joystick handling.
 I added second sprite - for butterfly net. It's the last sprite I can use :)
 
 I started thinking about joystick control. On the original G&W console only one button press is needed to move the character to the given position (top-left, top-right, bottom-left, bottom right). On Atari you'll need two joystick moves sometimes - for example, to move Berta from bottom left to the top right, you need to move joystick to the right and to the top. A different gamepad, like from Playstation or Xbox would be better. I could use top and bottom arrows and triangle and cross keys. Maybe I'll make a special adapter for this game (or even the special controller).
+
+# 2024-03-10 - Day #010
+
+I changed the butterfly net sprite for more "realistic" :) After the first experiments with joystick now Berta moves with it. I used REFP0 and REFP1 registers, to display mirrored sprites depending on Berta's position - if she is moved left or right. Thanks to that I saved some memory in ROM, because I don't need to keep two variants of each sprite.
+
+| Berta in top-left position| Berta in bottom-down position|
+|----------------|---------------|
+|![Berta up](./static/berta_up.png)|![Berta down](./static/berta_down.png)|
