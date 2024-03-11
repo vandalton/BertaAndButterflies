@@ -39,6 +39,15 @@
     %00111000
 end
 
+    dim _berta_position = a /* {0} left right, {1} bottom top */
+    dim _top_left_bf = b
+    dim _top_right_bf = c
+    dim _bottom_left_bf = d
+    dim _bottom_right_bf = e
+
+    dim _frame = f
+
+    _top_left_bf = 1
 main
 
     COLUBK=_blue
@@ -49,7 +58,7 @@ main
     NUSIZ1=$05
 
     /* top */
-    if a{1} then playfield:
+    if _berta_position{1} then playfield:
     ................................
     ................................
     ...........XX....XX.............
@@ -64,7 +73,7 @@ main
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 end
     /* bottom */
-    if !a{1} then playfield:
+    if !_berta_position{1} then playfield:
     ................................
     ................................
     ................................
@@ -95,7 +104,7 @@ end
 end
 
     /* top */
-    if a{1} then player0:
+    if _berta_position{1} then player0:
     %00000110
     %00000110
     %00000110
@@ -164,7 +173,7 @@ end
 end
 
     /* bottom */
-    if !a{1} then player0:
+    if !_berta_position{1} then player0:
     %01100110
     %01100110
     %01100110
@@ -228,7 +237,7 @@ end
     REFP1=0
     player1x=92
 
-    if a{0} then goto __leftrightset
+    if _berta_position{0} then goto __leftrightset
 
     REFP0=8
     REFP1=8
@@ -238,23 +247,31 @@ __leftrightset
 
     player1y=46
 
-    if a{1} then goto __topdownset
+    if _berta_position{1} then goto __topdownset
 
     player1y=60
 
 __topdownset
 
-    if joy0right then a{0}=1
-    if joy0left then a{0}=0
-    if joy0up then a{1}=1
-    if joy0down then a{1}=0
+    if joy0right then _berta_position{0}=1
+    if joy0left then _berta_position{0}=0
+    if joy0up then _berta_position{1}=1
+    if joy0down then _berta_position{1}=0
 
-    if a{0} && a{1} then pfpixel 26 3 on
-    if a{0} && !a{1} then pfpixel 26 6 on
-    if !a{0} && a{1} then pfpixel 4 3 on
-    if !a{0} && !a{1} then pfpixel 4 6 on
+    if _top_left_bf{0} then pfpixel 1 2 on
+    if _top_left_bf{1} then pfpixel 2 3 on : pfpixel 3 2 on 
+    if _top_left_bf{2} then pfpixel 4 3 on
+    if _top_left_bf{3} then pfpixel 5 4 on : pfpixel 6 3 on
+    if _top_left_bf{4} then pfpixel 8 4 on
 
     rem score=score+1
 
     drawscreen
+
+    _frame = _frame + 1
+    if _frame = 25 then _top_left_bf = _top_left_bf * 2
+    if _frame > 50 then _frame = 0
+
+    if _top_left_bf = 32 then _top_left_bf = 1
+
     goto main
