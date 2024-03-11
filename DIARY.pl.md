@@ -96,3 +96,7 @@ Zmieniłem sprite z siatką na motyle na bardziej "realistyczny" :) Po pierwszyc
 |----------------|---------------|
 |![Berta up](./static/berta_up.png)|![Berta down](./static/berta_down.png)|
 
+# 2024-03-11 - Dzień #011
+
+Poszerzyłem sprite siatki - jest dwa razy szerszy niż był. Zacząłem eksperymenty z dźwiękiem, ale jeszcze nie mam nic do commitnięcia...
+

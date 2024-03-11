@@ -95,3 +95,7 @@ I changed the butterfly net sprite for more "realistic" :) After the first exper
 | Berta in top-left position| Berta in bottom-down position|
 |----------------|---------------|
 |![Berta up](./static/berta_up.png)|![Berta down](./static/berta_down.png)|
+
+# 2024-03-11 - Day #011
+
+I made butterfly net sprite twice as wide as it was. I started experiments with sounds, but I have nothing to commit yet...
