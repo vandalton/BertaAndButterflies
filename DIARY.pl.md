@@ -100,3 +100,4 @@ Zmieniłem sprite z siatką na motyle na bardziej "realistyczny" :) Po pierwszyc
 
 Poszerzyłem sprite siatki - jest dwa razy szerszy niż był. Zacząłem eksperymenty z dźwiękiem, ale jeszcze nie mam nic do commitnięcia...
 
+Dodałem także eksperymentalną wersję "animacji" motylka. Motyle są zrobione z "pikseli pola gry", a ich modyfikacja jest kosztowna jeśli chodzi o cykle procesora. Prawdopodobnie nie wystarczy mi cykli, gdy będę chciał wyświetlić 4 czy 5 motyli jednocześnie.

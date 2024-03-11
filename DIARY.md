@@ -99,3 +99,5 @@ I changed the butterfly net sprite for more "realistic" :) After the first exper
 # 2024-03-11 - Day #011
 
 I made butterfly net sprite twice as wide as it was. I started experiments with sounds, but I have nothing to commit yet...
+
+I also added an experimental version of butterfly "animation". Butterflies are made of "playfield pixels" and their modification is quite expensive when comes to the processor cycles. I will probably run out of cycles when I display four or five butterflies at the same time.
