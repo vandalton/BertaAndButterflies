@@ -101,3 +101,9 @@ Zmieniłem sprite z siatką na motyle na bardziej "realistyczny" :) Po pierwszyc
 Poszerzyłem sprite siatki - jest dwa razy szerszy niż był. Zacząłem eksperymenty z dźwiękiem, ale jeszcze nie mam nic do commitnięcia...
 
 Dodałem także eksperymentalną wersję "animacji" motylka. Motyle są zrobione z "pikseli pola gry", a ich modyfikacja jest kosztowna jeśli chodzi o cykle procesora. Prawdopodobnie nie wystarczy mi cykli, gdy będę chciał wyświetlić 4 czy 5 motyli jednocześnie.
+
+# 2024-03-12 - Dzień #012
+
+Nadszedł czas, aby zacząć myśleć o algorytmie rozgrywki. Chcę, aby doświadczenie gry było podobne jak w oryginale, ale nie identyczne. Przykładowo - nie zrobię zegarka ani budzika. Pamiętam też, że w oryginalnej grze czasami pojawiał się kogut i traciło się tylko połowę życia, gdy był widoczny. Nie mam miejsca na ekranie na "koguta", dlatego jego też odpuszczę.
+
+Oryginalna konsola G&W używała mikroprocesora Sharp SM-5A, a rosyjskie konsole wykorzystywały jego klon - КБ1013ВК1-2. Milan Galcik stworzył disassembler tego procesora i wykonał inżynierię wsteczną gry w jajeczka:  [Sharp SM-5A Disassembler](https://www.septimus.sk/KB1013dbg/index.html). Jestem pełen podziwu dla jego pracy. Co prawda nie chcę stworzyć odpowiednika 1:1 gry, ale jego materiały na pewno będą pomocne.
