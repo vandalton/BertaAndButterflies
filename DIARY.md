@@ -107,3 +107,11 @@ I also added an experimental version of butterfly "animation". Butterflies are m
 It's time to start thinking about the gameplay algorithm. I want to create a similiar experience to the original, but not identical. For example - I won't make the clock, neither the alarm. I also remember that a rooster appeared sometimes in the original game and you could lose only half of live while it's visible. I don't have a place on the screen for "rooster", so I'm going to give up on it.
 
 The original G&W console used Sharp SM-5A microprocessor, while the russian consoles used its clone - КБ1013ВК1-2. Milan Galcik created a disassembler for this processor and did a reverse-engineer of the "Egg" game algorithm: [Sharp SM-5A Disassembler](https://www.septimus.sk/KB1013dbg/index.html). I really admire his work. Although I don't want to implement 1:1 game equivalent, his description will be helpful.
+
+# 2024-03-13 - Day #013
+
+Today I added a sound to the butterfly "animation", which is quite ok for my ears. I didn't mentioned it yet, but Atari 2600's sound capabilities are also very limited. (However, the real artist can do miracles with it - check this cTrix performance: [https://youtu.be/S8e7g8kJIlo](https://youtu.be/S8e7g8kJIlo)).
+
+I want to immerse in the original game, to know it as much as possible. Unfortunetely, neither of my vintage consoles work, but what are emulators for?
+
+![Consoles](./static/consoles.jpeg)

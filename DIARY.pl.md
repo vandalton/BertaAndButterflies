@@ -107,3 +107,11 @@ Dodałem także eksperymentalną wersję "animacji" motylka. Motyle są zrobione
 Nadszedł czas, aby zacząć myśleć o algorytmie rozgrywki. Chcę, aby doświadczenie gry było podobne jak w oryginale, ale nie identyczne. Przykładowo - nie zrobię zegarka ani budzika. Pamiętam też, że w oryginalnej grze czasami pojawiał się kogut i traciło się tylko połowę życia, gdy był widoczny. Nie mam miejsca na ekranie na "koguta", dlatego jego też odpuszczę.
 
 Oryginalna konsola G&W używała mikroprocesora Sharp SM-5A, a rosyjskie konsole wykorzystywały jego klon - КБ1013ВК1-2. Milan Galcik stworzył disassembler tego procesora i wykonał inżynierię wsteczną gry w jajeczka:  [Sharp SM-5A Disassembler](https://www.septimus.sk/KB1013dbg/index.html). Jestem pełen podziwu dla jego pracy. Co prawda nie chcę stworzyć odpowiednika 1:1 gry, ale jego materiały na pewno będą pomocne.
+
+# 2024-03-13 - Day #013
+
+Dziś dodałem dźwięk do "animacji" motyla i brzmi on całkiem dobrze jak na moje uszy. Nie wspomniałem o tym wcześniej, ale możliwości dźwiękowe Atari 2600 są także bardzo ograniczone. (Jednak prawdziwy artysta może z nim zdziałać cuda - zobaczcie ten występ cTrixa: [https://youtu.be/S8e7g8kJIlo](https://youtu.be/S8e7g8kJIlo)).
+
+Chcę zanurzyć się w oryginalnej grze, aby poznać ją najlepiej, jak to możliwe. Niestety, żadna z moich zabytkowych konsolek nie działa, ale od czego są emulatory?
+
+![Consoles](./static/consoles.jpeg)
