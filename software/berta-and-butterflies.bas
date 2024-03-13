@@ -269,8 +269,8 @@ __topdownset
     drawscreen
 
     _frame = _frame + 1
-    if _frame = 25 then _top_left_bf = _top_left_bf * 2
-    if _frame > 50 then _frame = 0
+    if _frame = 25 then _top_left_bf = _top_left_bf * 2 : AUDC0 = 12 : AUDV0 = 10 : AUDF0 = 7
+    if _frame > 50 then _frame = 0 : AUDV0 = 0
 
     if _top_left_bf = 32 then _top_left_bf = 1
 
