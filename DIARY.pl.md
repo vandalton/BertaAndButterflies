@@ -114,4 +114,4 @@ Dziś dodałem dźwięk do "animacji" motyla i brzmi on całkiem dobrze jak na m
 
 Chcę zanurzyć się w oryginalnej grze, aby poznać ją najlepiej, jak to możliwe. Niestety, żadna z moich zabytkowych konsolek nie działa, ale od czego są emulatory?
 
-![Consoles](./static/consoles.jpeg)
+![Consoles](./static/consoles.jpg)

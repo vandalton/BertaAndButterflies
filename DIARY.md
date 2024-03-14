@@ -114,4 +114,4 @@ Today I added a sound to the butterfly "animation", which is quite ok for my ear
 
 I want to immerse in the original game, to know it as much as possible. Unfortunetely, neither of my vintage consoles work, but what are emulators for?
 
-![Consoles](./static/consoles.jpeg)
+![Consoles](./static/consoles.jpg)
