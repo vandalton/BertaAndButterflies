@@ -114,4 +114,12 @@ Today I added a sound to the butterfly "animation", which is quite ok for my ear
 
 I want to immerse in the original game, to know it as much as possible. Unfortunetely, neither of my vintage consoles work, but what are emulators for?
 
-![Consoles](./static/consoles.jpg)
+![Consoles](./static//consoles.jpg)
+
+# 2024-03-14 - Day #014
+
+I added all missing butterflies. Butterflies are made of "playground pixels". Their higlighting is expensive when comes to the processor cycles. So far they are animated correctly, but there will be even more butterflies flying - up to 12 at the same time! I quess it will be too much. So I'll probably change the method of higlighting playground pixels to more direct, assembler-like way.
+
+I also added some bushes and clouds :)
+
+![Four butterflies](./static//four_butterflies.png)

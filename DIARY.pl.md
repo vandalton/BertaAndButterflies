@@ -115,3 +115,11 @@ Dziś dodałem dźwięk do "animacji" motyla i brzmi on całkiem dobrze jak na m
 Chcę zanurzyć się w oryginalnej grze, aby poznać ją najlepiej, jak to możliwe. Niestety, żadna z moich zabytkowych konsolek nie działa, ale od czego są emulatory?
 
 ![Consoles](./static/consoles.jpg)
+
+# 2024-03-14 - Day #014
+
+Dodałem brakujące motyle. Są one zrobione z "pikseli pola gry". Ich wyświetlanie jest kosztowne jeśli chodzi o cykle procesora. Na razie animują się poprawnie, ale będzie ich jeszcze więcej - nawet 12 w jednym momencie! Obstawiam, że to będzie za dużo. Prawdopodobnie kiedyś zmienię metodę "zapalania" "pikseli pola gry" na bardziej bezpośrednią, assemblero-podobną.
+
+Dodałem też krzaki i chmurki :)
+
+![Four butterflies](./static//four_butterflies.png)
