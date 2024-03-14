@@ -40,14 +40,17 @@
 end
 
     dim _berta_position = a /* {0} left right, {1} bottom top */
-    dim _top_left_bf = b
-    dim _top_right_bf = c
-    dim _bottom_left_bf = d
-    dim _bottom_right_bf = e
+    dim _prev_berta_position = b
+    dim _top_left_bf = c
+    dim _top_right_bf = d
+    dim _bottom_left_bf = e
+    dim _bottom_right_bf = f
 
-    dim _frame = f
+    dim _frame = g
 
+    _prev_berta_position = 99;
     _top_left_bf = 1
+    _top_right_bf = 2
 main
 
     COLUBK=_blue
@@ -87,6 +90,10 @@ end
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 end
+
+    if _prev_berta_position = _berta_position then goto __sprites_set
+    
+    _prev_berta_position = _berta_position
 
     pfcolors:
     _red
@@ -233,6 +240,8 @@ end
     %00001000
 end
 
+__sprites_set
+
     REFP0=0
     REFP1=0
     player1x=92
@@ -258,20 +267,27 @@ __topdownset
     if joy0up then _berta_position{1}=1
     if joy0down then _berta_position{1}=0
 
-    if _top_left_bf{0} then pfpixel 1 2 on
-    if _top_left_bf{1} then pfpixel 2 3 on : pfpixel 3 2 on 
-    if _top_left_bf{2} then pfpixel 4 3 on
-    if _top_left_bf{3} then pfpixel 5 4 on : pfpixel 6 3 on
-    if _top_left_bf{4} then pfpixel 8 4 on
+    if _top_left_bf{0} then pfpixel 1 1 on
+    if _top_left_bf{1} then pfpixel 2 2 on : pfpixel 3 1 on 
+    if _top_left_bf{2} then pfpixel 4 2 on
+    if _top_left_bf{3} then pfpixel 5 3 on : pfpixel 6 2 on
+    if _top_left_bf{4} then pfpixel 6 3 on
+
+    if _top_right_bf{0} then pfpixel 28 1 on
+    if _top_right_bf{1} then pfpixel 27 2 on : pfpixel 26 1 on 
+    if _top_right_bf{2} then pfpixel 25 2 on
+    if _top_right_bf{3} then pfpixel 24 3 on : pfpixel 23 2 on
+    if _top_right_bf{4} then pfpixel 23 3 on
 
     rem score=score+1
 
     drawscreen
 
     _frame = _frame + 1
-    if _frame = 25 then _top_left_bf = _top_left_bf * 2 : AUDC0 = 12 : AUDV0 = 10 : AUDF0 = 7
+    if _frame = 25 then _top_left_bf = _top_left_bf * 2 : _top_right_bf = _top_right_bf * 2  : AUDC0 = 12 : AUDV0 = 7 : AUDF0 = 7
     if _frame > 50 then _frame = 0 : AUDV0 = 0
 
     if _top_left_bf = 32 then _top_left_bf = 1
+    if _top_right_bf = 32 then _top_right_bf = 1
 
     goto main
