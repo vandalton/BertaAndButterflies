@@ -123,3 +123,7 @@ I added all missing butterflies. Butterflies are made of "playground pixels". Th
 I also added some bushes and clouds :)
 
 ![Four butterflies](./static//four_butterflies.png)
+
+# 2024-03-15 - Day #015
+
+I refactored the way Berta's position is stored. It'll be easier that way to handle it and comare with butterflies "sources"

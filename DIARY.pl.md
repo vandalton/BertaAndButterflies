@@ -123,3 +123,7 @@ Dodałem brakujące motyle. Są one zrobione z "pikseli pola gry". Ich wyświetl
 Dodałem też krzaki i chmurki :)
 
 ![Four butterflies](./static//four_butterflies.png)
+
+# 2024-03-15 - Day #015
+
+Zmieniłem sposób, w jaki przechowywana jest pozycja Berty. Tak będzie ją łatwiej obsłużyć i porównywać pozycję ze "źródłami" motylków.
