@@ -321,12 +321,17 @@ __berta_right_set
     if _bottom_right_bf{3} then pfpixel 24 7 on : pfpixel 23 6 on
     if _bottom_right_bf{4} then pfpixel 23 7 on
 
+    if !_berta_position{0} && !_berta_position{1} && _bottom_left_bf = 16 then COLUP1 = _red
+    if !_berta_position{0} && _berta_position{1} && _top_left_bf = 16 then COLUP1 = _red
+    if _berta_position{0} && !_berta_position{1} && _bottom_right_bf = 16 then COLUP1 = _red
+    if _berta_position{0} && _berta_position{1} && _top_right_bf = 16 then COLUP1 = _red
+
     rem score=score+1
 
     drawscreen
 
     _frame = _frame + 1
-    if _frame = 25 then _top_left_bf = _top_left_bf * 2 : _top_right_bf = _top_right_bf * 2  : _bottom_left_bf = _bottom_left_bf * 2 : _bottom_right_bf = _bottom_right_bf * 2 : AUDC0 = 12 : AUDV0 = 7 : AUDF0 = 7
+    if _frame = 25 then _top_left_bf = _top_left_bf * 2 : _top_right_bf = _top_right_bf * 2  : _bottom_left_bf = _bottom_left_bf * 2 : _bottom_right_bf = _bottom_right_bf * 2 : AUDC0 = 12 : AUDV0 = 5 : AUDF0 = 7
     if _frame > 50 then _frame = 0 : AUDV0 = 0
 
     if _top_left_bf = 32 then _top_left_bf = 1
