@@ -1,7 +1,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![pl](https://img.shields.io/badge/lang-pl-green.svg)](./README.pl.md)
 
-# Berta And Butterflies
+# Berta i motyle
 
 Mam nadzieję, że w tym repozytorium pewnego dnia znajdzie się gra na Atari 2600.
 Projekt będzie się składał nie tylko z kodu, ale także z płytki kartridża, etykiet, pudełka - wszystkiego, co potrzebne, aby stworzyć grę możliwą do uruchomienia na prawdziwej konsoli.

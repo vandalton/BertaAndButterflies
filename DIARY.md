@@ -8,7 +8,7 @@ A friend convinced me to take part in the [100 Commits](https://100commitow.pl/)
 I started preparations few weeks ago. I install tools and configure the environment. I started reading books:
 
 1. Nick Montfort, Ian Bogost - [Racing the Beam](https://mitpress.mit.edu/9780262539760/racing-the-beam/) - it contains Atari 2600 platform analysis and also analysis of some famous games, from the developer's point of view.
-2. Jan Ruszczyc - [Asembler 6502](https://retronics.eu/?a=item&id=20&l=pl) - how to use 6502 assembler. Although Atari 2600 contains 6507 processor, but it is stripped down version of 6502, so the knowledge won't be wasted.
+1. Jan Ruszczyc - [Asembler 6502](https://retronics.eu/?a=item&id=20&l=pl) - how to use 6502 assembler. Although Atari 2600 contains 6507 processor, but it is stripped down version of 6502, so the knowledge won't be wasted.
 
 I almost failed on the first day. Contest's rules says at least one commit by the repo author is needed. I had a wrong email address in my git configuration, so my previous commits were accounted to the different Github users! Fortunately, I noticed it.
 
@@ -21,10 +21,10 @@ It looks like that limitations are everywhere. I started to think how to workaro
 Few examples of limitations:
 
 1. Atari 2600 has 128 bytes of RAM, but only 26 of them are available. Other are already used for different purposes.
-2. You can draw only a few moveable objects: 2 player sprites, 2 missiles (which are always square) and one ball.
-3. If you want your sprite to have more than one color, you cannot use missile.
-4. There is no simple way to print text (so I can't even start with "hello world!" program).
-5. Binary program should be 4KB at most. If you want more, you can use bankswitching, but Atari has access to only one 4KB bank at one moment.
+1. You can draw only a few moveable objects: 2 player sprites, 2 missiles (which are always square) and one ball.
+1. If you want your sprite to have more than one color, you cannot use missile.
+1. There is no simple way to print text (so I can't even start with "hello world!" program).
+1. Binary program should be 4KB at most. If you want more, you can use bankswitching, but Atari has access to only one 4KB bank at one moment.
 
 I started working on the cartridge PCB. Why, if I have no single line of the game so far? It's because I want to order the boards as soon as possible. They will arrive within 30 days or so. If I made a mistake, I want to have time to fix it.
 
@@ -126,4 +126,11 @@ I also added some bushes and clouds :)
 
 # 2024-03-15 - Day #015
 
-I refactored the way Berta's position is stored. It'll be easier that way to handle it and comare with butterflies "sources"
+I refactored the way Berta's position is stored. It'll be easier that way to handle it and comare with butterflies "sources".
+
+# 2024-03-16 - Day #016
+
+I implemented a draft version of the butterflies releasing algorithm. It works quite ok, however, few variables are hardcoded at the moment:
+
+1. Maximal number of butterflies flying - 3. In the original game this number depends on the current score.
+1. Number of a "source" that is paused and doesn't release any new butterflies. In the original game it depends on the number of lives.

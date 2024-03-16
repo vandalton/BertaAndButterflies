@@ -8,7 +8,7 @@ Kolega z pracy namówił mnie na udział w konkursie [100 Commitów](https://100
 Przygotowania rozpocząłem kilka tygodni temu. Poznaję narzędzia, instaluję środowisko pracy. Zacząłem także czytać książki:
 
 1. Nick Montfort, Ian Bogost - [Racing the Beam](https://mitpress.mit.edu/9780262539760/racing-the-beam/) - zawiera analizę platformy Atari 2600 oraz kodu kilku słynnych gier z punktu widzenia programistycznego.
-2. Jan Ruszczyc - [Asembler 6502](https://retronics.eu/?a=item&id=20&l=pl) - opis assemblera procesora 6502. Atari 2600 zawiera co prawda procesor 6507, ale jest to okrojona wersja 6502, więc zdobyta wiedza nie zmarnuje się.
+1. Jan Ruszczyc - [Asembler 6502](https://retronics.eu/?a=item&id=20&l=pl) - opis assemblera procesora 6502. Atari 2600 zawiera co prawda procesor 6507, ale jest to okrojona wersja 6502, więc zdobyta wiedza nie zmarnuje się.
 
 Prawie zlamiłem pierwszego dnia! Zasady konkursu wymagają co najmniej jednego commita dziennie od autora repozytorium. W konfiguracji gita miałem podany błędny adres e-mail i moje wcześniejsze commity zaliczyły się na konto innego użytkownika Githuba! Na szczęście zauważyłem to w porę.
 
@@ -21,10 +21,10 @@ Wygląda na to, że ograniczenia są dosłownie na każdym kroku. Zastanawiam si
 Kilka przykładów ograniczeń:
 
 1. Atari 2600 ma 128 bajtów RAMu, ale tylko 26 jest dostępnych. Pozostałe są domyślnie użyte dla różnych celów.
-2. Możesz narysować pięć poruszających się obiektów: 2 sprite'y graczy, 2 pociski (muszą być kwadratowe) i jedną piłkę.
-3. Jeśli sprite ma używać więcej niż jednego koloru, nie użyjesz pocisku.
-4. Nie ma prostej metody wyświetlenia tekstu (nie zacznę standardowym programem "hello world!").
-5. Wersja binarna programu powinna mieć maksymalnie 4KB. Jeśli potrzeba więcej, można wykorzystać technikę przełączania banków pamięci, ale Atari w danym momencie ma dostęp tylko do jednego, 4-kilobajtowego banku.
+1. Możesz narysować pięć poruszających się obiektów: 2 sprite'y graczy, 2 pociski (muszą być kwadratowe) i jedną piłkę.
+1. Jeśli sprite ma używać więcej niż jednego koloru, nie użyjesz pocisku.
+1. Nie ma prostej metody wyświetlenia tekstu (nie zacznę standardowym programem "hello world!").
+1. Wersja binarna programu powinna mieć maksymalnie 4KB. Jeśli potrzeba więcej, można wykorzystać technikę przełączania banków pamięci, ale Atari w danym momencie ma dostęp tylko do jednego, 4-kilobajtowego banku.
 
 Zacząłem pracować nad płytką kartridża. Dlaczego, skoro jeszcze nie mam ani jednej linijki gry? Chcę zamówić płytki jak najszybciej. Mogą dotrzeć nawet po 30 dniach. Jeśli popełniłem błąd, chciałbym mieć czas na jego poprawę.
 
@@ -108,7 +108,7 @@ Nadszedł czas, aby zacząć myśleć o algorytmie rozgrywki. Chcę, aby doświa
 
 Oryginalna konsola G&W używała mikroprocesora Sharp SM-5A, a rosyjskie konsole wykorzystywały jego klon - КБ1013ВК1-2. Milan Galcik stworzył disassembler tego procesora i wykonał inżynierię wsteczną gry w jajeczka:  [Sharp SM-5A Disassembler](https://www.septimus.sk/KB1013dbg/index.html). Jestem pełen podziwu dla jego pracy. Co prawda nie chcę stworzyć odpowiednika 1:1 gry, ale jego materiały na pewno będą pomocne.
 
-# 2024-03-13 - Day #013
+# 2024-03-13 - Dzień #013
 
 Dziś dodałem dźwięk do "animacji" motyla i brzmi on całkiem dobrze jak na moje uszy. Nie wspomniałem o tym wcześniej, ale możliwości dźwiękowe Atari 2600 są także bardzo ograniczone. (Jednak prawdziwy artysta może z nim zdziałać cuda - zobaczcie ten występ cTrixa: [https://youtu.be/S8e7g8kJIlo](https://youtu.be/S8e7g8kJIlo)).
 
@@ -116,14 +116,21 @@ Chcę zanurzyć się w oryginalnej grze, aby poznać ją najlepiej, jak to możl
 
 ![Consoles](./static/consoles.jpg)
 
-# 2024-03-14 - Day #014
+# 2024-03-14 - Dzień #014
 
 Dodałem brakujące motyle. Są one zrobione z "pikseli pola gry". Ich wyświetlanie jest kosztowne jeśli chodzi o cykle procesora. Na razie animują się poprawnie, ale będzie ich jeszcze więcej - nawet 12 w jednym momencie! Obstawiam, że to będzie za dużo. Prawdopodobnie kiedyś zmienię metodę "zapalania" "pikseli pola gry" na bardziej bezpośrednią, assemblero-podobną.
 
 Dodałem też krzaki i chmurki :)
 
-![Four butterflies](./static//four_butterflies.png)
+![Cztery motyle](./static//four_butterflies.png)
 
-# 2024-03-15 - Day #015
+# 2024-03-15 - Dzień #015
 
 Zmieniłem sposób, w jaki przechowywana jest pozycja Berty. Tak będzie ją łatwiej obsłużyć i porównywać pozycję ze "źródłami" motylków.
+
+# 2024-03-16 - Dzień #016
+
+Zaimplementowałem roboczą wersję algorytmu wypuszczania motylków. Działa całkiem dobrze, jednak kilka zmiennych jest w tej chwili zabitych na sztywno:
+
+1. Maksymalna liczba motylków latających w jednym momencie - 3. W oryginalnej grze liczba ta zależy od aktualnego wyniku. 
+1. Numer "źródła", które pauzuje i nie wypuszcza motylków. W oryginalnej grze zależy to od liczby żyć gracza.
