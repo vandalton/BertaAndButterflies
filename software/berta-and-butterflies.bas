@@ -28,7 +28,13 @@
     player0x=60
     player0y=80
 
-    dim _berta_position = a /* 0: bottom left 1: bottom right 2: top left 3: top right */
+    /* 
+    0: bottom left 
+    1: bottom right 
+    2: top left 
+    3: top right 
+    */
+    dim _berta_position = a 
     dim _prev_berta_position = b
 
     dim _top_left_butterfly = c
@@ -40,8 +46,8 @@
 
     dim _slowdown = h
 
-    dim _butterfly_source = i /* 0: bottom left 1: bottom right 2: top left 3: top right */
-    dim _free_sources = j
+    dim _butterfly_source = i
+    dim _inactive_sources_count = j
 
     dim _current_butterflies = k
 
@@ -343,7 +349,7 @@ __berta_right_set
     
     if _slowdown > 0 then goto __inner_loop_end
 
-    _free_sources = 0
+    _inactive_sources_count = 0
 
 __release_butterflies
     if _butterfly_source = 0 then _current_butterflies = _bottom_left_butterfly
@@ -354,14 +360,14 @@ __release_butterflies
     _current_butterflies = _current_butterflies * 2
     if (_current_butterflies & 32) then _current_butterflies{6} = 0 : _butterfly_count = _butterfly_count - 1
 
-    _random = (rand & 1)
-    if _random && _butterfly_count <> 0 then goto __skip
+    _random = (rand & 3)
+    if _random <> 0 && _butterfly_count <> 0 && _butterfly_source = 2 then goto __skip
 
-    if !_current_butterflies{0} && _butterfly_count < 1 then _current_butterflies{0} = 1 : _butterfly_count = _butterfly_count + 1
+    if !_current_butterflies{1} && _butterfly_count < 3 then _current_butterflies{0} = 1 : _butterfly_count = _butterfly_count + 1
 
 __skip
 
-    if _current_butterflies > 0 then _free_sources = 0 else _free_sources = _free_sources + 1
+    if _current_butterflies > 0 then _inactive_sources_count = 0 else _inactive_sources_count = _inactive_sources_count + 1
 
     if _butterfly_source = 0 then _bottom_left_butterfly = _current_butterflies
     if _butterfly_source = 1 then _bottom_right_butterfly = _current_butterflies
@@ -371,11 +377,11 @@ __skip
     _butterfly_source = _butterfly_source + 1
     if _butterfly_source = 4 then _butterfly_source = 0
 
-    if _free_sources = 0 || _free_sources > 2 then goto __release_butterflies
+    if _inactive_sources_count > 0 && _inactive_sources_count <= 2 then goto __release_butterflies
     /* AUDC0 = 12 : AUDV0 = 5 : AUDF0 = 7 */
     
 __inner_loop_end
-    if _slowdown = 0 then _slowdown = 30
+    if _slowdown = 0 then _slowdown = 21
     _slowdown = _slowdown - 1
 
     goto main
