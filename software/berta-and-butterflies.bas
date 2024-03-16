@@ -38,16 +38,16 @@
 
     dim _butterfly_count = g
 
-    dim _frame = h
+    dim _slowdown = h
 
-    dim _slowdown = i
+    dim _butterfly_source = i /* 0: bottom left 1: bottom right 2: top left 3: top right */
+    dim _free_sources = j
 
-    _prev_berta_position = 99
+    dim _current_butterflies = k
 
-    _top_left_butterfly = 1
-    _top_right_butterfly = 2
-    _bottom_left_butterfly = 4
-    _bottom_right_butterfly = 8
+    dim _random = l
+
+    _prev_berta_position = 5
 
     COLUBK=_blue
     COLUP0=_white
@@ -60,7 +60,7 @@ main
     NUSIZ1=$05
 
     /* bottom */
-    if _berta_position = 0 || _berta_position = 1 then playfield:
+    if _berta_position < 2 then playfield:
     .....XXXXX..........XXXXX.......
     ................................
     ................................
@@ -76,7 +76,7 @@ main
 end
 
     /* top */
-    if _berta_position = 2 || _berta_position = 3 then playfield:
+    if _berta_position > 1 then playfield:
     .....XXXXX..........XXXXX.......
     ................................
     ...........XX....XX.............
@@ -111,7 +111,7 @@ end
 end
 
     /* top */
-    if _berta_position <> 2 && _berta_position <> 3 then goto __berta_top_set
+    if _berta_position < 2 then goto __berta_top_set
     
     player0:
     %00000110
@@ -201,7 +201,7 @@ end
 __berta_top_set
 
     /* bottom */
-    if _berta_position <> 0 && _berta_position <> 1 then goto __berta_bottom_set
+    if _berta_position > 1 then goto __berta_bottom_set
 
     player0:
     %01100110
@@ -334,30 +334,48 @@ __berta_right_set
     if _bottom_right_butterfly{3} then pfpixel 24 7 on : pfpixel 23 6 on
     if _bottom_right_butterfly{4} then pfpixel 23 7 on
 
-    if _berta_position = 0 && _bottom_left_butterfly = 16 then COLUP1 = _red
-    if _berta_position = 1 && _bottom_right_butterfly = 16 then COLUP1 = _red
-    if _berta_position = 2 && _top_left_butterfly = 16 then COLUP1 = _red
-    if _berta_position = 3 && _top_right_butterfly = 16 then COLUP1 = _red
-
-    rem score=score+1
+    if _berta_position = 0 && _bottom_left_butterfly{4} then COLUP1 = _red
+    if _berta_position = 1 && _bottom_right_butterfly{4} then COLUP1 = _red
+    if _berta_position = 2 && _top_left_butterfly{4} then COLUP1 = _red
+    if _berta_position = 3 && _top_right_butterfly{4} then COLUP1 = _red
 
     drawscreen
-
-    _frame = _frame + 1
     
     if _slowdown > 0 then goto __inner_loop_end
 
-    if _slowdown = 0 then _slowdown = 31
+    _free_sources = 0
 
-    _slowdown = _slowdown - 1
-    /* if _frame = 25 then _top_left_butterfly = _top_left_butterfly * 2 : _top_right_butterfly = _top_right_butterfly * 2  : _bottom_left_butterfly = _bottom_left_butterfly * 2 : _bottom_right_butterfly = _bottom_right_butterfly * 2 : AUDC0 = 12 : AUDV0 = 5 : AUDF0 = 7
-    if _frame > 50 then _frame = 0 : AUDV0 = 0
+__release_butterflies
+    if _butterfly_source = 0 then _current_butterflies = _bottom_left_butterfly
+    if _butterfly_source = 1 then _current_butterflies = _bottom_right_butterfly
+    if _butterfly_source = 2 then _current_butterflies = _top_left_butterfly
+    if _butterfly_source = 3 then _current_butterflies = _top_right_butterfly
 
-    if _top_left_butterfly = 32 then _top_left_butterfly = 1
-    if _top_right_butterfly = 32 then _top_right_butterfly = 1
-    if _bottom_left_butterfly = 32 then _bottom_left_butterfly = 1
-    if _bottom_right_butterfly = 32 then _bottom_right_butterfly = 1 */
+    _current_butterflies = _current_butterflies * 2
+    if (_current_butterflies & 32) then _current_butterflies{6} = 0 : _butterfly_count = _butterfly_count - 1
 
+    _random = (rand & 1)
+    if _random && _butterfly_count <> 0 then goto __skip
+
+    if !_current_butterflies{0} && _butterfly_count < 1 then _current_butterflies{0} = 1 : _butterfly_count = _butterfly_count + 1
+
+__skip
+
+    if _current_butterflies > 0 then _free_sources = 0 else _free_sources = _free_sources + 1
+
+    if _butterfly_source = 0 then _bottom_left_butterfly = _current_butterflies
+    if _butterfly_source = 1 then _bottom_right_butterfly = _current_butterflies
+    if _butterfly_source = 2 then _top_left_butterfly = _current_butterflies
+    if _butterfly_source = 3 then _top_right_butterfly = _current_butterflies
+
+    _butterfly_source = _butterfly_source + 1
+    if _butterfly_source = 4 then _butterfly_source = 0
+
+    if _free_sources = 0 || _free_sources > 2 then goto __release_butterflies
+    /* AUDC0 = 12 : AUDV0 = 5 : AUDF0 = 7 */
+    
 __inner_loop_end
+    if _slowdown = 0 then _slowdown = 30
+    _slowdown = _slowdown - 1
 
     goto main
