@@ -134,3 +134,7 @@ I implemented a draft version of the butterflies releasing algorithm. It works q
 
 1. Maximal number of butterflies flying - 3. In the original game this number depends on the current score.
 1. Number of a "source" that is paused and doesn't release any new butterflies. In the original game it depends on the number of lives.
+
+# 2024-03-17 - Day #017
+
+Nothing spectacular today - I'm resting :) I adjusted NTSC version colors and made NTSC version default, because the emulator by default treats ROMs as NTSC. Of course, PAL version is still more important for me, because I want to run the game on the real console and I have PAL versions only.

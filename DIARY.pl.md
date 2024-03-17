@@ -134,3 +134,7 @@ Zaimplementowałem roboczą wersję algorytmu wypuszczania motylków. Działa ca
 
 1. Maksymalna liczba motylków latających w jednym momencie - 3. W oryginalnej grze liczba ta zależy od aktualnego wyniku. 
 1. Numer "źródła", które pauzuje i nie wypuszcza motylków. W oryginalnej grze zależy to od liczby żyć gracza.
+
+# 2024-03-17 - Dzień #017
+
+Dziś nic spektakularnego - odpoczywam :) Dostosowałem kolory wersji NTSC i ustawiłem ją jako domyślną, gdyż emulator domyślnie traktuje ROMy jako wersje NTSC. Oczywiście wersja PAL pozostaje dla mnie ważniejsza, bo chcę ją uruchomić na prawdziwej konsoli, a tę mam w wersji PAL.
