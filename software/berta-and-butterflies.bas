@@ -3,22 +3,22 @@
     const font=retroputer
 
     /* pal colors */
-    const _blue=$B8
+    /* const _blue=$B8
     const _red=$64
-    const _white=$1E
+    const _white=$0E
     const _yellow=$28
     const _brown=$22
     const _green=$58
-    const _gray=$08
+    const _gray=$08 */
 
     /* ntsc colors */
-    /* const _blue=$98
-    const _red=$34
+    const _blue=$98
+    const _red=$44
     const _white=$0E
     const _yellow=$18
     const _brown=$12
-    const _green=$C6
-    const _gray=$08 */
+    const _green=$C8
+    const _gray=$08
 
     const pfscore=1
     pfscore1 = 21
