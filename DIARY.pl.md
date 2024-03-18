@@ -148,3 +148,9 @@ Próbowałem narysować Bertę na potrzeby przyszłej okładki kartridża i pude
 Inne rysunki są jeszcze gorsze. Jeden z nich pasowałby jako plakat do horroru Williama Wylera - [Kolekcjoner](https://www.imdb.com/title/tt0059043/).
 
 Prawdopodobnie poprosze żonę o rysunek :)
+
+# 2024-03-19 - Dzień #019
+
+Bardzo chciałem zobaczyć, jak program zadziała na prawdziwym sprzęcie. Co prawda nie mam jeszcze zamówionych płytek i jeszcze nie da się grać, to poświęciłem kość EPROM i użyłem jedną z wcześniejszych płytek prototypowych, aby uruchomić Bertę!
+
+![Berta na prawdziwym sprzęcie](./static/berta_first_time_on_real_hardware.jpeg)

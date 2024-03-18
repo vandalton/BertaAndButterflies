@@ -148,3 +148,9 @@ I tried to draw Berta for the future cartridge cover and box. The problem is I c
 Other drawings are even worse. One of them will work better as a poster for William Wyler's [Collector](https://www.imdb.com/title/tt0059043/) horror movie.
 
 I'll probably ask my wife for a drawing :)
+
+# 2024-03-19 - Day #019
+
+I really wanted to see how the program will work on a real hardware. Although cartridge PCBs didn't arrive yet and you can't really play the game at this point, I sacrificed EPROM chip and used a board in older version, to run Berta!
+
+![Berta on a real hardware](./static/berta_first_time_on_real_hardware.jpeg)
