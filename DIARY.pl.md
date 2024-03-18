@@ -65,7 +65,7 @@ Wiem już, że muszę połączyć "pole gry" ze spritem, aby wyświetlić wielok
 
 ![Berta drawing](./static/berta_drawing.png)
 
-Gdy widzę inną grę na Atari 2600, automatycznie myślę o tym, jak była zrobiona. Przykładowo, [Combat](https://youtu.be/3m86ftny1uY) to przykład bezpośredniego wykorzystania możliwości konsoli: wyświetlenia dwóch sprite'ów i dwóch pocisków na polu gry.  [Breakout](https://youtu.be/tT70Tv6D41o) najwyraźniej wykorzystuje sprite'a na paletkę, do tego piłkę i klocki z "pikseli" pola gry.
+Gdy widzę inną grę na Atari 2600, automatycznie myślę o tym, jak była zrobiona. Przykładowo, [Combat](https://youtu.be/3m86ftny1uY) to prezentacja bezpośredniego wykorzystania możliwości konsoli: wyświetlenia dwóch sprite'ów i dwóch pocisków na polu gry.  [Breakout](https://youtu.be/tT70Tv6D41o) najwyraźniej wykorzystuje sprite'a na paletkę, do tego piłkę i klocki z "pikseli" pola gry.
 
 # 2024-03-07 - Dzień #007
 
@@ -138,3 +138,13 @@ Zaimplementowałem roboczą wersję algorytmu wypuszczania motylków. Działa ca
 # 2024-03-17 - Dzień #017
 
 Dziś nic spektakularnego - odpoczywam :) Dostosowałem kolory wersji NTSC i ustawiłem ją jako domyślną, gdyż emulator domyślnie traktuje ROMy jako wersje NTSC. Oczywiście wersja PAL pozostaje dla mnie ważniejsza, bo chcę ją uruchomić na prawdziwej konsoli, a tę mam w wersji PAL.
+
+# 2024-03-18 - Dzień #018
+
+Próbowałem narysować Bertę na potrzeby przyszłej okładki kartridża i pudełka. Problem w tym, że nie umiem rysować. Na razie to mój najlepszy rezultat:
+
+![Berta - drawing for cover](./static/berta_cover_drawing.png)
+
+Inne rysunki są jeszcze gorsze. Jeden z nich pasowałby jako plakat do horroru Williama Wylera - [Kolekcjoner](https://www.imdb.com/title/tt0059043/).
+
+Prawdopodobnie poprosze żonę o rysunek :)

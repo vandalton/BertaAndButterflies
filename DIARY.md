@@ -65,7 +65,7 @@ I already know that I need to combine playfield with sprite, to create a multi-c
 
 ![Berta drawing](./static/berta_drawing.png)
 
-Now when I see other game for the Atari 2600, I'm automatically thinking how it was done. For example, [Combat](https://youtu.be/3m86ftny1uY) game is an example of how to use console's abilities in the most direct way: display two sprites and two missiles, and a playfield. [Breakout](https://youtu.be/tT70Tv6D41o) apparently has one sprite for paddle, the ball and bricks made out of the "playfield pixels".
+Now when I see other game for the Atari 2600, I'm automatically thinking how it was done. For example, [Combat](https://youtu.be/3m86ftny1uY) game is a presentation of how to use console's abilities in the most direct way: display two sprites and two missiles, and a playfield. [Breakout](https://youtu.be/tT70Tv6D41o) apparently has one sprite for paddle, the ball and bricks made out of the "playfield pixels".
 
 # 2024-03-07 - Day #007
 
@@ -138,3 +138,13 @@ I implemented a draft version of the butterflies releasing algorithm. It works q
 # 2024-03-17 - Day #017
 
 Nothing spectacular today - I'm resting :) I adjusted NTSC version colors and made NTSC version default, because the emulator by default treats ROMs as NTSC. Of course, PAL version is still more important for me, because I want to run the game on the real console and I have PAL versions only.
+
+# 2024-03-18 - Day #018
+
+I tried to draw Berta for the future cartridge cover and box. The problem is I cannot draw. This is my best result so far:
+
+![Berta - drawing for cover](./static/berta_cover_drawing.png)
+
+Other drawings are even worse. One of them will work better as a poster for William Wyler's [Collector](https://www.imdb.com/title/tt0059043/) horror movie.
+
+I'll probably ask my wife for a drawing :)
