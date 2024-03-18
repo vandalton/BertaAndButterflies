@@ -361,7 +361,7 @@ __release_butterflies
     if (_current_butterflies & 32) then _current_butterflies{6} = 0 : _butterfly_count = _butterfly_count - 1
 
     _random = (rand & 3)
-    if _random <> 0 && _butterfly_count <> 0 && _butterfly_source = 2 then goto __skip
+    if _random <> 0 || _butterfly_source = 2 then goto __skip
 
     if !_current_butterflies{1} && _butterfly_count < 3 then _current_butterflies{0} = 1 : _butterfly_count = _butterfly_count + 1
 
