@@ -138,3 +138,13 @@ I implemented a draft version of the butterflies releasing algorithm. It works q
 # 2024-03-17 - Day #017
 
 Nothing spectacular today - I'm resting :) I adjusted NTSC version colors and made NTSC version default, because the emulator by default treats ROMs as NTSC. Of course, PAL version is still more important for me, because I want to run the game on the real console and I have PAL versions only.
+
+# 2024-03-18 - Day #018
+
+I tried to draw Berta for the future cartridge cover and box. The problem is I cannot draw. This is my best result so far:
+
+![Berta - drawing for cover](./static/berta_cover_drawing.png)
+
+Other drawings are even worse. One of them will work better as a poster for William Wyler's [Collector](https://www.imdb.com/title/tt0059043/) horror movie.
+
+I'll probably ask my wife for a drawing :)

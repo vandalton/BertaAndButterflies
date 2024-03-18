@@ -138,3 +138,13 @@ Zaimplementowałem roboczą wersję algorytmu wypuszczania motylków. Działa ca
 # 2024-03-17 - Dzień #017
 
 Dziś nic spektakularnego - odpoczywam :) Dostosowałem kolory wersji NTSC i ustawiłem ją jako domyślną, gdyż emulator domyślnie traktuje ROMy jako wersje NTSC. Oczywiście wersja PAL pozostaje dla mnie ważniejsza, bo chcę ją uruchomić na prawdziwej konsoli, a tę mam w wersji PAL.
+
+# 2024-03-18 - Dzień #018
+
+Próbowałem narysować Bertę na potrzeby przyszłej okładki kartridża i pudełka. Problem w tym, że nie umiem rysować. Na razie to mój najlepszy rezultat:
+
+![Berta - drawing for cover](./static/berta_cover_drawing.png)
+
+Inne rysunki są jeszcze gorsze. Jeden z nich pasowałby jako plakat do horroru Williama Wylera - [Kolekcjoner](https://www.imdb.com/title/tt0059043/).
+
+Prawdopodobnie poprosze żonę o rysunek :)
