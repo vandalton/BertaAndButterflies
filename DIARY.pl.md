@@ -154,3 +154,5 @@ Prawdopodobnie poprosze żonę o rysunek :)
 Bardzo chciałem zobaczyć, jak program zadziała na prawdziwym sprzęcie. Co prawda zamówione płytki jeszcze nie dotarły i jeszcze nie da się grać, ale mimo to poświęciłem kość EPROM i użyłem jednej z wcześniejszych płytek prototypowych, aby uruchomić Bertę!
 
 ![Berta na prawdziwym sprzęcie](./static/berta_first_time_on_real_hardware.jpeg)
+
+Poruszałem trochę Bertą używając joysticka. Nie było aż tak źle, ale i tak zacząłem przymierzać się do skonstruowania adaptera pada, aby sterowanie było wygodniejsze. Zdecydowałem się na pady od Super Nintendo - ich zamienniki są tanie, mają odpowiednią liczbę przycisków do obsługi gry. Z padem od Playstation 4 byłoby więcej roboty, wymagałoby też użycia potężniejszego (droższego) mikrokontrolera. Zamówiłem gniazda pada od SNESa i zacząłem projektować płytkę adaptera.

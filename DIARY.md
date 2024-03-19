@@ -154,3 +154,5 @@ I'll probably ask my wife for a drawing :)
 I really wanted to see how the program will work on a real hardware. Although cartridge PCBs didn't arrive yet and you can't really play the game at this point, I sacrificed EPROM chip and used a board in older version, to run Berta!
 
 ![Berta on a real hardware](./static/berta_first_time_on_real_hardware.jpeg)
+
+I moved Berta few times using joystick. It was not that bad, but still I'm going to make a special adapter, to make control more convinient. I decided to use Super Nintendo controllers - their replacements are cheap, they have sufficient number of buttons. Use of Playstation 4 controller would be harder, it would also need more powerful (and more expensive) microcontroller. I orderd SNES controller sockets and started designing the adapter board.
