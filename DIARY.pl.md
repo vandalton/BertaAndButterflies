@@ -156,3 +156,7 @@ Bardzo chciałem zobaczyć, jak program zadziała na prawdziwym sprzęcie. Co pr
 ![Berta na prawdziwym sprzęcie](./static/berta_first_time_on_real_hardware.jpeg)
 
 Poruszałem trochę Bertą używając joysticka. Nie było aż tak źle, ale i tak zacząłem przymierzać się do skonstruowania adaptera pada, aby sterowanie było wygodniejsze. Zdecydowałem się na pady od Super Nintendo - ich zamienniki są tanie, mają odpowiednią liczbę przycisków do obsługi gry. Z padem od Playstation 4 byłoby więcej roboty, wymagałoby też użycia potężniejszego (droższego) mikrokontrolera. Zamówiłem gniazda pada od SNESa i zacząłem projektować płytkę adaptera.
+
+# 2024-03-20 - Dzień #020
+
+Wrzuciłem projekt płytki drukowanej adaptera kontrolera. Będzie wykorzystywał mikroprocesor Atmega8/48/88, który nie jest tak tani, jak kiedyś był, ale jest bardziej przyjazny hobbistom niż procesory w wersji SMD. Muszę go jeszcze zaprogramować, ale to nie powinno być problemem. Robiłem wcześniej podobne adaptery dla padów od NESa, które są podobne i różnią się tylko liczbą przycisków i wtyczką.

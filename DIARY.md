@@ -156,3 +156,7 @@ I really wanted to see how the program will work on a real hardware. Although ca
 ![Berta on a real hardware](./static/berta_first_time_on_real_hardware.jpeg)
 
 I moved Berta few times using joystick. It was not that bad, but still I'm going to make a special adapter, to make control more convinient. I decided to use Super Nintendo controllers - their replacements are cheap, they have sufficient number of buttons. Use of Playstation 4 controller would be harder, it would also need more powerful (and more expensive) microcontroller. I orderd SNES controller sockets and started designing the adapter board.
+
+# 2024-03-20 - Day #020
+
+I uploaded the controller adapter PCB design. It will use Atmega8/48/88 microprocessor, which is not as cheap as it used to be, but it's more DIY friendly than SMD processors. I need to program it, but it should not be a problem. I did similiar adapters before, for NES controllers, which are similiar and differ only in a number of buttons and plug type.
