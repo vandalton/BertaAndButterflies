@@ -160,3 +160,9 @@ I moved Berta few times using joystick. It was not that bad, but still I'm going
 # 2024-03-20 - Day #020
 
 I uploaded the controller adapter PCB design. It will use Atmega8/48/88 microprocessor, which is not as cheap as it used to be, but it's more DIY friendly than SMD processors. I need to program it, but it should not be a problem. I did similiar adapters before, for NES controllers, which are similiar and differ only in a number of buttons and plug type.
+
+# 2024-03-21 - Day #021
+
+Today is my wife's birthday and I planned to to a break. However, I did a few tiny amendments in controller adapter PCB:
+
+![Controller adapter](./static/adapter_pcb.png)

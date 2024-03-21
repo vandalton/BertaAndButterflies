@@ -160,3 +160,9 @@ Poruszałem trochę Bertą używając joysticka. Nie było aż tak źle, ale i t
 # 2024-03-20 - Dzień #020
 
 Wrzuciłem projekt płytki drukowanej adaptera kontrolera. Będzie wykorzystywał mikroprocesor Atmega8/48/88, który nie jest tak tani, jak kiedyś był, ale jest bardziej przyjazny hobbistom niż procesory w wersji SMD. Muszę go jeszcze zaprogramować, ale to nie powinno być problemem. Robiłem wcześniej podobne adaptery dla padów od NESa, które są podobne i różnią się tylko liczbą przycisków i wtyczką.
+
+# 2024-03-21 - Dzień #021
+
+Dziś urodziny żony i miałem zrobić sobie przerwę, ale dokonałem kilku drobnych poprawek w projekcie płytki adaptera pada:
+
+![Controller adapter](./static/adapter_pcb.png)
