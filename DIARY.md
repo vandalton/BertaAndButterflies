@@ -166,3 +166,7 @@ I uploaded the controller adapter PCB design. It will use Atmega8/48/88 micropro
 Today is my wife's birthday and I planned to take a break. However, I did a few tiny amendments in controller adapter PCB:
 
 ![Controller adapter](./static/adapter_pcb.png)
+
+# 2024-03-22 - Day #022
+
+Berta can catch a butterfly from now on! Although you cannot lose life yet, but you can score for the first time :)

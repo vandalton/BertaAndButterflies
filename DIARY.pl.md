@@ -166,3 +166,7 @@ Wrzuciłem projekt płytki drukowanej adaptera kontrolera. Będzie wykorzystywa�
 Dziś urodziny żony i miałem zrobić sobie przerwę, ale dokonałem kilku drobnych poprawek w projekcie płytki adaptera pada:
 
 ![Controller adapter](./static/adapter_pcb.png)
+
+# 2024-03-22 - Dzień #022
+
+Berta od teraz może złapać motylka! Co prawda nie można jeszcze stracić życia, ale po raz pierwszy można zdobyć punkt :)
