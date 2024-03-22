@@ -53,14 +53,28 @@
 
     dim _random = l
 
+    dim _sound_duration = m
+
+    dim _after_scored_duration = n
+
     _prev_berta_position = 5
+
+    AUDC0 = 12
 
     COLUBK=_blue
     COLUP0=_white
 
 main
+    if _sound_duration = 0 then AUDV0 = 0 : goto __sound_muted
+
+    AUDV0 = 5
+    _sound_duration = _sound_duration - 1
+
+__sound_muted
 
     COLUP1=_brown
+
+    if _after_scored_duration > 0 then _after_scored_duration = _after_scored_duration - 1 : COLUP1 = _red
 
     NUSIZ0=$07
     NUSIZ1=$05
@@ -340,34 +354,44 @@ __berta_right_set
     if _bottom_right_butterfly{3} then pfpixel 24 7 on : pfpixel 23 6 on
     if _bottom_right_butterfly{4} then pfpixel 23 7 on
 
-    if _berta_position = 0 && _bottom_left_butterfly{4} then COLUP1 = _red
-    if _berta_position = 1 && _bottom_right_butterfly{4} then COLUP1 = _red
-    if _berta_position = 2 && _top_left_butterfly{4} then COLUP1 = _red
-    if _berta_position = 3 && _top_right_butterfly{4} then COLUP1 = _red
+__check_if_catch
+    if _berta_position = 0 then _current_butterflies = _bottom_left_butterfly
+    if _berta_position = 1 then _current_butterflies = _bottom_right_butterfly
+    if _berta_position = 2 then _current_butterflies = _top_left_butterfly
+    if _berta_position = 3 then _current_butterflies = _top_right_butterfly
 
-    drawscreen
-    
+    if (_current_butterflies & 16) then _current_butterflies{4} = 0 : gosub __score_point
+
+    if _berta_position = 0 then _bottom_left_butterfly = _current_butterflies
+    if _berta_position = 1 then _bottom_right_butterfly = _current_butterflies
+    if _berta_position = 2 then _top_left_butterfly = _current_butterflies
+    if _berta_position = 3 then _top_right_butterfly = _current_butterflies
+
     if _slowdown > 0 then goto __inner_loop_end
 
     _inactive_sources_count = 0
 
 __release_butterflies
-    if _butterfly_source = 0 then _current_butterflies = _bottom_left_butterfly
-    if _butterfly_source = 1 then _current_butterflies = _bottom_right_butterfly
-    if _butterfly_source = 2 then _current_butterflies = _top_left_butterfly
-    if _butterfly_source = 3 then _current_butterflies = _top_right_butterfly
+    if _butterfly_source = 0 then _current_butterflies = _bottom_left_butterfly : AUDF0 = 9
+    if _butterfly_source = 1 then _current_butterflies = _bottom_right_butterfly : AUDF0 = 11
+    if _butterfly_source = 2 then _current_butterflies = _top_left_butterfly : AUDF0 = 13
+    if _butterfly_source = 3 then _current_butterflies = _top_right_butterfly : AUDF0 = 15
+
+    if _current_butterflies = 0 then goto __butterflies_moved
 
     _current_butterflies = _current_butterflies * 2
     if (_current_butterflies & 32) then _current_butterflies{6} = 0 : _butterfly_count = _butterfly_count - 1
 
+__butterflies_moved
+
     _random = (rand & 3)
-    if _random <> 0 || _butterfly_source = 2 then goto __skip
+    if _random <> 0 || _butterfly_source = 2 then goto __skip_releasing
 
     if !_current_butterflies{1} && _butterfly_count < 3 then _current_butterflies{0} = 1 : _butterfly_count = _butterfly_count + 1
 
-__skip
+__skip_releasing
 
-    if _current_butterflies > 0 then _inactive_sources_count = 0 else _inactive_sources_count = _inactive_sources_count + 1
+    if _current_butterflies > 0 then _sound_duration = 5 : _inactive_sources_count = 0 else _inactive_sources_count = _inactive_sources_count + 1
 
     if _butterfly_source = 0 then _bottom_left_butterfly = _current_butterflies
     if _butterfly_source = 1 then _bottom_right_butterfly = _current_butterflies
@@ -378,10 +402,20 @@ __skip
     if _butterfly_source = 4 then _butterfly_source = 0
 
     if _inactive_sources_count > 0 && _inactive_sources_count <= 2 then goto __release_butterflies
-    /* AUDC0 = 12 : AUDV0 = 5 : AUDF0 = 7 */
     
 __inner_loop_end
-    if _slowdown = 0 then _slowdown = 21
+
+    drawscreen
+
+    if _slowdown = 0 then _slowdown = 25
     _slowdown = _slowdown - 1
 
     goto main
+
+__score_point
+    score = score + 1
+    _butterfly_count = _butterfly_count - 1 
+    _after_scored_duration = 20
+    _sound_duration = 5
+    AUDF0 = 7
+    return
