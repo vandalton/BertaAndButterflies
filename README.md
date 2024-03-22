@@ -1,6 +1,8 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![pl](https://img.shields.io/badge/lang-pl-green.svg)](./README.pl.md)
 
+![Logo](./static/logo.png)
+
 # Berta And Butterflies
 
 In this repository hopefully you will find a game for Atari 2600 one day.

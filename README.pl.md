@@ -1,6 +1,8 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![pl](https://img.shields.io/badge/lang-pl-green.svg)](./README.pl.md)
 
+![Logo](./static/logo.png)
+
 # Berta i motyle
 
 Mam nadzieję, że w tym repozytorium pewnego dnia znajdzie się gra na Atari 2600.
