@@ -57,6 +57,13 @@
 
     dim _after_scored_duration = n
 
+    dim _max_butterflies = o
+
+    dim _sc1 = score
+    dim _sc2 = score + 1
+    dim _sc3 = score + 2
+
+    _max_butterflies = 1
     _prev_berta_position = 5
 
     AUDC0 = 12
@@ -387,7 +394,7 @@ __butterflies_moved
     _random = (rand & 3)
     if _random <> 0 || _butterfly_source = 2 then goto __skip_releasing
 
-    if !_current_butterflies{1} && _butterfly_count < 3 then _current_butterflies{0} = 1 : _butterfly_count = _butterfly_count + 1
+    if !_current_butterflies{1} && _butterfly_count < _max_butterflies then _current_butterflies{0} = 1 : _butterfly_count = _butterfly_count + 1
 
 __skip_releasing
 
@@ -414,6 +421,20 @@ __inner_loop_end
 
 __score_point
     score = score + 1
+    
+    _max_butterflies = _sc2 + (_sc3 & $F0)
+
+    if _max_butterflies >= 17 then _max_butterflies = 12 : goto __max_butterflies_set
+    if _max_butterflies >= 14 then _max_butterflies = 9 : goto __max_butterflies_set
+    if _max_butterflies >= 11 then _max_butterflies = 7 : goto __max_butterflies_set
+    if _max_butterflies >= 9 then _max_butterflies = 5 : goto __max_butterflies_set
+    if _max_butterflies >= 5 then _max_butterflies = 4 : goto __max_butterflies_set
+    if _max_butterflies >= 1 then _max_butterflies = 3 : goto __max_butterflies_set
+    if _sc3 >= $5 && _sc3 < $10 then _max_butterflies = 2 : goto __max_butterflies_set
+    _max_butterflies = 1
+
+__max_butterflies_set
+
     _butterfly_count = _butterfly_count - 1 
     _after_scored_duration = 20
     _sound_duration = 5
