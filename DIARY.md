@@ -176,3 +176,5 @@ Berta can catch a butterfly from now on! Although you cannot lose life yet, but 
 I uploaded the first "playable" version to the biggest Atari forum - [Atari Age](https://forums.atariage.com/topic/362557-berta-and-butterflies-in-development/?do=findComment&comment=5434927)
 
 I'm looking forward for early feedback!
+
+I also implemented dependency between maximum number of butterflies on current score.

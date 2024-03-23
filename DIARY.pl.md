@@ -175,5 +175,7 @@ Berta od teraz może złapać motylka! Co prawda nie można jeszcze stracić ży
 
 Wrzuciłem pierwszą "grywalną" wersję na największe forum o Atari - [Atari Age](https://forums.atariage.com/topic/362557-berta-and-butterflies-in-development/?do=findComment&comment=5434927)
 
-Oczekuję na wczesne opinie!
+Liczę na jak najwcześniejsze opinie!
+
+Zaimplementowałem też zależność maksymalnej liczby jednocześnie wypuszczonych motylków od aktualnego wyniku.
  
