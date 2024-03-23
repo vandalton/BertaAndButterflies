@@ -170,3 +170,9 @@ Today is my wife's birthday and I planned to take a break. However, I did a few 
 # 2024-03-22 - Day #022
 
 Berta can catch a butterfly from now on! Although you cannot lose life yet, but you can score for the first time :)
+
+# 2024-03-23 - Day #023
+
+I uploaded the first "playable" version to the biggest Atari forum - [Atari Age](https://forums.atariage.com/topic/362557-berta-and-butterflies-in-development/?do=findComment&comment=5434927)
+
+I'm looking forward for early feedback!
