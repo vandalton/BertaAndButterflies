@@ -392,11 +392,14 @@ __release_butterflies
 __butterflies_moved
 
     _random = (rand & 3)
-    if _random <> 0 || _butterfly_source = 2 then goto __skip_releasing
+    
+    /* we don't want to skip releasing if there are no butterflies flying around */
+    if _butterfly_count = 0 then _random = 0
+    if _random <> 0 || _butterfly_source = 2 then goto __butterfly_released
 
     if !_current_butterflies{1} && _butterfly_count < _max_butterflies then _current_butterflies{0} = 1 : _butterfly_count = _butterfly_count + 1
 
-__skip_releasing
+__butterfly_released
 
     if _current_butterflies > 0 then _sound_duration = 5 : _inactive_sources_count = 0 else _inactive_sources_count = _inactive_sources_count + 1
 
