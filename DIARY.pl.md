@@ -178,4 +178,8 @@ Wrzuciłem pierwszą "grywalną" wersję na największe forum o Atari - [Atari A
 Liczę na jak najwcześniejsze opinie!
 
 Zaimplementowałem też zależność maksymalnej liczby jednocześnie wypuszczonych motylków od aktualnego wyniku.
+
+# 2024-03-24 - Dzień #024
+
+Dziś wprowadziłem drobną poprawkę w algorytmie uwalniania motylków. Gdy nie ma żadnych motyli w powietrzu, wypuszczanie nie jest zależne od wyniku losowania. Wcześniej zdarzały się przerwy, kiedy nie wylatywały żadne motyle.
  

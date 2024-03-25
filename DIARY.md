@@ -178,3 +178,7 @@ I uploaded the first "playable" version to the biggest Atari forum - [Atari Age]
 I'm looking forward for early feedback!
 
 I also implemented dependency between maximum number of butterflies on current score.
+
+# 2024-03-24 - Day #024
+
+Today I did a small fix in the butterfly releasing altorightm. When there are no butterflies in the air, their releasing doesn't depend on random function. Before that fix there were long breaks without butterflies released.
