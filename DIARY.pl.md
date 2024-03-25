@@ -182,4 +182,10 @@ Zaimplementowałem też zależność maksymalnej liczby jednocześnie wypuszczon
 # 2024-03-24 - Dzień #024
 
 Dziś wprowadziłem drobną poprawkę w algorytmie uwalniania motylków. Gdy nie ma żadnych motyli w powietrzu, wypuszczanie nie jest zależne od wyniku losowania. Wcześniej zdarzały się przerwy, kiedy nie wylatywały żadne motyle.
+
+# 2024-03-25 - Dzień #025
+
+Dotarły płytki kartridży! Niestety, nie znalazłem chwili, aby polutować pierwszy egzemplarz na próbę.
+
+![Płytki kartridży](./static/pcbs.jpeg)
  
