@@ -193,3 +193,7 @@ Cartridge PCBs arrived! Unfortunetely, I didn't have time to solder even the fir
 
 I soldered the first cartridge. Unfortunetely, it doesn't work. The only new thing in its design is a transistor based inverter. 
 I asked [x_angel](http://ataripcb.pl/), who is my guru when comes to the electronics, what could be the reason. It looks like the "low" voltage in Atari is too high (0.6V) and it's not inverted to 5V, but to 0V. I need to lower it with a voltage divider.
+
+![First cartridge](./static/first_cartridge.jpeg)
+
+I experimented with resistors values, to no avail. Cartridge still doesn't work. I don't know what to think, but I won't give up :)

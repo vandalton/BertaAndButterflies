@@ -193,4 +193,8 @@ Dotarły płytki kartridży! Niestety, nie znalazłem chwili, aby polutować pie
 
 Polutowałem pierwszy kartridż. Niestety, nie działa. Jedyna nowość w jego projekcie to inwerter oparty o tranzystor.
 Spytałem [x_angela](http://ataripcb.pl/), który jest moim elektronicznym guru, jaki może być powód. Wygląda na to, że stan "niski" w Atari jest za wysoki (0.6V) i nie jest odwracany na 5V, a na 0V. Muszę go obniżyć przy użyciu dzielnika napięcia.
+
+![Pierwszy kartridż](./static/first_cartridge.jpeg)
+
+Poeksperymentowałem z wartościami rezystorów, ale bez efektu. Kartridż wciąż nie działa. Na ten moment sam nie wiem, co o tym myśleć, ale się nie poddam :)
  
