@@ -188,4 +188,9 @@ Dziś wprowadziłem drobną poprawkę w algorytmie uwalniania motylków. Gdy nie
 Dotarły płytki kartridży! Niestety, nie znalazłem chwili, aby polutować pierwszy egzemplarz na próbę.
 
 ![Płytki kartridży](./static/pcbs.jpeg)
+
+# 2024-03-26 - Dzień #026
+
+Polutowałem pierwszy kartridż. Niestety, nie działa. Jedyna nowość w jego projekcie to inwerter oparty o tranzystor.
+Spytałem [x_angela](http://ataripcb.pl/), który jest moim elektronicznym guru, jaki może być powód. Wygląda na to, że stan "niski" w Atari jest za wysoki (0.6V) i nie jest odwracany na 5V, a na 0V. Muszę go obniżyć przy użyciu dzielnika napięcia.
  
