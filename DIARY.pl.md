@@ -198,3 +198,6 @@ Spytałem [x_angela](http://ataripcb.pl/), który jest moim elektronicznym guru,
 
 Poeksperymentowałem z wartościami rezystorów, ale bez efektu. Kartridż wciąż nie działa. Na ten moment sam nie wiem, co o tym myśleć, ale się nie poddam :)
  
+ # 2024-03-27 - Dzień #027
+
+Wciąż bez sukcesu z inwerterem. W najgorszym razie użyję małego inwertera 74V1T14 z jedną bramką i umieszczę go jakoś na płytce. Ale najpierw poeksperymentuję dalej z rezystorami. Muszę sprawdzić, jakie są dokładne poziomy napięć w Atari przy użyciu oscyloskopu.

@@ -197,3 +197,7 @@ I asked [x_angel](http://ataripcb.pl/), who is my guru when comes to the electro
 ![First cartridge](./static/first_cartridge.jpeg)
 
 I experimented with resistors values, to no avail. Cartridge still doesn't work. I don't know what to think, but I won't give up :)
+
+# 2024-03-27 - Day #027
+
+Still no success with the inverter. In the worst case I'll use a small 74V1T14 inverter with one gate only and place it somehow on the board. But  first I'll experiment even more with the resistors. I need to check how the voltages in Atari really are using oscilloscope.
