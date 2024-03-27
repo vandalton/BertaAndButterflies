@@ -32,5 +32,5 @@
 *.eps
 *.lck
 # batari Basic
-software/bin
+software/atari2600-game/bin
 
