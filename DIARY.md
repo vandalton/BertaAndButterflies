@@ -201,3 +201,7 @@ I experimented with resistors values, to no avail. Cartridge still doesn't work.
 # 2024-03-27 - Day #027
 
 Still no success with the inverter. In the worst case I'll use a small 74V1T14 inverter with one gate only and place it somehow on the board. But  first I'll experiment even more with the resistors. I need to check how the voltages in Atari really are using oscilloscope.
+
+# 2024-03-28 - Day #028
+
+I need to take a break from the inverter. I started working on the program for the SNES pad adapter instead.
