@@ -204,4 +204,6 @@ Still no success with the inverter. In the worst case I'll use a small 74V1T14 i
 
 # 2024-03-28 - Day #028
 
-I need to take a break from the inverter. I started working on the program for the SNES pad adapter instead.
+I need to take a break from the inverter. I started working on the program for the SNES pad adapter instead. I also prepared a cable for experiments:
+
+![SNES cable](./static/snes_connector.jpeg)

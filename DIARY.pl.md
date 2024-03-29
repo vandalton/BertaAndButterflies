@@ -204,4 +204,8 @@ Wciąż bez sukcesu z inwerterem. W najgorszym razie użyję małego inwertera 7
 
 # 2024-03-28 - Dzień #028
 
-Muszę zrobić przerwę od inwertera. Zamiast tego zacząłem pracę nad oprogramowaniem dla adaptera pada SNES.
+Muszę zrobić przerwę od inwertera. Zamiast tego zacząłem pracę nad oprogramowaniem dla adaptera pada SNES. Przygotowałem prototypowy kabelek do eksperymentów:
+
+![Kabelek SNES](./static/snes_connector.jpeg)
+
+
