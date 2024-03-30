@@ -215,3 +215,6 @@ Postanowiłem sprawdzić, czy może na płytce kartridża są jakieś inne błę
 ![Kartridż z inwerterem](./static/cart_standard_inverter.jpeg)
 
 
+# 2024-03-30 - Dzień #030
+
+Zbliża się Wielkanoc. Dziś nic wielkiego - dodałem wstępną obsługę straty życia.

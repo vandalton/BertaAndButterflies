@@ -169,7 +169,7 @@ Today is my wife's birthday and I planned to take a break. However, I did a few 
 
 # 2024-03-22 - Day #022
 
-Berta can catch a butterfly from now on! Although you cannot lose life yet, but you can score for the first time :)
+Berta can catch a butterfly from now on! Although you cannot lose live yet, but you can score for the first time :)
 
 # 2024-03-23 - Day #023
 
@@ -213,3 +213,7 @@ I need to take a break from the inverter. I started working on the program for t
 I wanted to check if there are other errors on the cartridge board design. I connected "standard" inverter - 74S04. The cartridge works perfectly fine with  it:
 
 ![Cartridge with inverter](./static/cart_standard_inverter.jpeg)
+
+# 2024-03-30 - Day #030
+
+Easter is coming. Today I did only a small change - I've added initial version of live losing.
