@@ -207,3 +207,9 @@ Still no success with the inverter. In the worst case I'll use a small 74V1T14 i
 I need to take a break from the inverter. I started working on the program for the SNES pad adapter instead. I also prepared a cable for experiments:
 
 ![SNES cable](./static/snes_connector.jpeg)
+
+# 2024-03-29 - Day #029
+
+I wanted to check if there are other errors on the cartridge board design. I connected "standard" inverter - 74S04. The cartridge works perfectly fine with  it:
+
+![Cartridge with inverter](./static/cart_standard_inverter.jpeg)

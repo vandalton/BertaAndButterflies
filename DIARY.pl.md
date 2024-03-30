@@ -208,4 +208,10 @@ Muszę zrobić przerwę od inwertera. Zamiast tego zacząłem pracę nad oprogra
 
 ![Kabelek SNES](./static/snes_connector.jpeg)
 
+# 2024-03-29 - Dzień #029
+
+Postanowiłem sprawdzić, czy może na płytce kartridża są jakieś inne błędy. W tym celu podłączyłem "standardowy" inverter - 74S04. Z nim kartridż działa prawidłowo:
+
+![Kartridż z inwerterem](./static/cart_standard_inverter.jpeg)
+
 
