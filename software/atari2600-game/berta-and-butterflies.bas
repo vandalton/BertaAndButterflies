@@ -387,7 +387,7 @@ __release_butterflies
     if _current_butterflies = 0 then goto __butterflies_moved
 
     _current_butterflies = _current_butterflies * 2
-    if (_current_butterflies & 32) then _current_butterflies{6} = 0 : _butterfly_count = _butterfly_count - 1
+    if (_current_butterflies & 32) then _current_butterflies{6} = 0 : _butterfly_count = _butterfly_count - 1 : gosub __fail
 
 __butterflies_moved
 
@@ -442,4 +442,19 @@ __max_butterflies_set
     _after_scored_duration = 20
     _sound_duration = 5
     AUDF0 = 7
+    return
+
+__fail
+    _butterfly_count = 0
+    _bottom_left_butterfly = 0
+    _bottom_right_butterfly = 0
+    _top_left_butterfly = 0
+    _top_right_butterfly = 0
+    _sound_duration = 5
+
+    if pfscore1 = 1 then pfscore1 = 0 /* game over */
+    if pfscore1 = 5 then pfscore1 = 1
+    if pfscore1 = 21 then pfscore1 = 5
+    
+    AUDF0 = 30
     return
