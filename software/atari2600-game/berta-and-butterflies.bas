@@ -446,6 +446,7 @@ __max_butterflies_set
 
 __fail
     _butterfly_count = 0
+    _current_butterflies = 0
     _bottom_left_butterfly = 0
     _bottom_right_butterfly = 0
     _top_left_butterfly = 0
@@ -455,6 +456,6 @@ __fail
     if pfscore1 = 1 then pfscore1 = 0 /* game over */
     if pfscore1 = 5 then pfscore1 = 1
     if pfscore1 = 21 then pfscore1 = 5
-    
+
     AUDF0 = 30
     return
