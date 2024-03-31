@@ -217,3 +217,7 @@ I wanted to check if there are other errors on the cartridge board design. I con
 # 2024-03-30 - Day #030
 
 Easter is coming. Today I did only a small change - I've added initial version of live losing.
+
+# 2024-03-31 - Day #031
+
+![Happy Easter](./static/happy_easter.png)
