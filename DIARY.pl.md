@@ -219,6 +219,6 @@ Postanowiłem sprawdzić, czy może na płytce kartridża są jakieś inne błę
 
 Zbliża się Wielkanoc. Dziś nic wielkiego - dodałem wstępną obsługę straty życia.
 
-# 2024-03-31 - Dzień #031
+# 2024-03-31 do 2024-04-01 - Dzień #031 i #032
 
 ![Happy Easter](./static/happy_easter.png)
