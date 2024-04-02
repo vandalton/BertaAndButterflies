@@ -221,3 +221,7 @@ Easter is coming. Today I did only a small change - I've added initial version o
 # 2024-03-31 to 2024-04-01 - Day #031 and #032
 
 ![Happy Easter](./static/happy_easter.png)
+
+# 2024-04-02 - Day #033
+
+I posted a parcel with PCB and EPROM to [x_angel](http://ataripcb.pl/), who will help me to make the inverter working.

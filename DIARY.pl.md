@@ -222,3 +222,7 @@ Zbliża się Wielkanoc. Dziś nic wielkiego - dodałem wstępną obsługę strat
 # 2024-03-31 do 2024-04-01 - Dzień #031 i #032
 
 ![Happy Easter](./static/happy_easter.png)
+
+# 2024-04-02 - Dzień #033
+
+Wysłałem paczkę z płytką drukowaną i EPROMem do [x_angela](http://ataripcb.pl/), który pomoże mi w sprawieniu, aby inwerter zadziałał.
