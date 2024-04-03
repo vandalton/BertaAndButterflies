@@ -10,7 +10,7 @@
 
 #define OUT_UP 14
 #define OUT_DOWN 15
-#define OUT_LEFT 26
+#define OUT_LEFT 16
 #define OUT_RIGHT 17
 #define OUT_FIRE 18
 #define OUT_SECOND_FIRE 19
@@ -39,7 +39,9 @@ void setup() {
 void loop() {
   int state = getButtonsState();
 
-  digitalWrite(OUT_FIRE, state & 1);
+  digitalWrite(OUT_FIRE, state > 0 ? LOW : HIGH);
+
+  delay(1);
 }
 
 int getButtonsState() {
