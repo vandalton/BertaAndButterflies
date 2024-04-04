@@ -10,7 +10,7 @@
 
 #define OUT_UP 14
 #define OUT_DOWN 15
-#define OUT_LEFT 26
+#define OUT_LEFT 16
 #define OUT_RIGHT 17
 #define OUT_FIRE 18
 #define OUT_SECOND_FIRE 19
@@ -27,6 +27,7 @@ void setup() {
   pinMode(OUT_DOWN, OUTPUT);
   pinMode(OUT_LEFT, OUTPUT);
   pinMode(OUT_RIGHT, OUTPUT);
+  pinMode(OUT_FIRE, OUTPUT);
   pinMode(OUT_SECOND_FIRE, OUTPUT);
   pinMode(OUT_THIRD_FIRE, OUTPUT);  
 
@@ -36,6 +37,31 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  int state = getButtonsState();
 
+  digitalWrite(OUT_FIRE, state > 0 ? LOW : HIGH);
+
+  delay(1);
+}
+
+int getButtonsState() {
+  int res = 0;
+
+  digitalWrite(LATCH, HIGH);
+  delayMicroseconds(12);
+  digitalWrite(LATCH, LOW);
+
+  for(int i=0;i<16;++i)
+  {
+    int s = digitalRead(DATA);
+    
+    delayMicroseconds(12);
+    digitalWrite(CLOCK, HIGH);
+    delayMicroseconds(12);
+    digitalWrite(CLOCK, LOW);
+
+    res |= (s << i);
+  }
+
+  return ~res;
 }
