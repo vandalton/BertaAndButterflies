@@ -225,3 +225,9 @@ Easter is coming. Today I did only a small change - I've added initial version o
 # 2024-04-02 - Day #033
 
 I posted a parcel with PCB and EPROM to [x_angel](http://ataripcb.pl/), who will help me to make the inverter working.
+
+# 2024-04-03 - Day #034
+
+Today I was working on a software for SNES controller adapter. But this time I did a prototype before ordering boards :)
+
+![Adapter prototype](./static/adapter_prototype.jpg)

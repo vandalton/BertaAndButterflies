@@ -226,3 +226,9 @@ Zbliża się Wielkanoc. Dziś nic wielkiego - dodałem wstępną obsługę strat
 # 2024-04-02 - Dzień #033
 
 Wysłałem paczkę z płytką drukowaną i EPROMem do [x_angela](http://ataripcb.pl/), który pomoże mi w sprawieniu, aby inwerter zadziałał.
+
+# 2024-04-03 - Dzień #034
+
+Dziś pracowałem nad oprogramowaniem dla adaptera padów od SNESa. Tym razem robię prototyp przed zamówieniem płytek :)
+
+![Prototyp adaptera](./static/adapter_prototype.jpg)
