@@ -232,3 +232,19 @@ Wysłałem paczkę z płytką drukowaną i EPROMem do [x_angela](http://ataripcb
 Dziś pracowałem nad oprogramowaniem dla adaptera padów od SNESa. Tym razem robię prototyp przed zamówieniem płytek :)
 
 ![Prototyp adaptera](./static/adapter_prototype.jpg)
+
+# 2024-04-04 - Dzień #035
+
+Dzięki [x_angelowi](http://ataripcb.pl/) kartridż z prostym inwerterem zadziałał! Dwie pierwsze fotki są z jego pola bitwy:
+
+![Działający inwerter - x_angel](./static/inverter_fixed_x_angel.jpg)
+
+![Działający inwerter - x_angel](./static/inverter_fixed_x_angel_2.jpg)
+
+Rozwiązanie okazało się bardzo proste. Należy dodać kondensator 1nF równolegle do rezystora R1. [X_angel](http://ataripcb.pl/) mówi, że inwerter działa zbyt wolno, a kondensator go "przyspiesza".
+
+Uwzględnię dodatkowy kondensator w projekcie, a na już zamówionych płytkach dolutuję go w następujący sposób:
+
+![Działający inwerter - góra](./static/inverter_fixed_top.jpg)
+
+![Działający inwerter - dół](./static/inverter_fixed_bottom.jpg)
