@@ -1,4 +1,3 @@
-
 // Atari joystick pinout - seen from the front
 // \1 2 3 4 5/
 //  \6 7 8 9/
@@ -16,52 +15,72 @@
 #define OUT_SECOND_FIRE 19
 #define OUT_THIRD_FIRE 11
 
-#define CLOCK 23
-#define LATCH 24
-#define DATA 25
+#define SNES_PAD_CLOCK 23
+#define SNES_PAD_LATCH 24
+#define SNES_PAD_DATA 25
 
-void setup() {
-  pinMode(MODE_JUMPER, INPUT_PULLUP);
-  
-  pinMode(OUT_UP, OUTPUT);
-  pinMode(OUT_DOWN, OUTPUT);
-  pinMode(OUT_LEFT, OUTPUT);
-  pinMode(OUT_RIGHT, OUTPUT);
-  pinMode(OUT_FIRE, OUTPUT);
-  pinMode(OUT_SECOND_FIRE, OUTPUT);
-  pinMode(OUT_THIRD_FIRE, OUTPUT);  
+#define SNES_BUTTON_B 1
+#define SNES_BUTTON_Y 2
+#define SNES_BUTTON_SELECT 4
+#define SNES_BUTTON_START 8
+#define SNES_BUTTON_UP 16
+#define SNES_BUTTON_DOWN 32
+#define SNES_BUTTON_LEFT 64
+#define SNES_BUTTON_RIGHT 128
+#define SNES_BUTTON_A 256
+#define SNES_BUTTON_X 512
+#define SNES_BUTTON_L 1024
+#define SNES_BUTTON_R 2048
 
-  pinMode(CLOCK,  OUTPUT);
-  pinMode(LATCH, OUTPUT);
-  pinMode(DATA, INPUT);
+void setup()
+{
+    pinMode(MODE_JUMPER, INPUT_PULLUP);
+
+    pinMode(OUT_UP, OUTPUT);
+    pinMode(OUT_DOWN, OUTPUT);
+    pinMode(OUT_LEFT, OUTPUT);
+    pinMode(OUT_RIGHT, OUTPUT);
+    pinMode(OUT_FIRE, OUTPUT);
+    pinMode(OUT_SECOND_FIRE, OUTPUT);
+    pinMode(OUT_THIRD_FIRE, OUTPUT);
+
+    pinMode(SNES_PAD_CLOCK, OUTPUT);
+    pinMode(SNES_PAD_LATCH, OUTPUT);
+    pinMode(SNES_PAD_DATA, INPUT);
 }
 
-void loop() {
-  int state = getButtonsState();
+void loop()
+{
+    int state = getButtonsState();
 
-  digitalWrite(OUT_FIRE, state > 0 ? LOW : HIGH);
+    digitalWrite(OUT_FIRE, state & SNES_BUTTON_Y ? LOW : HIGH);
+    digitalWrite(OUT_UP, state & (SNES_BUTTON_UP | SNES_BUTTON_X) ? LOW : HIGH);
+    digitalWrite(OUT_DOWN, state & (SNES_BUTTON_DOWN | SNES_BUTTON_B) ? LOW : HIGH);
+    digitalWrite(OUT_LEFT, state & (SNES_BUTTON_UP | SNES_BUTTON_DOWN) ? LOW : HIGH);
+    digitalWrite(OUT_RIGHT, state & (SNES_BUTTON_X | SNES_BUTTON_B) ? LOW : HIGH);
 
-  delay(1);
+    delay(1);
 }
 
-int getButtonsState() {
-  int res = 0;
+int getButtonsState()
+{
+    int res = 0;
 
-  digitalWrite(LATCH, HIGH);
-  delayMicroseconds(12);
-  digitalWrite(LATCH, LOW);
-
-  for(int i=0;i<8;++i)
-  {
-    int s = digitalRead(DATA);
-    
+    digitalWrite(SNES_PAD_LATCH, HIGH);
     delayMicroseconds(12);
-    digitalWrite(CLOCK, HIGH);
-    delayMicroseconds(12);
-    digitalWrite(CLOCK, LOW);
+    digitalWrite(SNES_PAD_LATCH, LOW);
 
-    res |= (s << i);
-  }
+    for (int i = 0; i < 16; ++i)
+    {
+        int s = digitalRead(SNES_PAD_DATA);
 
-  return ~res;
+        delayMicroseconds(12);
+        digitalWrite(SNES_PAD_CLOCK, HIGH);
+        delayMicroseconds(12);
+        digitalWrite(SNES_PAD_CLOCK, LOW);
+
+        res |= (!s << i);
+    }
+
+    return res;
 }
