@@ -1571,11 +1571,11 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="54.356" y="23.876" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="53.8734" y="25.5016" size="0.9906" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="1nF" x="20.066" y="-3.556" smashed="yes">
-<attribute name="NAME" x="17.78" y="-2.032" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="65" x="20.066" y="-3.556" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="20.066" y="-3.556" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="17.78" y="-6.35" size="1.27" layer="27" ratio="10"/>
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="1nF" x="56.642" y="24.13" smashed="yes" rot="MR270">
+<attribute name="NAME" x="55.118" y="26.416" size="1.27" layer="26" ratio="10" rot="MR270"/>
+<attribute name="POPULARITY" value="65" x="56.642" y="24.13" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="56.642" y="24.13" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="59.436" y="26.416" size="1.27" layer="28" ratio="10" rot="MR270"/>
 </element>
 </elements>
 <signals>
@@ -1832,14 +1832,16 @@ design rules under a new name.</description>
 <signal name="A12">
 <contactref element="CON1" pad="6"/>
 <contactref element="R1" pad="1"/>
-<wire x1="56.515" y1="21.9075" x2="56.515" y2="20.32" width="0.254" layer="1"/>
+<wire x1="56.515" y1="21.9075" x2="56.515" y2="21.59" width="0.254" layer="1"/>
+<wire x1="56.515" y1="21.59" x2="56.515" y2="20.32" width="0.254" layer="1"/>
 <wire x1="47.3075" y1="21.9075" x2="56.515" y2="21.9075" width="0.254" layer="1"/>
 <wire x1="37.465" y1="12.065" x2="47.3075" y2="21.9075" width="0.254" layer="1"/>
 <wire x1="37.465" y1="8.5725" x2="37.465" y2="12.065" width="0.254" layer="1"/>
 <wire x1="56.515" y1="20.32" x2="56.642" y2="20.066" width="0.254" layer="1"/>
 <wire x1="37.465" y1="8.5725" x2="37.23" y2="8.302" width="0.254" layer="1"/>
 <contactref element="C2" pad="2"/>
-<wire x1="21.336" y1="-3.556" x2="37.23" y2="8.302" width="0" layer="19" extent="1-1"/>
+<wire x1="56.515" y1="21.9075" x2="56.515" y2="22.86" width="0.254" layer="1"/>
+<wire x1="56.515" y1="22.86" x2="56.642" y2="22.86" width="0.254" layer="1"/>
 </signal>
 <signal name="A12INV">
 <contactref element="IC2" pad="18"/>
@@ -1860,7 +1862,9 @@ design rules under a new name.</description>
 <wire x1="56.8325" y1="27.94" x2="56.642" y2="27.686" width="0.254" layer="1"/>
 <wire x1="56.8325" y1="31.115" x2="56.769" y2="31.242" width="0.254" layer="1"/>
 <contactref element="C2" pad="1"/>
-<wire x1="18.796" y1="-3.556" x2="56.642" y2="27.686" width="0" layer="19" extent="1-1"/>
+<wire x1="57.15" y1="27.305" x2="57.15" y2="25.4" width="0.254" layer="1"/>
+<wire x1="57.15" y1="25.4" x2="56.642" y2="25.4" width="0.254" layer="1"/>
+<wire x1="57.15" y1="27.305" x2="56.642" y2="27.686" width="0.254" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
