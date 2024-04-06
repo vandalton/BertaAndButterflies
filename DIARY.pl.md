@@ -248,3 +248,9 @@ Uwzględnię dodatkowy kondensator w projekcie, a na już zamówionych płytkach
 ![Działający inwerter - góra](./static/inverter_fixed_top.jpg)
 
 ![Działający inwerter - dół](./static/inverter_fixed_bottom.jpg)
+
+# 2024-04-05 - Dzień #036
+
+Zaprogramowałem adapter pada od SNESa. Te pady są łatwe do obsłużenia. W środku znajduje się rejestr przesuwny, który szeregowo przesyła dane o tym, które przyciski są wciśnięte.
+
+Atmega8 wydaje się dobrym procesorem do adaptera, gdyż gniazdo joysticka w Atari 2600 nie ma zbyt dobrej wydajności prądowej i inne procesory (SAMD21, Pico, ESP32) mogłyby wcale nie zadziałać...

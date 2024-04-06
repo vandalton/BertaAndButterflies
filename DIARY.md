@@ -248,3 +248,8 @@ I'm going to add this additional capacitor in the project, and I'll solder it to
 
 ![Inverter working - bottom](./static/inverter_fixed_bottom.jpg)
 
+# 2024-04-05 - Day #036
+
+I programmed SNES controller adapter. These pad are easy to handle. There is a shift register inside, which sends data which buttons are pressed like in the serial communication.
+
+Atmega8 seems a good choice for this adapter, because the joystick socket in Atari 2600 doesn't give enough current and other processors (SAMD21, Pico, ESP32) might don't work...
