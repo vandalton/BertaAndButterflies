@@ -225,3 +225,26 @@ Easter is coming. Today I did only a small change - I've added initial version o
 # 2024-04-02 - Day #033
 
 I posted a parcel with PCB and EPROM to [x_angel](http://ataripcb.pl/), who will help me to make the inverter working.
+
+# 2024-04-03 - Day #034
+
+Today I was working on a software for SNES controller adapter. But this time I did a prototype before ordering boards :)
+
+![Adapter prototype](./static/adapter_prototype.jpg)
+
+# 2024-04-04 - Day #035
+
+With many thanks to [x_angel](http://ataripcb.pl/) the cartridge with the simple inverter works! First two photos are from his battlefield:
+
+![Działający inwerter - x_angel](./static/inverter_fixed_x_angel.jpg)
+
+![Działający inwerter - x_angel](./static/inverter_fixed_x_angel_2.jpg)
+
+Solution was deadly simple. I need to add a 1nF capacitor in paraller with R1 resistor. [X_angel](http://ataripcb.pl/) says that the inverter is too slow and this capacitor makes it "faster".
+
+I'm going to add this additional capacitor in the project, and I'll solder it to the existing PCBs like that:
+
+![Inverter working - top](./static/inverter_fixed_top.jpg)
+
+![Inverter working - bottom](./static/inverter_fixed_bottom.jpg)
+
