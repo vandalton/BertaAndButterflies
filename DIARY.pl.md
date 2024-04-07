@@ -262,3 +262,7 @@ Zaktualizowałem projekt płytki drukowanej kartridża, dodając kondensator, dz
 Zmiana jest kosmetyczna. Kondensator lutuje się od drugiej strony płytki:
 
 ![Poprawiona płytka](./static/pcb_fixed.png)
+
+# 2024-04-07 - Dzień #038
+
+Dziś chciałem kontynuować pracę nad głównym programem gry. Jednak zamiast tego 3 razy sprawdziłem, czy z projektem adaptera wszystko w porządku i zamówiłem płytki :)
