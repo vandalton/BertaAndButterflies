@@ -253,3 +253,11 @@ I'm going to add this additional capacitor in the project, and I'll solder it to
 I programmed SNES controller adapter. These pad are easy to handle. There is a shift register inside, which sends data which buttons are pressed like in the serial communication.
 
 Atmega8 seems a good choice for this adapter, because the joystick socket in Atari 2600 doesn't give enough current and other processors (SAMD21, Pico, ESP32) might don't work...
+
+# 2024-04-06 - Day #037
+
+I updated the cartridge project by adding a capacitor that fixes the inverter.
+
+It is a tiny change. The capacitor should be soldered on the other side of the board:
+
+![Poprawiona płytka](./static/pcb_fixed.png)

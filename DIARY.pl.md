@@ -254,3 +254,11 @@ Uwzględnię dodatkowy kondensator w projekcie, a na już zamówionych płytkach
 Zaprogramowałem adapter pada od SNESa. Te pady są łatwe do obsłużenia. W środku znajduje się rejestr przesuwny, który szeregowo przesyła dane o tym, które przyciski są wciśnięte.
 
 Atmega8 wydaje się dobrym procesorem do adaptera, gdyż gniazdo joysticka w Atari 2600 nie ma zbyt dobrej wydajności prądowej i inne procesory (SAMD21, Pico, ESP32) mogłyby wcale nie zadziałać...
+
+# 2024-04-06 - Dzień #037
+
+Zaktualizowałem projekt płytki drukowanej kartridża, dodając kondensator, dzięki któremu działa inwerter.
+
+Zmiana jest kosmetyczna. Kondensator lutuje się od drugiej strony płytki:
+
+![Poprawiona płytka](./static/pcb_fixed.png)
