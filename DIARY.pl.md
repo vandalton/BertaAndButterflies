@@ -266,3 +266,17 @@ Zmiana jest kosmetyczna. Kondensator lutuje się od drugiej strony płytki:
 # 2024-04-07 - Dzień #038
 
 Dziś chciałem kontynuować pracę nad głównym programem gry. Jednak zamiast tego 3 razy sprawdziłem, czy z projektem adaptera wszystko w porządku i zamówiłem płytki :)
+
+# 2024-04-08 - Dzień #039
+
+Wróciłem do głównego programu, czyli gry. Dodałem wstępną wersję "animiacji" straconego motylka.
+
+Nie wspominałem o tym wcześniej, ale zamierzam użyć obudów od [Sikor Soft](http://sikorsoft.waw.pl/hardware/obudowy-na-cartridge-2600-7800/) do kartridży. Są bardzo dobrej jakości, zrobione na wtryskarce, a nie za pomocą druku 3D. Sprawdziłem, czy płytki pasują:
+
+![Obudowa kartridża](./static/cartridge_case.jpeg)
+
+Pasują idealnie!
+
+![Obudowa kartridża](./static/cartridge_case_2.jpeg)
+
+Obudowy istnieją w dwóch kolorach - czarnym i białym. Białe bardziej pasują mi do Berty.

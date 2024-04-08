@@ -265,3 +265,17 @@ It is a tiny change. The capacitor should be soldered on the other side of the b
 # 2024-04-07 - Day #038
 
 Today I wanted to work on a main game program. However, I triple checked the adapter design instead and I ordered the boards :)
+
+# 2024-04-08 - Day #039
+
+I got back to the main program, which is a game. I added draft version of "animation" of lost butterfly.
+
+I didn't mention it before, but I'm going to use cartridge cases from [Sikor Soft](http://sikorsoft.waw.pl/hardware/obudowy-na-cartridge-2600-7800/). They are excellent quality, made in molding machine, it's not a 3D print. I checked if the boards fits it well:
+
+![Obudowa kartridża](./static/cartridge_case.jpeg)
+
+It fits perfectly!
+
+![Obudowa kartridża](./static/cartridge_case_2.jpeg)
+
+The cases exist in two variants - black and white. White suits Berta better.
