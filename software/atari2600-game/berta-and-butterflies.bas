@@ -59,6 +59,9 @@
 
     dim _max_butterflies = o
 
+    dim _fail_left = p
+    dim _fail_right = q
+
     dim _sc1 = score
     dim _sc2 = score + 1
     dim _sc3 = score + 2
@@ -328,6 +331,15 @@ __berta_left_set
 
 __berta_right_set
 
+    if _fail_left = 0 && _fail_right = 0 then goto __fail_handled
+
+    if _fail_left > 0 then pfpixel 6 1 on : _fail_left = _fail_left - 1
+    if _fail_right > 0 then pfpixel 23 1 on : _fail_right = _fail_right - 1
+
+__fail_handled
+
+    if _fail_left > 0 || _fail_right > 0 then goto __inner_loop_end
+
     if joy0right && _berta_position = 0 then _berta_position = 1
     if joy0right && _berta_position = 2 then _berta_position = 3
     if joy0left && _berta_position = 1 then _berta_position = 0
@@ -387,7 +399,7 @@ __release_butterflies
     if _current_butterflies = 0 then goto __butterflies_moved
 
     _current_butterflies = _current_butterflies * 2
-    if (_current_butterflies & 32) then _current_butterflies{6} = 0 : _butterfly_count = _butterfly_count - 1 : gosub __fail
+    if (_current_butterflies & 32) then gosub __fail
 
 __butterflies_moved
 
@@ -452,6 +464,9 @@ __fail
     _top_left_butterfly = 0
     _top_right_butterfly = 0
     _sound_duration = 5
+
+    if _butterfly_source = 0 || _butterfly_source = 2 then _fail_left = 150
+    if _butterfly_source = 1 || _butterfly_source = 3 then _fail_right = 150
 
     if pfscore1 = 1 then pfscore1 = 0 /* game over */
     if pfscore1 = 5 then pfscore1 = 1
