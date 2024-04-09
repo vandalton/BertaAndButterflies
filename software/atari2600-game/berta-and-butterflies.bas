@@ -4,6 +4,7 @@
 
     /* pal colors */
     /* const _blue=$B8
+    const _blue_gray=$DC
     const _red=$64
     const _white=$0E
     const _yellow=$28
@@ -13,6 +14,7 @@
 
     /* ntsc colors */
     const _blue=$98
+    const _blue_gray=$8C
     const _red=$44
     const _white=$0E
     const _yellow=$18
@@ -71,7 +73,6 @@
 
     AUDC0 = 12
 
-    COLUBK=_blue
     COLUP0=_white
 
 main
@@ -82,6 +83,7 @@ main
 
 __sound_muted
 
+    COLUBK=_blue
     COLUP1=_brown
 
     if _after_scored_duration > 0 then _after_scored_duration = _after_scored_duration - 1 : COLUP1 = _red
@@ -121,10 +123,6 @@ end
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 end
 
-    if _prev_berta_position = _berta_position then goto __sprites_set
-    
-    _prev_berta_position = _berta_position
-
     pfcolors:
     _white
     _white
@@ -139,6 +137,10 @@ end
     _green
     _yellow
 end
+
+    if _prev_berta_position = _berta_position then goto __sprites_set
+    
+    _prev_berta_position = _berta_position
 
     /* top */
     if _berta_position < 2 then goto __berta_top_set
@@ -333,8 +335,46 @@ __berta_right_set
 
     if _fail_left = 0 && _fail_right = 0 then goto __fail_handled
 
-    if _fail_left > 0 then pfpixel 6 1 on : _fail_left = _fail_left - 1
-    if _fail_right > 0 then pfpixel 23 1 on : _fail_right = _fail_right - 1
+    COLUBK=_blue_gray
+
+    pfcolors:
+    _red
+    _red
+    _red
+    _red
+    _red
+    _red
+    _red
+    _red
+    _red
+    _red
+    _green
+    _yellow
+end
+
+    if _fail_left = 0 then goto __fail_left_handled
+
+    if _fail_left = 90 || _fail_left = 60 then _sound_duration = 3 : AUDF0 = 30
+
+    if _fail_left <= 60 then pfpixel 4 0 on
+    if _fail_left > 60 && _fail_left <= 90 then pfpixel 6 1 on
+    if _fail_left > 90 && _fail_left <= 120 then pfpixel 7 2 on : pfpixel 8 1 on
+
+    _fail_left = _fail_left - 1
+
+__fail_left_handled
+
+    if _fail_right = 0 then goto __fail_right_handled
+
+    if _fail_right = 90 || _fail_right = 60 then _sound_duration = 3 : AUDF0 = 30
+
+    if _fail_right <= 60 then pfpixel 25 0 on
+    if _fail_right > 60 && _fail_right <= 90 then pfpixel 23 1 on
+    if _fail_right > 90 && _fail_right <= 120 then pfpixel 22 2 on : pfpixel 21 1 on
+
+    _fail_right = _fail_right - 1
+
+__fail_right_handled
 
 __fail_handled
 
@@ -463,14 +503,15 @@ __fail
     _bottom_right_butterfly = 0
     _top_left_butterfly = 0
     _top_right_butterfly = 0
-    _sound_duration = 5
 
-    if _butterfly_source = 0 || _butterfly_source = 2 then _fail_left = 150
-    if _butterfly_source = 1 || _butterfly_source = 3 then _fail_right = 150
+    if _butterfly_source = 0 || _butterfly_source = 2 then _fail_left = 120
+    if _butterfly_source = 1 || _butterfly_source = 3 then _fail_right = 120
 
     if pfscore1 = 1 then pfscore1 = 0 /* game over */
     if pfscore1 = 5 then pfscore1 = 1
     if pfscore1 = 21 then pfscore1 = 5
 
+    _sound_duration = 3
     AUDF0 = 30
+
     return
