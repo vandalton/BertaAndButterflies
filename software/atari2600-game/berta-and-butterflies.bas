@@ -431,6 +431,7 @@ __check_if_catch
     _inactive_sources_count = 0
 
 __release_butterflies
+
     if _butterfly_source = 0 then _current_butterflies = _bottom_left_butterfly : AUDF0 = 9
     if _butterfly_source = 1 then _current_butterflies = _bottom_right_butterfly : AUDF0 = 11
     if _butterfly_source = 2 then _current_butterflies = _top_left_butterfly : AUDF0 = 13
@@ -439,9 +440,30 @@ __release_butterflies
     if _current_butterflies = 0 then goto __butterflies_moved
 
     _current_butterflies = _current_butterflies * 2
-    if (_current_butterflies & 32) then gosub __fail
+    if (_current_butterflies & 32 = 0) then goto __butterflies_moved
+
+    /* here is what happens when you fail */
+    _butterfly_count = 0
+    _current_butterflies = 0
+    _bottom_left_butterfly = 0
+    _bottom_right_butterfly = 0
+    _top_left_butterfly = 0
+    _top_right_butterfly = 0
+
+    if _butterfly_source = 0 || _butterfly_source = 2 then _fail_left = 120
+    if _butterfly_source = 1 || _butterfly_source = 3 then _fail_right = 120
+
+    if pfscore1 = 1 then pfscore1 = 0 /* game over */
+    if pfscore1 = 5 then pfscore1 = 1
+    if pfscore1 = 21 then pfscore1 = 5
+
+    _sound_duration = 3
+    AUDF0 = 30
+    goto __inner_loop_end
 
 __butterflies_moved
+
+    if pfscore1 = 0 then goto __inner_loop_end
 
     _random = (rand & 3)
     
@@ -494,24 +516,4 @@ __max_butterflies_set
     _after_scored_duration = 20
     _sound_duration = 5
     AUDF0 = 7
-    return
-
-__fail
-    _butterfly_count = 0
-    _current_butterflies = 0
-    _bottom_left_butterfly = 0
-    _bottom_right_butterfly = 0
-    _top_left_butterfly = 0
-    _top_right_butterfly = 0
-
-    if _butterfly_source = 0 || _butterfly_source = 2 then _fail_left = 120
-    if _butterfly_source = 1 || _butterfly_source = 3 then _fail_right = 120
-
-    if pfscore1 = 1 then pfscore1 = 0 /* game over */
-    if pfscore1 = 5 then pfscore1 = 1
-    if pfscore1 = 21 then pfscore1 = 5
-
-    _sound_duration = 3
-    AUDF0 = 30
-
     return
