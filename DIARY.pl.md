@@ -280,3 +280,11 @@ Pasują idealnie!
 ![Obudowa kartridża](./static/cartridge_case_2.jpeg)
 
 Obudowy istnieją w dwóch kolorach - czarnym i białym. Białe bardziej pasują mi do Berty.
+
+# 2024-04-09 - Dzień #040
+
+Dodałem animację utraconego motylka. Nie jestem z niej w pełni zadowolony i prawdopodobnie później ją trochę dostroję.
+
+Dodałem też funkcję "końca gry". Kiedy stracisz życia, nowe motylki się nie pojawią.
+
+To dobre wiadomości. Zła wiadomość jest taka, że zostało mi tylko 855 bajtów! Chciałbym dodać co najmniej ekran tytułowy z muzyką i dwa poziomy trudności... Mam nadzieję, że te 855 bajtów mi wystarczy.

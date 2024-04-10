@@ -279,3 +279,11 @@ It fits perfectly!
 ![Obudowa kartridża](./static/cartridge_case_2.jpeg)
 
 The cases exist in two variants - black and white. White suits Berta better.
+
+# 2024-04-09 - Day #040
+
+I added animation of lost butterfly. I'm not fully content with it and probably I'll finetune it later.
+
+I also added "game over" function, which means the butterflies stop when you lost your lives.
+
+That was the good news. The bad news is that I have only 855 bytes left! And I want to add at least the title screen with music and two game difficulty levels... Hope that 855 bytes will be enough.
