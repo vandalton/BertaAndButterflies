@@ -293,3 +293,10 @@ That was the good news. The bad news is that I have only 855 bytes left! And I w
 From now on the rate of butterflies releasing is growing, the game became harder.
 
 A "pausing" butterflies source changes after fail.
+
+# 2024-04-11 - Day #042
+
+I shared the current version with coworkers in my team. They played it in [Javatari](https://javatari.org/) online emulator. Here is the current high score:
+
+![High score](./static/berta_top_score.png)
+

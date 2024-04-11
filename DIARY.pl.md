@@ -294,3 +294,10 @@ To dobre wiadomości. Zła wiadomość jest taka, że zostało mi tylko 855 bajt
 Od teraz motylki są uwalniane z rosnącą prędkością, gra stała się trudniejsza.
 
 "Pauzujące" źródło motyli zmienia się po każdej utracie życia.
+
+# 2024-04-11 - Day #042
+
+Udostępniłem obecną wersję współpracownikom z mojego zespołu. Grali w online'owym emulatorze [Javatari](https://javatari.org/). Oto aktualny, najwyższy wynik:
+
+![High score](./static/berta_top_score.png)
+
