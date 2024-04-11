@@ -288,3 +288,9 @@ Dodałem animację utraconego motylka. Nie jestem z niej w pełni zadowolony i p
 Dodałem też funkcję "końca gry". Kiedy stracisz życia, nowe motylki się nie pojawią.
 
 To dobre wiadomości. Zła wiadomość jest taka, że zostało mi tylko 855 bajtów! Chciałbym dodać co najmniej ekran tytułowy z muzyką i dwa poziomy trudności... Mam nadzieję, że te 855 bajtów mi wystarczy.
+
+# 2024-04-10 - Dzień #041
+
+Od teraz motylki są uwalniane z rosnącą prędkością, gra stała się trudniejsza.
+
+"Pauzujące" źródło motyli zmienia się po każdej utracie życia.

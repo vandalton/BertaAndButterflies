@@ -287,3 +287,9 @@ I added animation of lost butterfly. I'm not fully content with it and probably 
 I also added "game over" function, which means the butterflies stop when you lost your lives.
 
 That was the good news. The bad news is that I have only 855 bytes left! And I want to add at least the title screen with music and two game difficulty levels... Hope that 855 bytes will be enough.
+
+# 2024-04-10 - Day #041
+
+From now on the rate of butterflies releasing is growing, the game became harder.
+
+A "pausing" butterflies source changes after fail.
