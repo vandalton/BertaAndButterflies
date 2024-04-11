@@ -67,14 +67,22 @@
 
     dim _pausing_source = s
 
+    /*
+    0: title screen
+    1: game a
+    2: game b
+    */
+    dim _game_mode = t
+
+    dim _temp = u
+
     dim _sc1 = score
     dim _sc2 = score + 1
     dim _sc3 = score + 2
 
+    _game_mode = 0
     _max_butterflies = 1
     _prev_berta_position = 5
-    _slowdown_limit = 30
-    _pausing_source = 2
 
     AUDC0 = 12
 
@@ -90,8 +98,6 @@ __sound_muted
 
     COLUBK=_blue
     COLUP1=_brown
-
-    if _after_scored_duration > 0 then _after_scored_duration = _after_scored_duration - 1 : COLUP1 = _red
 
     NUSIZ0=$07
     NUSIZ1=$05
@@ -338,6 +344,20 @@ __berta_left_set
 
 __berta_right_set
 
+    if _game_mode > 0 then goto __title_screen_handled
+
+    if !joy0fire && !switchreset then goto __inner_loop_end
+
+    _slowdown = 0
+    if switchleftb then _game_mode = 1 : _slowdown_limit = 28 : _pausing_source = (rand & 3)
+    if !switchleftb then _game_mode = 2 :  _slowdown_limit = 25 : _pausing_source = 5
+
+    goto __inner_loop_end
+
+__title_screen_handled
+
+    if _after_scored_duration > 0 then _after_scored_duration = _after_scored_duration - 1 : COLUP1 = _red
+
     if _fail_left = 0 && _fail_right = 0 then goto __fail_handled
 
     COLUBK=_blue_gray
@@ -454,7 +474,8 @@ __release_butterflies
     _bottom_right_butterfly = 0
     _top_left_butterfly = 0
     _top_right_butterfly = 0
-    _pausing_source = (rand & 3)
+
+    if _game_mode = 1 then _pausing_source = (rand & 3)
 
     if _butterfly_source = 0 || _butterfly_source = 2 then _fail_left = 120
     if _butterfly_source = 1 || _butterfly_source = 3 then _fail_right = 120
@@ -511,12 +532,7 @@ __score_point
 
     _max_butterflies = _sc2 + (_sc3 & $F0)
 
-    if _max_butterflies >= 17 then _max_butterflies = 12 : goto __max_butterflies_set
-    if _max_butterflies >= 14 then _max_butterflies = 9 : goto __max_butterflies_set
-    if _max_butterflies >= 11 then _max_butterflies = 7 : goto __max_butterflies_set
-    if _max_butterflies >= 9 then _max_butterflies = 5 : goto __max_butterflies_set
-    if _max_butterflies >= 5 then _max_butterflies = 4 : goto __max_butterflies_set
-    if _max_butterflies >= 1 then _max_butterflies = 3 : goto __max_butterflies_set
+    for _temp = 0 to 10 step 2 : if _max_butterflies >= __max_butterflies_numbers[_temp] then _max_butterflies = __max_butterflies_limits[_temp] : goto __max_butterflies_set
     if _sc3 >= $5 && _sc3 < $10 then _max_butterflies = 2 : goto __max_butterflies_set
     _max_butterflies = 1
 
@@ -527,3 +543,11 @@ __max_butterflies_set
     _sound_duration = 5
     AUDF0 = 7
     return
+
+    data __max_butterflies_numbers
+    17, 14, 11, 9, 5, 1
+end
+
+    data __max_butterflies_limits
+    12, 9, 7, 5, 4, 3
+end
