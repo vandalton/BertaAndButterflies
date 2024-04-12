@@ -457,10 +457,11 @@ __check_if_catch
 
 __release_butterflies
 
-    if _butterfly_source = 0 then _current_butterflies = _bottom_left_butterfly : AUDF0 = 9
-    if _butterfly_source = 1 then _current_butterflies = _bottom_right_butterfly : AUDF0 = 11
-    if _butterfly_source = 2 then _current_butterflies = _top_left_butterfly : AUDF0 = 13
-    if _butterfly_source = 3 then _current_butterflies = _top_right_butterfly : AUDF0 = 15
+    AUDF0 = __sources_audio_frequencies[_butterfly_source]
+    if _butterfly_source = 0 then _current_butterflies = _bottom_left_butterfly
+    if _butterfly_source = 1 then _current_butterflies = _bottom_right_butterfly
+    if _butterfly_source = 2 then _current_butterflies = _top_left_butterfly
+    if _butterfly_source = 3 then _current_butterflies = _top_right_butterfly
 
     if _current_butterflies = 0 then goto __butterflies_moved
 
@@ -532,7 +533,10 @@ __score_point
 
     _max_butterflies = _sc2 + (_sc3 & $F0)
 
-    for _temp = 0 to 10 step 2 : if _max_butterflies >= __max_butterflies_numbers[_temp] then _max_butterflies = __max_butterflies_limits[_temp] : goto __max_butterflies_set
+    for _temp = 0 to 5
+    if _max_butterflies >= __max_butterflies_numbers[_temp] then _max_butterflies = __max_butterflies_limits[_temp] : goto __max_butterflies_set
+    next
+
     if _sc3 >= $5 && _sc3 < $10 then _max_butterflies = 2 : goto __max_butterflies_set
     _max_butterflies = 1
 
@@ -545,9 +549,13 @@ __max_butterflies_set
     return
 
     data __max_butterflies_numbers
-    17, 14, 11, 9, 5, 1
+    1, 5, 9, 11, 14, 17
 end
 
     data __max_butterflies_limits
-    12, 9, 7, 5, 4, 3
+    3, 4, 5, 7, 9, 12
+end
+
+    data __sources_audio_frequencies
+    9, 11, 13, 15
 end
