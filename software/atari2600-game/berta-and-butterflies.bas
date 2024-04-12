@@ -23,7 +23,7 @@
     const _gray=$08
 
     const pfscore=1
-    pfscore1 = 21
+
     pfscorecolor=_white
     scorecolor=_white
 
@@ -347,6 +347,8 @@ __berta_right_set
     if !joy0fire && !switchreset then goto __inner_loop_end
 
     _slowdown = 0
+    pfscore1 = 21
+    
     if switchleftb then _game_mode = 1 : _slowdown_limit = 26 : _pausing_source = (rand & 3)
     if !switchleftb then _game_mode = 2 :  _slowdown_limit = 23 : _pausing_source = 5
 
