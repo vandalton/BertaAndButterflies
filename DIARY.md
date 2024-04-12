@@ -300,3 +300,8 @@ I shared the current version with coworkers in my team. They played it in [Javat
 
 ![High score](./static/berta_top_score.png)
 
+# 2024-04-12 - Day #043
+
+I added second difficulty level and adjusted speed. I also added option to mute sound.
+
+Although I made a few optimizations, I have only 778 bytes left.
