@@ -54,27 +54,25 @@
 
     dim _current_butterflies = l
 
-    dim _random = m
+    dim _sound_duration = m
 
-    dim _sound_duration = n
+    dim _after_scored_duration = n
 
-    dim _after_scored_duration = o
+    dim _max_butterflies = o
 
-    dim _max_butterflies = p
+    dim _fail_left = p
+    dim _fail_right = q
 
-    dim _fail_left = q
-    dim _fail_right = r
-
-    dim _pausing_source = s
+    dim _pausing_source = r
 
     /*
     0: title screen
     1: game a
     2: game b
     */
-    dim _game_mode = t
+    dim _game_mode = s
 
-    dim _temp = u
+    dim _temp = t
 
     dim _sc1 = score
     dim _sc2 = score + 1
@@ -349,8 +347,8 @@ __berta_right_set
     if !joy0fire && !switchreset then goto __inner_loop_end
 
     _slowdown = 0
-    if switchleftb then _game_mode = 1 : _slowdown_limit = 28 : _pausing_source = (rand & 3)
-    if !switchleftb then _game_mode = 2 :  _slowdown_limit = 25 : _pausing_source = 5
+    if switchleftb then _game_mode = 1 : _slowdown_limit = 26 : _pausing_source = (rand & 3)
+    if !switchleftb then _game_mode = 2 :  _slowdown_limit = 23 : _pausing_source = 5
 
     goto __inner_loop_end
 
@@ -493,11 +491,11 @@ __butterflies_moved
 
     if pfscore1 = 0 then goto __inner_loop_end
 
-    _random = (rand & 3)
+    _temp = (rand & 3)
     
     /* we don't want to skip releasing if there are no butterflies flying around */
-    if _butterfly_count = 0 then _random = 0
-    if _random <> 0 || _butterfly_source = _pausing_source then goto __butterfly_released
+    if _butterfly_count = 0 then _temp = 0
+    if _temp <> 0 || _butterfly_source = _pausing_source then goto __butterfly_released
 
     if !_current_butterflies{1} && _butterfly_count < _max_butterflies then _current_butterflies{0} = 1 : _butterfly_count = _butterfly_count + 1
 
