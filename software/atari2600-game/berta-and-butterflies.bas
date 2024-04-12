@@ -89,7 +89,7 @@
     COLUP0=_white
 
 main
-    if _sound_duration = 0 then AUDV0 = 0 : goto __sound_muted
+    if _sound_duration = 0 || switchbw then AUDV0 = 0 : goto __sound_muted
 
     AUDV0 = 5
     _sound_duration = _sound_duration - 1
