@@ -27,7 +27,6 @@
     pfscorecolor=_white
     scorecolor=_white
 
-    player0x=60
     player0y=80
 
     /* 
@@ -74,6 +73,8 @@
 
     dim _temp = t
 
+    dim _title_screen_counter = u
+
     dim _sc1 = score
     dim _sc2 = score + 1
     dim _sc3 = score + 2
@@ -94,6 +95,8 @@ main
 
 __sound_muted
 
+    player0x=60
+
     COLUBK=_blue
     COLUP1=_brown
 
@@ -101,7 +104,7 @@ __sound_muted
     NUSIZ1=$05
 
     /* bottom */
-    if _berta_position < 2 then playfield:
+    if _berta_position < 2 && _game_mode > 0 then playfield:
     .....XXXXX..........XXXXX.......
     ................................
     ................................
@@ -115,9 +118,23 @@ __sound_muted
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 end
+    if _berta_position < 2 && _game_mode = 0 then playfield:
+    ................................
+    ................................
+    XX..XXX.XX.XXX.XX...............
+    X.X.X...X.X.X..X.X.....XX....XX.
+    XXX.XX..XX..X..XXX....XX......XX
+    X.X.X...X.X.X..X.X..............
+    XXX.XXX.X.X.X..X.X.......XXXX...
+    .........X..............XXXXXX..
+    ....X...X......X.........XXXX...
+    XXXXX...........................
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+end
 
     /* top */
-    if _berta_position > 1 then playfield:
+    if _berta_position > 1 && _game_mode > 0 then playfield:
     .....XXXXX..........XXXXX.......
     ................................
     ...........XX....XX.............
@@ -128,6 +145,22 @@ end
     ............XXXXXX..............
     .............XXXX...............
     XXXXX......................XXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+end
+
+    /* top */
+    if _berta_position > 1 && _game_mode = 0 then playfield:
+    ...............................
+    ...............................
+    XX..XXX.XX.XXX.XX......XX....XX.
+    X.X.X...X.X.X..X.X....XX......XX
+    XXX.XX..XX..X..XXX..............
+    X.X.X...X.X.X..X.X........XX....
+    XXX.XXX.X.X.X..X.X.......XXXX...
+    ...X..........X.........XXXXXX..
+    ..X.......X..X...........XXXX...
+    XXXXX...........................
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 end
@@ -344,10 +377,65 @@ __berta_right_set
 
     if _game_mode > 0 then goto __title_screen_handled
 
+    COLUP1=_white
+    NUSIZ1=0
+    REFP1=0
+    player0x=108
+
+    player1x=92
+    player1y=55
+
+    player1:
+    %11111111
+    %10000000
+    %11110000
+    %10000000
+    %11111111
+    %00000000
+    %11111111
+    %11000000
+    %11000000
+    %00000000
+    %00011000
+    %00111100
+    %11000011
+    %00000000
+    %00011000
+    %00011000
+    %11111111
+    %00000000
+    %00111100
+    %11000011
+    %00111100
+    %00000000
+    %10000001
+    %10011001
+    %11100111
+    %00000000
+    %00000000
+    %00000000
+    %00011000
+    %00011000
+    %00011000
+end
+
+    if _title_screen_counter > 0 then goto __title_screen_counter_handled
+
+    _title_screen_counter = 50
+
+    if _berta_position = 0 then _berta_position = 3 : goto __title_screen_counter_handled
+    if _berta_position = 3 then _berta_position = 1 : goto __title_screen_counter_handled
+    if _berta_position = 1 then _berta_position = 2 : goto __title_screen_counter_handled
+    if _berta_position = 2 then _berta_position = 0 : goto __title_screen_counter_handled
+
+__title_screen_counter_handled
+    _title_screen_counter = _title_screen_counter - 1
+
     if !joy0fire && !switchreset then goto __inner_loop_end
 
     _slowdown = 0
     pfscore1 = 21
+    _prev_berta_position = 5
     
     if switchleftb then _game_mode = 1 : _slowdown_limit = 26 : _pausing_source = (rand & 3)
     if !switchleftb then _game_mode = 2 :  _slowdown_limit = 23 : _pausing_source = 5
