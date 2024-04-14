@@ -74,6 +74,7 @@
     dim _temp = t
 
     dim _title_screen_counter = u
+    dim _title_screen_note = v
 
     dim _sc1 = score
     dim _sc2 = score + 1
@@ -418,10 +419,19 @@ __berta_right_set
     %00011000
     %00011000
 end
+    if !_title_screen_counter{4} || _sound_duration <> 0 then goto __title_screen_music_handled
+
+    AUDF0 = __title_music_notes[_title_screen_note]
+    _sound_duration = __title_music_lengths[_title_screen_note]
+
+    _title_screen_note = _title_screen_note + 1
+    if _title_screen_note > 19 then _title_screen_note = 0
+
+__title_screen_music_handled
 
     if _title_screen_counter > 0 then goto __title_screen_counter_handled
 
-    _title_screen_counter = 50
+    _title_screen_counter = 32
 
     if _berta_position = 0 then _berta_position = 3 : goto __title_screen_counter_handled
     if _berta_position = 3 then _berta_position = 1 : goto __title_screen_counter_handled
@@ -492,6 +502,8 @@ __fail_right_handled
 __fail_handled
 
     if _fail_left > 0 || _fail_right > 0 then goto __inner_loop_end
+
+    rem if pfscore1 = 0 && joy0fire then _game_mode = 0
 
     if joy0right && _berta_position = 0 then _berta_position = 1
     if joy0right && _berta_position = 2 then _berta_position = 3
@@ -646,4 +658,12 @@ end
 
     data __sources_audio_frequencies
     9, 11, 13, 15
+end
+
+    data __title_music_notes
+    15, 15, 15, 15, 16, 15, 16, 15, 20, 20, 23, 23, 23, 23, 24, 23, 24, 23, 31, 31
+end
+
+    data __title_music_lengths
+    20, 20, 20, 20, 12, 12, 12, 12, 20, 20, 20, 20, 20, 20, 12, 12, 12, 12, 20, 20
 end
