@@ -306,3 +306,9 @@ Udostępniłem obecną wersję współpracownikom z mojego zespołu. Grali w onl
 Dodałem drugi poziom trudności, dostroiłem trochę prędkość, dodałem opcję wyłączenia dźwięku.
 
 Mimo, że zastosowałem kilka optymalizacji, zostało mi już jedynie 778 bajtów.
+
+# 2024-04-13 - Dzień #044
+
+Dziś dodałem ekran tytułowy. Na razie w wersji polskiej. Jak się podoba?
+
+![Ekran tytułowy](./static/title_screen.png)

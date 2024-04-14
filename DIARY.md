@@ -305,3 +305,9 @@ I shared the current version with coworkers in my team. They played it in [Javat
 I added second difficulty level and adjusted speed. I also added option to mute sound.
 
 Although I made a few optimizations, I have only 778 bytes left.
+
+# 2024-04-13 - Day #044
+
+Today I added title screen. At the moment only in polish version. How do you like it?
+
+![Ekran tytułowy](./static/title_screen.png)
