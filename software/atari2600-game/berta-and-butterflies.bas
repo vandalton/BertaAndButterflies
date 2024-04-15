@@ -1,3 +1,5 @@
+    rem include bbavox-eeprom-static.asm
+
     set kernel_options pfcolors no_blank_lines
     rem set tv pal
     const font=retroputer
@@ -87,7 +89,7 @@
     AUDC0 = 12
 
     COLUP0=_white
-
+    
 main
     if _sound_duration = 0 || switchbw then AUDV0 = 0 : goto __sound_muted
 
