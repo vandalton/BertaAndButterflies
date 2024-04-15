@@ -312,3 +312,7 @@ Mimo, że zastosowałem kilka optymalizacji, zostało mi już jedynie 778 bajtó
 Dziś dodałem ekran tytułowy. Na razie w wersji polskiej. Jak się podoba?
 
 ![Ekran tytułowy](./static/title_screen.png)
+
+# 2024-04-14 - Dzień #045
+
+Dodałem muzykę tytułową. Aczkolwiek, na moje ucho jest trochę za szybka.

@@ -311,3 +311,7 @@ Although I made a few optimizations, I have only 778 bytes left.
 Today I added title screen. At the moment only in polish version. How do you like it?
 
 ![Ekran tytułowy](./static/title_screen.png)
+
+# 2024-04-14 - Day #045
+
+I added title music. However, it is a bit too fast to my ears.
