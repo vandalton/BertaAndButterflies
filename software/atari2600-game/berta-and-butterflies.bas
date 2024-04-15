@@ -419,7 +419,8 @@ __berta_right_set
     %00011000
     %00011000
 end
-    if !_title_screen_counter{4} || _sound_duration <> 0 then goto __title_screen_music_handled
+    if _title_screen_counter <> 20 && _title_screen_counter <> 0 then goto __title_screen_music_handled
+    if _sound_duration <> 0 then goto __title_screen_music_handled
 
     AUDF0 = __title_music_notes[_title_screen_note]
     _sound_duration = __title_music_lengths[_title_screen_note]
@@ -431,7 +432,7 @@ __title_screen_music_handled
 
     if _title_screen_counter > 0 then goto __title_screen_counter_handled
 
-    _title_screen_counter = 32
+    _title_screen_counter = 40
 
     if _berta_position = 0 then _berta_position = 3 : goto __title_screen_counter_handled
     if _berta_position = 3 then _berta_position = 1 : goto __title_screen_counter_handled
@@ -665,5 +666,5 @@ end
 end
 
     data __title_music_lengths
-    20, 20, 20, 20, 12, 12, 12, 12, 20, 20, 20, 20, 20, 20, 12, 12, 12, 12, 20, 20
+    21, 21, 21, 21, 10, 10, 10, 10, 21, 21, 21, 21, 21, 21, 10, 10, 10, 10, 21, 21
 end
