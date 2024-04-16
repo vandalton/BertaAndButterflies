@@ -315,3 +315,7 @@ Today I added title screen. At the moment only in polish version. How do you lik
 # 2024-04-14 - Day #045
 
 I added title music. However, it is a bit too fast to my ears.
+
+# 2024-04-15 - Day #046
+
+I managed to slow the title music down. It sounds exacly as I wanted it to sound.

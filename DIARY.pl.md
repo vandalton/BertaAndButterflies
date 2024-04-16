@@ -316,3 +316,7 @@ Dziś dodałem ekran tytułowy. Na razie w wersji polskiej. Jak się podoba?
 # 2024-04-14 - Dzień #045
 
 Dodałem muzykę tytułową. Aczkolwiek, na moje ucho jest trochę za szybka.
+
+# 2024-04-15 - Dzień #046
+
+Zdołałem spowolnić muzyczkę tytułową i sprawić, że brzmi tak, jak chciałem.
