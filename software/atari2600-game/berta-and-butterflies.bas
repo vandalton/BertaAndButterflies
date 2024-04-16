@@ -78,12 +78,13 @@
     dim _title_screen_counter = u
     dim _title_screen_note = v
 
+    dim _return_to_the_title_screen = w
+
     dim _sc1 = score
     dim _sc2 = score + 1
     dim _sc3 = score + 2
 
     _game_mode = 0
-    _max_butterflies = 1
     _prev_berta_position = 5
 
     AUDC0 = 12
@@ -448,6 +449,8 @@ __title_screen_counter_handled
 
     _slowdown = 0
     pfscore1 = 21
+    score = 0
+    _max_butterflies = 1
     _prev_berta_position = 5
     
     if switchleftb then _game_mode = 1 : _slowdown_limit = 26 : _pausing_source = (rand & 3)
@@ -506,7 +509,15 @@ __fail_handled
 
     if _fail_left > 0 || _fail_right > 0 then goto __inner_loop_end
 
-    rem if pfscore1 = 0 && joy0fire then _game_mode = 0
+    if pfscore1 > 0 then goto __return_to_the_title_screen_handled
+
+    if joy0fire || switchreset then _return_to_the_title_screen = 1
+
+    if _return_to_the_title_screen = 0 then goto __return_to_the_title_screen_handled
+
+    if !joy0fire && !switchreset then _return_to_the_title_screen = 0 : _title_screen_note = 0 : _game_mode = 0
+
+__return_to_the_title_screen_handled
 
     if joy0right && _berta_position = 0 then _berta_position = 1
     if joy0right && _berta_position = 2 then _berta_position = 3
@@ -630,7 +641,7 @@ __inner_loop_end
 __score_point
     score = score + 1
     
-    if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + 7
+    if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + 5
 
     if _slowdown_limit < 12 then _slowdown_limit = 12
 
