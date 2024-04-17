@@ -319,3 +319,7 @@ I added title music. However, it is a bit too fast to my ears.
 # 2024-04-15 - Day #046
 
 I managed to slow the title music down. It sounds exacly as I wanted it to sound.
+
+# 2024-04-16 - Day #047
+
+Now when the game is over you can go back to the title screen and start again.

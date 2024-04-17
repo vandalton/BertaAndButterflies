@@ -320,3 +320,7 @@ Dodałem muzykę tytułową. Aczkolwiek, na moje ucho jest trochę za szybka.
 # 2024-04-15 - Dzień #046
 
 Zdołałem spowolnić muzyczkę tytułową i sprawić, że brzmi tak, jak chciałem.
+
+# 2024-04-16 - Day #047
+
+Kiedy gra się zakończy, można teraz wrócić do ekranu tytułowego i zacząć ponownie.
