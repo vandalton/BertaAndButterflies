@@ -10,8 +10,10 @@
     const _red=$64
     const _white=$0E
     const _yellow=$28
+    const _light_yellow=$2E
     const _brown=$42
-    const _green=$58 */
+    const _green=$58
+    const _gray=$0C */
 
     /* ntsc colors */
     const _blue=$98
@@ -19,8 +21,10 @@
     const _red=$44
     const _white=$0E
     const _yellow=$18
+    const _light_yellow=$2E
     const _brown=$22
     const _green=$C8
+    const _gray=$0C
 
     const pfscore=1
 
@@ -100,7 +104,7 @@ __sound_muted
     player0x=60
 
     COLUBK=_blue
-    COLUP1=_white
+    COLUP1=_light_yellow
 
     if _game_mode = 0 && !switchleftb then COLUP1=_red
     if _game_mode = 2 then COLUP1=_red
@@ -535,7 +539,7 @@ __title_screen_handled
     
      _after_scored_duration = _after_scored_duration - 1
      COLUP1 = _red
-     if !switchleftb then COLUP1 = _white
+     if !switchleftb then COLUP1 = _light_yellow
 
 __after_scored_handled
 
