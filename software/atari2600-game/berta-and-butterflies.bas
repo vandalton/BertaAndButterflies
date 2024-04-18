@@ -10,9 +10,8 @@
     const _red=$64
     const _white=$0E
     const _yellow=$28
-    const _brown=$22
-    const _green=$58
-    const _gray=$08 */
+    const _brown=$42
+    const _green=$58 */
 
     /* ntsc colors */
     const _blue=$98
@@ -20,9 +19,8 @@
     const _red=$44
     const _white=$0E
     const _yellow=$18
-    const _brown=$12
+    const _brown=$22
     const _green=$C8
-    const _gray=$08
 
     const pfscore=1
 
@@ -102,7 +100,10 @@ __sound_muted
     player0x=60
 
     COLUBK=_blue
-    COLUP1=_brown
+    COLUP1=_white
+
+    if _game_mode = 0 && !switchleftb then COLUP1=_red
+    if _game_mode = 2 then COLUP1=_red
 
     NUSIZ0=$07
     NUSIZ1=$05
@@ -381,7 +382,6 @@ __berta_right_set
 
     if _game_mode > 0 then goto __title_screen_handled
 
-    COLUP1=_white
     NUSIZ1=0
     REFP1=0
     player0x=108
@@ -511,6 +511,9 @@ __title_screen_music_handled
     if _berta_position = 2 then _berta_position = 0 : goto __title_screen_counter_handled
 
 __title_screen_counter_handled
+
+    if switchleftb then var0 = %11100000
+    if !switchleftb then var1 = %10000000 : var2 = %11000000 /* pfpixel 15 0 : pfpixel 16 0 : pfpixel 17 0 */
     _title_screen_counter = _title_screen_counter - 1
 
     if !joy0fire && !switchreset then goto __inner_loop_end
@@ -528,7 +531,13 @@ __title_screen_counter_handled
 
 __title_screen_handled
 
-    if _after_scored_duration > 0 then _after_scored_duration = _after_scored_duration - 1 : COLUP1 = _red
+    if _after_scored_duration = 0 then goto __after_scored_handled
+    
+     _after_scored_duration = _after_scored_duration - 1
+     COLUP1 = _red
+     if !switchleftb then COLUP1 = _white
+
+__after_scored_handled
 
     if _fail_left = 0 && _fail_right = 0 then goto __fail_handled
 
