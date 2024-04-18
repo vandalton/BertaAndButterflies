@@ -323,3 +323,9 @@ I managed to slow the title music down. It sounds exacly as I wanted it to sound
 # 2024-04-16 - Day #047
 
 Now when the game is over you can go back to the title screen and start again.
+
+# 2024-04-17 - Day #048
+
+Today I added the title screen in the "international" version:
+
+![International title screen](./static/title_screen_international.png)

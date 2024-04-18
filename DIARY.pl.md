@@ -321,6 +321,12 @@ Dodałem muzykę tytułową. Aczkolwiek, na moje ucho jest trochę za szybka.
 
 Zdołałem spowolnić muzyczkę tytułową i sprawić, że brzmi tak, jak chciałem.
 
-# 2024-04-16 - Day #047
+# 2024-04-16 - Dzień #047
 
 Kiedy gra się zakończy, można teraz wrócić do ekranu tytułowego i zacząć ponownie.
+
+# 2024-04-17 - Dzień #048
+
+Dziś dodałem ekran tytułowy w wersji "międzynarodowej":
+
+![Międzynarodowy ekran tytułowy](./static/title_screen_international.png)
