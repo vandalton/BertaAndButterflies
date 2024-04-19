@@ -330,3 +330,9 @@ Kiedy gra się zakończy, można teraz wrócić do ekranu tytułowego i zacząć
 Dziś dodałem ekran tytułowy w wersji "międzynarodowej":
 
 ![Międzynarodowy ekran tytułowy](./static/title_screen_international.png)
+
+# 2024-04-18 - Dzień #049
+
+Dodałem sposób na rozróżnienie, który poziom trudności jest ustawiony. W poziomie "łatwym" siatka jest żółta. W "trudnym" jest czerwona.
+
+Dodatkowo, jeśli na ekranie tytułowym chmurka jest nad literą "B", oznacza to, że jest ustawiony poziom "łatwy" (z ang. "beginner"). Kiedy jest nad literą "A", mamy poziom "trudny" ("advanced").

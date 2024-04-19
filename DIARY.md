@@ -329,3 +329,9 @@ Now when the game is over you can go back to the title screen and start again.
 Today I added the title screen in the "international" version:
 
 ![International title screen](./static/title_screen_international.png)
+
+# 2024-04-18 - Day #049
+
+I added a way to distinguish which difficulty level is set. In the "beginner" mode the net is yellow. In the "advanced" mode it is red.
+
+Additionally, when there is a cloud above the "B" letter on the title screen, it means it is "beginner" mode. When it's above "A" letter, it means "advanced" mode is set.
