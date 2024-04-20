@@ -517,7 +517,7 @@ __title_screen_music_handled
 __title_screen_counter_handled
 
     if switchleftb then var0 = %11100000
-    if !switchleftb then var1 = %10000000 : var2 = %11000000 /* pfpixel 15 0 : pfpixel 16 0 : pfpixel 17 0 */
+    if !switchleftb then var1 = %10000000 : var2 = %11000000
     _title_screen_counter = _title_screen_counter - 1
 
     if !joy0fire && !switchreset then goto __inner_loop_end
@@ -539,7 +539,7 @@ __title_screen_handled
     
      _after_scored_duration = _after_scored_duration - 1
      COLUP1 = _red
-     if !switchleftb then COLUP1 = _light_yellow
+     if _game_mode = 2 then COLUP1 = _light_yellow
 
 __after_scored_handled
 
