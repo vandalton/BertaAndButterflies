@@ -336,3 +336,11 @@ Dziś dodałem ekran tytułowy w wersji "międzynarodowej":
 Dodałem sposób na rozróżnienie, który poziom trudności jest ustawiony. W poziomie "łatwym" siatka jest żółta. W "trudnym" jest czerwona.
 
 Dodatkowo, jeśli na ekranie tytułowym chmurka jest nad literą "B", oznacza to, że jest ustawiony poziom "łatwy" (z ang. "beginner"). Kiedy jest nad literą "A", mamy poziom "trudny" ("advanced").
+
+# 2024-04-19 - Dzień #050
+
+Dziś 50-ty dzień konkursu [100 Commitów](https://100commitow.pl/). Pomyślałem, że to dobra okazja, aby wydać pierwszą wersję beta gry - obecnie jest już całkiem grywalna. Udostępniłem ROM tu i ówdzie i czekam na feedback.
+
+Wykonałem też kolejny kartridż, aby pograć na prawdziwej konsoli:
+
+![50-ty dzień - kartridż](./static/50_day_cartridge.jpeg)

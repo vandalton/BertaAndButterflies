@@ -335,3 +335,11 @@ Today I added the title screen in the "international" version:
 I added a way to distinguish which difficulty level is set. In the "beginner" mode the net is yellow. In the "advanced" mode it is red.
 
 Additionally, when there is a cloud above the "B" letter on the title screen, it means it is "beginner" mode. When it's above "A" letter, it means "advanced" mode is set.
+
+# 2024-04-19 - Day #050
+
+Today is the 50th day of the [100 Commits](https://100commitow.pl/) competition. I thought it's a good occasion to make the first beta release of the game, as it is quite playable. I shared the ROM here and there and I'm waiting for the feedback.
+
+I also made another cartridge to play the game on a real console:
+
+![50th day cartridge](./static/50_day_cartridge.jpeg)
