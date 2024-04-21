@@ -343,3 +343,11 @@ Today is the 50th day of the [100 Commits](https://100commitow.pl/) competition.
 I also made another cartridge to play the game on a real console:
 
 ![50th day cartridge](./static/50_day_cartridge.jpeg)
+
+# 2024-04-20 - Day #051
+
+Feedback from first players is positive. One of them reported that lack of "game over" message could be a problem. However, I'm not sure if I will be able to add it, if there will be enough place in ROM and if I want to do it at all - in the original game there was only a sound at the end.
+
+I got some scores reports and there were a few above 400!
+
+I found one bug myself related to the net's color. Fortunately, it was not critical one and I already fixed it.

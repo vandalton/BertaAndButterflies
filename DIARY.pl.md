@@ -344,3 +344,11 @@ Dziś 50-ty dzień konkursu [100 Commitów](https://100commitow.pl/). Pomyślał
 Wykonałem też kolejny kartridż, aby pograć na prawdziwej konsoli:
 
 ![50-ty dzień - kartridż](./static/50_day_cartridge.jpeg)
+
+# 2024-04-20 - Dzień #051
+
+Wrażenia pierwszych grających są pozytywne. Z uwag - brakuje napisu "game over" na koniec. Nie wiem, czy go dorobię, czy wystarczy mi miejsca w ROMie i czy w ogóle chcę to robić - w oryginale na koniec był tylko sygnał dźwiękowy.
+
+Zebrałem kilka raportów z wyników i rekordziści zebrali powyżej 400 motyli!
+
+Sam znalazłem jednego buga związanego z kolorowaniem siatki. Nie był to na szczęście błąd krytyczny, no i już go poprawiłem.
