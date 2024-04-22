@@ -5,19 +5,19 @@
 // 1 - up, 2 - down, 3 - left, 4 - right, 5 - NC 6 - fire
 // 7 - 5V (HIGH), 8 - GND (LOW), 9 - NC
 
-#define MODE_JUMPER 12
+#define MODE_JUMPER 16
 
-#define OUT_UP 14
-#define OUT_DOWN 15
-#define OUT_LEFT 16
-#define OUT_RIGHT 17
-#define OUT_FIRE 18
-#define OUT_SECOND_FIRE 19
-#define OUT_THIRD_FIRE 11
+#define OUT_UP 8
+#define OUT_DOWN 9
+#define OUT_LEFT 10
+#define OUT_RIGHT 11
+#define OUT_FIRE 12
+#define OUT_SECOND_FIRE 13
+#define OUT_THIRD_FIRE 15
 
-#define SNES_PAD_CLOCK 23
-#define SNES_PAD_LATCH 24
-#define SNES_PAD_DATA 25
+#define SNES_PAD_CLOCK 14
+#define SNES_PAD_LATCH 15
+#define SNES_PAD_DATA 16
 
 #define SNES_BUTTON_B 1
 #define SNES_BUTTON_Y 2
