@@ -352,3 +352,19 @@ Wrażenia pierwszych grających są pozytywne. Z uwag - brakuje napisu "game ove
 Zebrałem kilka raportów z wyników i rekordziści zebrali powyżej 400 motyli!
 
 Sam znalazłem jednego buga związanego z kolorowaniem siatki. Nie był to na szczęście błąd krytyczny, no i już go poprawiłem.
+
+# 2024-04-21 - Dzień #052
+
+Dziś nic spektakularnego - testy, testy i jeszcze raz testy. Mój osobisty rekord to 640.
+
+# 2024-04-22 - Dzień #053
+
+Właśnie dostałem przesyłkę z płytkami do adaptera kontrolera od SNESa! Czuję się, jakby była gwiazdka!
+
+Zbudowałem pierwszy adapter (zgadnijcie, czemu jest czerwony?):
+
+![SNES pad adapter](./static/snes_adapter.jpg)
+
+Pomysł polega na wykorzystaniu strzałki w górę, w dół oraz przycisków "X" i "B", aby łatwo poruszyć Bertę w pożądanym kierunku.
+
+Adapter działa! Nie zadziałał za pierwszym razem, ale musiałem poprawić jedynie numery pinów w kodzie źródłowym i zrekompilować go.

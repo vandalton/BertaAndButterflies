@@ -351,3 +351,19 @@ Feedback from first players is positive. One of them reported that lack of "game
 I got some scores reports and there were a few above 400!
 
 I found one bug myself related to the net's color. Fortunately, it was not critical one and I already fixed it.
+
+# 2024-04-21 - Day #052
+
+Nothing spectacular today - tests, tests and nothing but the tests. My personal high-score is 640.
+
+# 2024-04-22 - Day #053
+
+I've just received a parcel with a SNES controller adapter boards! I feel like it's Christmas!
+
+I built the first of them (guess why it is red?):
+
+![SNES controller adapter](./static/snes_adapter.jpg)
+
+The idea is to use "up" and "down" arrows and "X" and "B" buttons to easily move Berta to the desired direction.
+
+And the adapter works! It didn't work first time, but I only needed to fix pin numbers in the source code and recompile it.
