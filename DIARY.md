@@ -260,7 +260,7 @@ I updated the cartridge project by adding a capacitor that fixes the inverter.
 
 It is a tiny change. The capacitor should be soldered on the other side of the board:
 
-![Poprawiona płytka](./static/pcb_fixed.png
+![Fixed board](./static/pcb_fixed.png)
 
 # 2024-04-07 - Day #038
 
