@@ -368,3 +368,9 @@ Zbudowałem pierwszy adapter (zgadnijcie, czemu jest czerwony?):
 Pomysł polega na wykorzystaniu strzałki w górę, w dół oraz przycisków "X" i "B", aby łatwo poruszyć Bertę w pożądanym kierunku.
 
 Adapter działa! Nie zadziałał za pierwszym razem, ale musiałem poprawić jedynie numery pinów w kodzie źródłowym i zrekompilować go.
+
+# 2024-04-23 - Dzień #054
+
+Próbuję zrobic jakąś grafikę na okładkę. Na razie mam taką wersję roboczą:
+
+![Robocza okładka](./static/cover_draft.png)

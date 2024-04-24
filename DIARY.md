@@ -367,3 +367,9 @@ I built the first of them (guess why it is red?):
 The idea is to use "up" and "down" arrows and "X" and "B" buttons to easily move Berta to the desired direction.
 
 And the adapter works! It didn't work first time, but I only needed to fix pin numbers in the source code and recompile it.
+
+# 2024-04-23 - Day #054
+
+I try to design cartridge cover. So far I have this draft version:
+
+![Draft cover](./static/cover_draft.png)
