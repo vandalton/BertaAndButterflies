@@ -51,13 +51,24 @@ void setup()
 
 void loop()
 {
+    int mode = digitalRead(MODE_JUMPER);
     int state = getButtonsState();
 
-    digitalWrite(OUT_FIRE, state & SNES_BUTTON_Y ? LOW : HIGH);
-    digitalWrite(OUT_UP, state & (SNES_BUTTON_UP | SNES_BUTTON_X) ? LOW : HIGH);
-    digitalWrite(OUT_DOWN, state & (SNES_BUTTON_DOWN | SNES_BUTTON_B) ? LOW : HIGH);
-    digitalWrite(OUT_LEFT, state & (SNES_BUTTON_UP | SNES_BUTTON_DOWN) ? LOW : HIGH);
-    digitalWrite(OUT_RIGHT, state & (SNES_BUTTON_X | SNES_BUTTON_B) ? LOW : HIGH);
+    if (mode == HIGH)
+    {
+      digitalWrite(OUT_FIRE, state & SNES_BUTTON_Y ? LOW : HIGH);
+      digitalWrite(OUT_UP, state & (SNES_BUTTON_UP | SNES_BUTTON_X) ? LOW : HIGH);
+      digitalWrite(OUT_DOWN, state & (SNES_BUTTON_DOWN | SNES_BUTTON_B) ? LOW : HIGH);
+      digitalWrite(OUT_LEFT, state & (SNES_BUTTON_UP | SNES_BUTTON_DOWN) ? LOW : HIGH);
+      digitalWrite(OUT_RIGHT, state & (SNES_BUTTON_X | SNES_BUTTON_B) ? LOW : HIGH);
+    } 
+    else {
+      digitalWrite(OUT_FIRE, state & SNES_BUTTON_Y ? LOW : HIGH);
+      digitalWrite(OUT_UP, state & (SNES_BUTTON_UP | SNES_BUTTON_B) ? LOW : HIGH);
+      digitalWrite(OUT_DOWN, state & SNES_BUTTON_DOWN ? LOW : HIGH);
+      digitalWrite(OUT_LEFT, state & SNES_BUTTON_LEFT ? LOW : HIGH);
+      digitalWrite(OUT_RIGHT, state & SNES_BUTTON_RIGHT ? LOW : HIGH);
+    }
 
     delay(1);
 }
