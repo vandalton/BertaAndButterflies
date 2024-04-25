@@ -609,7 +609,8 @@ __return_to_the_title_screen_handled
     if joy0down && _berta_position = 2 then _berta_position = 0
     if joy0down && _berta_position = 3 then _berta_position = 1
 
-    if _top_left_butterfly{0} then pfpixel 1 2 on
+
+    if _top_left_butterfly{0} then var8 = %01000000
     if _top_left_butterfly{1} then pfpixel 2 3 on : pfpixel 3 2 on 
     if _top_left_butterfly{2} then pfpixel 4 3 on
     if _top_left_butterfly{3} then pfpixel 5 4 on : pfpixel 6 3 on
