@@ -374,3 +374,7 @@ Adapter działa! Nie zadziałał za pierwszym razem, ale musiałem poprawić jed
 Próbuję zrobic jakąś grafikę na okładkę. Na razie mam taką wersję roboczą:
 
 ![Robocza okładka](./static/cover_draft.png)
+
+# 2024-04-24 - Dzień #055
+
+Rozwinąłem oprogramowanie dla adaptera pada. Jeśli założy się zworkę, kontroler zadziała jako "normalny" joystick - kierunki i "Y" jako "fire".

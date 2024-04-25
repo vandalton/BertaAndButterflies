@@ -373,3 +373,7 @@ And the adapter works! It didn't work first time, but I only needed to fix pin n
 I try to design cartridge cover. So far I have this draft version:
 
 ![Draft cover](./static/cover_draft.png)
+
+# 2024-04-24 - Day #055
+
+I enhanced the SNES controller adapter software. If you use a jumper, controller will work as "normal" joystick, with direction and "Y" button working as "fire".
