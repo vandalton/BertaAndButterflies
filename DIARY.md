@@ -377,3 +377,7 @@ I try to design cartridge cover. So far I have this draft version:
 # 2024-04-24 - Day #055
 
 I enhanced the SNES controller adapter software. If you use a jumper, controller will work as "normal" joystick, with direction and "Y" button working as "fire".
+
+# 2024-04-25 - Day #056
+
+I started replacing `pfpixel` calls with direct playfield variables manipulations. This way I'll save some ROM space.

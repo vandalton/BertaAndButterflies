@@ -378,3 +378,7 @@ Próbuję zrobic jakąś grafikę na okładkę. Na razie mam taką wersję roboc
 # 2024-04-24 - Dzień #055
 
 Rozwinąłem oprogramowanie dla adaptera pada. Jeśli założy się zworkę, kontroler zadziała jako "normalny" joystick - kierunki i "Y" jako "fire".
+
+# 2024-04-25 - Dzień #056
+
+Zacząłem zamieniać wywołania `pfpixel` na bezpośrednie manipulacje zmiennymi pola gry. Dzięki temu oszczędzę trochę miejsca w ROMie.
