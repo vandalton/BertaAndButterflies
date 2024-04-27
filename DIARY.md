@@ -381,3 +381,7 @@ I enhanced the SNES controller adapter software. If you use a jumper, controller
 # 2024-04-25 - Day #056
 
 I started replacing `pfpixel` calls with direct playfield variables manipulations. This way I'll save some ROM space.
+
+# 2024-04-26 - Day #057
+
+Berta appeared in a [ZeroPage Homebrew](https://www.twitch.tv/zeropagehomebrew) stream! You can see the latest episode here: [https://youtu.be/SA3xd5n5TF4?t=3413](https://youtu.be/SA3xd5n5TF4?t=3413)

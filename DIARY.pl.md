@@ -382,3 +382,7 @@ Rozwinąłem oprogramowanie dla adaptera pada. Jeśli założy się zworkę, kon
 # 2024-04-25 - Dzień #056
 
 Zacząłem zamieniać wywołania `pfpixel` na bezpośrednie manipulacje zmiennymi pola gry. Dzięki temu oszczędzę trochę miejsca w ROMie.
+
+# 2024-04-26 - Dzień #057
+
+Berta pojawiła się w programie [ZeroPage Homebrew](https://www.twitch.tv/zeropagehomebrew)! Możecie zobaczyć ostatni odcinek tutaj: [https://youtu.be/SA3xd5n5TF4?t=3413](https://youtu.be/SA3xd5n5TF4?t=3413)
