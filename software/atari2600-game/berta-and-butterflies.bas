@@ -609,11 +609,11 @@ __return_to_the_title_screen_handled
     if joy0down && _berta_position = 2 then _berta_position = 0
     if joy0down && _berta_position = 3 then _berta_position = 1
 
-    if _top_left_butterfly{0} then var8 = %01000000
-    if _top_left_butterfly{1} then var12 = %00100000 : var8 = %00010000
-    if _top_left_butterfly{2} then var12 = %00001000
-    if _top_left_butterfly{3} then var16 = %00000100 : var12 = %00000010
-    if _top_left_butterfly{4} then var16 = %00000010
+    if _top_left_butterfly{0} then pfpixel 1 2 on
+    if _top_left_butterfly{1} then pfpixel 2 3 on : pfpixel 3 2 on 
+    if _top_left_butterfly{2} then pfpixel 4 3 on
+    if _top_left_butterfly{3} then pfpixel 5 4 on : pfpixel 6 3 on
+    if _top_left_butterfly{4} then pfpixel 6 4 on
 
     if _top_right_butterfly{0} then pfpixel 28 2 on
     if _top_right_butterfly{1} then pfpixel 27 3 on : pfpixel 26 2 on 
@@ -621,11 +621,11 @@ __return_to_the_title_screen_handled
     if _top_right_butterfly{3} then pfpixel 24 4 on : pfpixel 23 3 on
     if _top_right_butterfly{4} then pfpixel 23 4 on
 
-    if _bottom_left_butterfly{0} then var24 = %01000000
-    if _bottom_left_butterfly{1} then var28 = %00100000 : var24 = %00010000
-    if _bottom_left_butterfly{2} then var24 = %00001000
-    if _bottom_left_butterfly{3} then var28 = %00000100 : var24 = %00000010
-    if _bottom_left_butterfly{4} then var28 = %00000010
+    if _bottom_left_butterfly{0} then pfpixel 1 6 on
+    if _bottom_left_butterfly{1} then pfpixel 2 7 on : pfpixel 3 6 on 
+    if _bottom_left_butterfly{2} then pfpixel 4 6 on
+    if _bottom_left_butterfly{3} then pfpixel 5 7 on : pfpixel 6 6 on
+    if _bottom_left_butterfly{4} then pfpixel 6 7 on
 
     if _bottom_right_butterfly{0} then pfpixel 28 6 on
     if _bottom_right_butterfly{1} then pfpixel 27 7 on : pfpixel 26 6 on 
