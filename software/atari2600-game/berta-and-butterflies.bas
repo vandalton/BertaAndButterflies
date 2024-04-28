@@ -753,7 +753,7 @@ __inner_loop_end
 
 __score_point
     score = score + 1
-    
+
     if _game_mode = 2 then goto __high_score_beginner_checked
 
     if _sc1 > _high_sc1_beginner then goto __high_score_beginner_update
@@ -796,30 +796,24 @@ __high_score_advanced_checked
 
     if _slowdown_limit < 12 then _slowdown_limit = 12
 
-    _max_butterflies = _sc2 + (_sc3 & $F0)
-
-    for _temp = 0 to 5
-    if _max_butterflies >= __max_butterflies_numbers[_temp] then _max_butterflies = __max_butterflies_limits[_temp] : goto __max_butterflies_set
-    next
-
-    if _sc3 >= $5 && _sc3 < $10 then _max_butterflies = 2 : goto __max_butterflies_set
     _max_butterflies = 1
 
-__max_butterflies_set
+    var44 = (_sc2 & $F0) / 16 + (_sc2 & $0F) + (_sc3 & $F0) / 16
+
+    if var44 >= 1 then _max_butterflies = 3
+    if var44 >= 5 then _max_butterflies = 4
+    if var44 >= 9 then _max_butterflies = 5
+    if var44 >= 11 then _max_butterflies = 7
+    if var44 >= 14 then _max_butterflies = 9
+    if var44 >= 17 then _max_butterflies = 12
+
+    if _sc3 >= $5 && _sc3 < $10 then _max_butterflies = 2
 
     _butterfly_count = _butterfly_count - 1 
     _after_scored_duration = 20
     _sound_duration = 5
     AUDF0 = 7
     return
-
-    data __max_butterflies_numbers
-    1, 5, 9, 11, 14, 17
-end
-
-    data __max_butterflies_limits
-    3, 4, 5, 7, 9, 12
-end
 
     data __sources_audio_frequencies
     9, 11, 13, 15
