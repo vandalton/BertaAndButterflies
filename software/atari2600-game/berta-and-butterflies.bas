@@ -798,14 +798,14 @@ __high_score_advanced_checked
 
     _max_butterflies = 1
 
-    var44 = (_sc2 & $F0) / 16 + (_sc2 & $0F) + (_sc3 & $F0) / 16
+    _temp = (_sc2 & $F0) / 16 + (_sc2 & $0F) + (_sc3 & $F0) / 16
 
-    if var44 >= 1 then _max_butterflies = 3
-    if var44 >= 5 then _max_butterflies = 4
-    if var44 >= 9 then _max_butterflies = 5
-    if var44 >= 11 then _max_butterflies = 7
-    if var44 >= 14 then _max_butterflies = 9
-    if var44 >= 17 then _max_butterflies = 12
+    if _temp >= 1 then _max_butterflies = 3
+    if _temp >= 5 then _max_butterflies = 4
+    if _temp >= 9 then _max_butterflies = 5
+    if _temp >= 11 then _max_butterflies = 7
+    if _temp >= 14 then _max_butterflies = 9
+    if _temp >= 17 then _max_butterflies = 12
 
     if _sc3 >= $5 && _sc3 < $10 then _max_butterflies = 2
 
