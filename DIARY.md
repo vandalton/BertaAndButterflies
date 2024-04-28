@@ -385,3 +385,7 @@ I started replacing `pfpixel` calls with direct playfield variables manipulation
 # 2024-04-26 - Day #057
 
 Berta appeared in a [ZeroPage Homebrew](https://www.twitch.tv/zeropagehomebrew) stream! You can see the latest episode here: [https://youtu.be/SA3xd5n5TF4?t=3413](https://youtu.be/SA3xd5n5TF4?t=3413)
+
+# 2024-04-27 - Day #058
+
+I tried to regain some ROM space, to no avail yet. However, I have an idea how to do it.

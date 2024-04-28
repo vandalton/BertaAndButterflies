@@ -386,3 +386,7 @@ Zacząłem zamieniać wywołania `pfpixel` na bezpośrednie manipulacje zmiennym
 # 2024-04-26 - Dzień #057
 
 Berta pojawiła się w programie [ZeroPage Homebrew](https://www.twitch.tv/zeropagehomebrew)! Możecie zobaczyć ostatni odcinek tutaj: [https://youtu.be/SA3xd5n5TF4?t=3413](https://youtu.be/SA3xd5n5TF4?t=3413)
+
+# 2024-04-27 - Dzień #058
+
+Próbowałem odsyzkać trochę miejsca w ROMie, ale bez sukcesu. Mam jednak pomysł jak to zrobić.
