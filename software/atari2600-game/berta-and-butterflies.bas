@@ -75,21 +75,22 @@
     */
     dim _game_mode = s
 
-    dim _title_screen_note = t
+    dim _return_to_the_title_screen = t
 
-    dim _return_to_the_title_screen = u
+    dim _high_sc1_beginner = u
+    dim _high_sc2_beginner = v
+    dim _high_sc3_beginner = w
 
-    dim _high_sc1_beginner = v
-    dim _high_sc2_beginner = w
-    dim _high_sc3_beginner = x
-
-    dim _high_sc1_advanced = y
-    dim _high_sc2_advanced = z
+    dim _high_sc1_advanced = x
+    dim _high_sc2_advanced = y
+    dim _high_sc3_advanced = z
 
     dim _sc1 = score
     dim _sc2 = score + 1
     dim _sc3 = score + 2
 
+    /* deliberately both are aliases for the same variable */
+    dim _title_screen_note = temp7
     dim _temp = temp7
 
     _game_mode = 0
@@ -131,7 +132,6 @@ __sound_muted
     .............XXXX...............
     XXXXX......................XXXXX
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 end
     if _berta_position < 2 && _game_mode = 0 then playfield:
     ................................
@@ -144,7 +144,6 @@ end
     .........X..............XXXXXX..
     ....X...X......X.........XXXX...
     XXXXX...........................
-    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 end
 
@@ -161,7 +160,6 @@ end
     .............XXXX...............
     XXXXX......................XXXXX
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 end
 
     /* top */
@@ -176,7 +174,6 @@ end
     ...X..........X.........XXXXXX..
     ..X.......X..X...........XXXX...
     XXXXX...........................
-    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 end
 
