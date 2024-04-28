@@ -75,16 +75,22 @@
     */
     dim _game_mode = s
 
-    dim _temp = t
+    dim _title_screen_note = t
 
-    dim _title_screen_counter = u
-    dim _title_screen_note = v
+    dim _return_to_the_title_screen = u
 
-    dim _return_to_the_title_screen = w
+    dim _high_sc1_beginner = v
+    dim _high_sc2_beginner = w
+    dim _high_sc3_beginner = x
+
+    dim _high_sc1_advanced = y
+    dim _high_sc2_advanced = z
 
     dim _sc1 = score
     dim _sc2 = score + 1
     dim _sc3 = score + 2
+
+    dim _temp = temp7
 
     _game_mode = 0
     _prev_berta_position = 5
@@ -494,7 +500,7 @@ end
     %00011000
     %00011000
 end */
-    if _title_screen_counter <> 20 && _title_screen_counter <> 0 then goto __title_screen_music_handled
+    if _slowdown <> 20 && _slowdown <> 0 then goto __title_screen_music_handled
     if _sound_duration <> 0 then goto __title_screen_music_handled
 
     AUDF0 = __title_music_notes[_title_screen_note]
@@ -505,9 +511,8 @@ end */
 
 __title_screen_music_handled
 
-    if _title_screen_counter > 0 then goto __title_screen_counter_handled
-
-    _title_screen_counter = 40
+    _slowdown_limit = 40
+    if _slowdown > 0 then goto __title_screen_counter_handled
 
     if _berta_position = 0 then _berta_position = 3 : goto __title_screen_counter_handled
     if _berta_position = 3 then _berta_position = 1 : goto __title_screen_counter_handled
@@ -518,7 +523,6 @@ __title_screen_counter_handled
 
     if switchleftb then var0 = %11100000
     if !switchleftb then var1 = %10000000 : var2 = %11000000
-    _title_screen_counter = _title_screen_counter - 1
 
     if !joy0fire && !switchreset then goto __inner_loop_end
 
