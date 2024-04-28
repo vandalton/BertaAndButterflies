@@ -509,6 +509,11 @@ end */
 __title_screen_music_handled
 
     _slowdown_limit = 40
+
+    /* display high score for beginner or advanced mode */
+    if switchleftb then _sc1 = _high_sc1_beginner : _sc2 = _high_sc2_beginner : _sc3 = _high_sc3_beginner
+    if !switchleftb then _sc1 = _high_sc1_advanced: _sc2 = _high_sc2_advanced : _sc3 = _high_sc3_advanced 
+
     if _slowdown > 0 then goto __title_screen_counter_handled
 
     if _berta_position = 0 then _berta_position = 3 : goto __title_screen_counter_handled
@@ -723,6 +728,44 @@ __inner_loop_end
 __score_point
     score = score + 1
     
+    if _game_mode = 2 then goto __high_score_beginner_checked
+
+    if _sc1 > _high_sc1_beginner then goto __high_score_beginner_update
+    if _sc1 < _high_sc1_beginner then goto __high_score_beginner_checked
+
+    if _sc2 > _high_sc2_beginner then goto __high_score_beginner_update
+    if _sc2 < _high_sc2_beginner then goto __high_score_beginner_checked
+
+    if _sc3 > _high_sc3_beginner then goto __high_score_beginner_update
+    if _sc3 < _high_sc3_beginner then goto __high_score_beginner_checked
+
+    goto __high_score_beginner_checked
+
+__high_score_beginner_update
+
+   _high_sc1_beginner = _sc1 : _high_sc2_beginner = _sc2 : _high_sc3_beginner = _sc3
+
+__high_score_beginner_checked
+
+    if _game_mode = 1 then goto __high_score_advanced_checked
+
+    if _sc1 > _high_sc1_advanced then goto __high_score_advanced_update
+    if _sc1 < _high_sc1_advanced then goto __high_score_advanced_checked
+
+    if _sc2 > _high_sc2_advanced then goto __high_score_advanced_update
+    if _sc2 < _high_sc2_advanced then goto __high_score_advanced_checked
+
+    if _sc3 > _high_sc3_advanced then goto __high_score_advanced_update
+    if _sc3 < _high_sc3_advanced then goto __high_score_advanced_checked
+
+    goto __high_score_advanced_checked
+
+__high_score_advanced_update
+
+   _high_sc1_advanced = _sc1 : _high_sc2_advanced = _sc2 : _high_sc3_advanced = _sc3
+
+__high_score_advanced_checked
+
     if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + 5
 
     if _slowdown_limit < 12 then _slowdown_limit = 12
