@@ -389,3 +389,10 @@ Berta appeared in a [ZeroPage Homebrew](https://www.twitch.tv/zeropagehomebrew) 
 # 2024-04-27 - Day #058
 
 I tried to regain some ROM space, to no avail yet. However, I have an idea how to do it.
+
+# 2024-04-28 - Day #059
+
+I implemented high score saving for both "beginner" and "advanced" modes. I needed to free up two variables, because I used all possible variables before.
+
+High score saving is not permanent. It could be if I implemented support for the external device called SaveKey, but I don't have space in ROM. Despite I did some optimizations, I have only 26 bytes left...
+

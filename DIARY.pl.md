@@ -390,3 +390,9 @@ Berta pojawiła się w programie [ZeroPage Homebrew](https://www.twitch.tv/zerop
 # 2024-04-27 - Dzień #058
 
 Próbowałem odsyzkać trochę miejsca w ROMie, ale bez sukcesu. Mam jednak pomysł jak to zrobić.
+
+# 2024-04-28 - Dzień #059
+
+Zaimplementowałem zapamiętywanie najwyższych wyników dla trybu "łatwego" i "trudnego". Musiałem w tym celu zwolnić dwie zmienne, bo użyłem już wszystkich możliwych.
+
+Zapamiętywanie wyników nie jest permanentne. Mogłoby być, gdybym zaimplementował obsługę zewnętrznego urządzenia SaveKey, ale na to nie starczy mi miejsca w ROMie. Mimo optymalizacji, zostało mi tylko 26 bajtów...
