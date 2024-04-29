@@ -671,7 +671,73 @@ __check_if_catch
     if _berta_position = 2 then _current_butterflies = _top_left_butterfly
     if _berta_position = 3 then _current_butterflies = _top_right_butterfly
 
-    if (_current_butterflies & 16) then _current_butterflies{4} = 0 : gosub __score_point
+    if (_current_butterflies & 16 = 0) then goto __point_scored
+    
+    _current_butterflies{4} = 0
+
+    score = score + 1
+
+    if _game_mode = 2 then goto __high_score_beginner_checked
+
+    if _sc1 > _high_sc1_beginner then goto __high_score_beginner_update
+    if _sc1 < _high_sc1_beginner then goto __high_score_beginner_checked
+
+    if _sc2 > _high_sc2_beginner then goto __high_score_beginner_update
+    if _sc2 < _high_sc2_beginner then goto __high_score_beginner_checked
+
+    if _sc3 > _high_sc3_beginner then goto __high_score_beginner_update
+    if _sc3 < _high_sc3_beginner then goto __high_score_beginner_checked
+
+    goto __high_score_beginner_checked
+
+__high_score_beginner_update
+
+   _high_sc1_beginner = _sc1 : _high_sc2_beginner = _sc2 : _high_sc3_beginner = _sc3
+
+__high_score_beginner_checked
+
+    if _game_mode = 1 then goto __high_score_advanced_checked
+
+    if _sc1 > _high_sc1_advanced then goto __high_score_advanced_update
+    if _sc1 < _high_sc1_advanced then goto __high_score_advanced_checked
+
+    if _sc2 > _high_sc2_advanced then goto __high_score_advanced_update
+    if _sc2 < _high_sc2_advanced then goto __high_score_advanced_checked
+
+    if _sc3 > _high_sc3_advanced then goto __high_score_advanced_update
+    if _sc3 < _high_sc3_advanced then goto __high_score_advanced_checked
+
+    goto __high_score_advanced_checked
+
+__high_score_advanced_update
+
+   _high_sc1_advanced = _sc1 : _high_sc2_advanced = _sc2 : _high_sc3_advanced = _sc3
+
+__high_score_advanced_checked
+
+    if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + 5
+
+    if _slowdown_limit < 12 then _slowdown_limit = 12
+
+    _max_butterflies = 1
+
+    _temp = (_sc2 & $F0) / 16 + (_sc2 & $0F) + (_sc3 & $F0) / 16
+
+    if _temp >= 1 then _max_butterflies = 3
+    if _temp >= 5 then _max_butterflies = 4
+    if _temp >= 9 then _max_butterflies = 5
+    if _temp >= 11 then _max_butterflies = 7
+    if _temp >= 14 then _max_butterflies = 9
+    if _temp >= 17 then _max_butterflies = 12
+
+    if _sc3 >= $5 && _sc3 < $10 then _max_butterflies = 2
+
+    _butterfly_count = _butterfly_count - 1 
+    _after_scored_duration = 20
+    _sound_duration = 5
+    AUDF0 = 7
+
+__point_scored
 
     if _berta_position = 0 then _bottom_left_butterfly = _current_butterflies
     if _berta_position = 1 then _bottom_right_butterfly = _current_butterflies
@@ -750,70 +816,6 @@ __inner_loop_end
     _slowdown = _slowdown - 1
 
     goto main
-
-__score_point
-    score = score + 1
-
-    if _game_mode = 2 then goto __high_score_beginner_checked
-
-    if _sc1 > _high_sc1_beginner then goto __high_score_beginner_update
-    if _sc1 < _high_sc1_beginner then goto __high_score_beginner_checked
-
-    if _sc2 > _high_sc2_beginner then goto __high_score_beginner_update
-    if _sc2 < _high_sc2_beginner then goto __high_score_beginner_checked
-
-    if _sc3 > _high_sc3_beginner then goto __high_score_beginner_update
-    if _sc3 < _high_sc3_beginner then goto __high_score_beginner_checked
-
-    goto __high_score_beginner_checked
-
-__high_score_beginner_update
-
-   _high_sc1_beginner = _sc1 : _high_sc2_beginner = _sc2 : _high_sc3_beginner = _sc3
-
-__high_score_beginner_checked
-
-    if _game_mode = 1 then goto __high_score_advanced_checked
-
-    if _sc1 > _high_sc1_advanced then goto __high_score_advanced_update
-    if _sc1 < _high_sc1_advanced then goto __high_score_advanced_checked
-
-    if _sc2 > _high_sc2_advanced then goto __high_score_advanced_update
-    if _sc2 < _high_sc2_advanced then goto __high_score_advanced_checked
-
-    if _sc3 > _high_sc3_advanced then goto __high_score_advanced_update
-    if _sc3 < _high_sc3_advanced then goto __high_score_advanced_checked
-
-    goto __high_score_advanced_checked
-
-__high_score_advanced_update
-
-   _high_sc1_advanced = _sc1 : _high_sc2_advanced = _sc2 : _high_sc3_advanced = _sc3
-
-__high_score_advanced_checked
-
-    if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + 5
-
-    if _slowdown_limit < 12 then _slowdown_limit = 12
-
-    _max_butterflies = 1
-
-    _temp = (_sc2 & $F0) / 16 + (_sc2 & $0F) + (_sc3 & $F0) / 16
-
-    if _temp >= 1 then _max_butterflies = 3
-    if _temp >= 5 then _max_butterflies = 4
-    if _temp >= 9 then _max_butterflies = 5
-    if _temp >= 11 then _max_butterflies = 7
-    if _temp >= 14 then _max_butterflies = 9
-    if _temp >= 17 then _max_butterflies = 12
-
-    if _sc3 >= $5 && _sc3 < $10 then _max_butterflies = 2
-
-    _butterfly_count = _butterfly_count - 1 
-    _after_scored_duration = 20
-    _sound_duration = 5
-    AUDF0 = 7
-    return
 
     data __sources_audio_frequencies
     9, 11, 13, 15
