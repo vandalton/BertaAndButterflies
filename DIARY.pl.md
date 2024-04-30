@@ -396,3 +396,7 @@ Próbowałem odsyzkać trochę miejsca w ROMie, ale bez sukcesu. Mam jednak pomy
 Zaimplementowałem zapamiętywanie najwyższych wyników dla trybu "łatwego" i "trudnego". Musiałem w tym celu zwolnić dwie zmienne, bo użyłem już wszystkich możliwych.
 
 Zapamiętywanie wyników nie jest permanentne. Mogłoby być, gdybym zaimplementował obsługę zewnętrznego urządzenia SaveKey, ale na to nie starczy mi miejsca w ROMie. Mimo optymalizacji, zostało mi tylko 26 bajtów...
+
+# 2024-04-29 - Dzień #060
+
+Wgrałem aktualną wersję gry na kartridż i testowałem na prawdziwej konsoli. Po niedawnej poprawce dotyczącej limitu motyli, gra stała się za trudna. Dostrajam poziom trudności.
