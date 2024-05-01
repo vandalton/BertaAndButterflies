@@ -723,12 +723,12 @@ __high_score_advanced_checked
 
     if _sc3 >= $5 && _sc3 < $10 then _max_butterflies = 2
 
-    _temp = (_sc2 & $F0) / 16 + (_sc2 & $0F) + (_sc3 & $F0) / 16
+    _temp = (_sc1 & $F0) / 16 + (_sc1 & $0F) + (_sc2 & $F0) / 16 + (_sc2 & $0F) + (_sc3 & $F0) / 16
 
     if _temp >= 1 then _max_butterflies = 3
     if _temp >= 6 then _max_butterflies = 4
-    if _temp >= 11 then _max_butterflies = 6
-    if _temp >= 15 then _max_butterflies = 9
+    if _temp >= 10 then _max_butterflies = 5
+    if _temp >= 15 then _max_butterflies = 7
 
     _butterfly_count = _butterfly_count - 1 
     _after_scored_duration = 20
