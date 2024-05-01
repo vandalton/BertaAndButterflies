@@ -399,3 +399,7 @@ High score saving is not permanent. It could be if I implemented support for the
 # 2024-04-29 - Day #060
 
 I put the current version to the cartridge and played on a real console. After the recent fix related to the butterflies limit, the game became too hard. So I'm adjusting difficulty level now.
+
+# 2024-04-30 - Day #061
+
+I'm still adjusting difficulty level...

@@ -400,3 +400,7 @@ Zapamiętywanie wyników nie jest permanentne. Mogłoby być, gdybym zaimplement
 # 2024-04-29 - Dzień #060
 
 Wgrałem aktualną wersję gry na kartridż i testowałem na prawdziwej konsoli. Po niedawnej poprawce dotyczącej limitu motyli, gra stała się za trudna. Dostrajam poziom trudności.
+
+# 2024-04-30 - Dzień #061
+
+Dalej dostrajam poziom trudności...
