@@ -598,9 +598,9 @@ end
 
     if _fail_left = 90 || _fail_left = 60 then _sound_duration = 3 : AUDF0 = 30
 
-    if _fail_left <= 60 then pfpixel 4 1 on
-    if _fail_left > 60 && _fail_left <= 90 then pfpixel 6 2 on
-    if _fail_left > 90 && _fail_left <= 120 then pfpixel 7 3 on : pfpixel 8 2 on
+    if _fail_left <= 60 then pfpixel 4 0 on
+    if _fail_left > 60 && _fail_left <= 90 then pfpixel 6 1 on
+    if _fail_left > 90 && _fail_left <= 120 then pfpixel 7 2 on : pfpixel 8 1 on
 
     _fail_left = _fail_left - 1
 
@@ -610,9 +610,9 @@ __fail_left_handled
 
     if _fail_right = 90 || _fail_right = 60 then _sound_duration = 3 : AUDF0 = 30
 
-    if _fail_right <= 60 then pfpixel 25 1 on
-    if _fail_right > 60 && _fail_right <= 90 then pfpixel 23 2 on
-    if _fail_right > 90 && _fail_right <= 120 then pfpixel 22 3 on : pfpixel 21 2 on
+    if _fail_right <= 60 then pfpixel 25 0 on
+    if _fail_right > 60 && _fail_right <= 90 then pfpixel 23 1 on
+    if _fail_right > 90 && _fail_right <= 120 then pfpixel 22 2 on : pfpixel 21 1 on
 
     _fail_right = _fail_right - 1
 
