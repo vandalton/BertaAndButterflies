@@ -403,3 +403,13 @@ I put the current version to the cartridge and played on a real console. After t
 # 2024-04-30 - Day #061
 
 I'm still adjusting difficulty level...
+
+# 2024-05-01 - Day #062
+
+I played with Leonardo AI a little bit. I tried its "guided image" function, to redo my Berta drawing. Here are a few results. Ok, one of them was not guided :) And the first one is the original one.
+
+|||
+|----------------|---------------|
+|![Original drawing](./design/leonardo_ai/original.png)|![Berta from Leonardo AI 1](./design/leonardo_ai/berta_leonardo_ai.jpg)|
+|![Berta from Leonardo AI 2](./design/leonardo_ai/berta_leonardo_ai_2.jpg)|![Berta from Leonardo AI 3](./design/leonardo_ai/berta_leonardo_ai_3.jpg)|
+|![Berta from Leonardo AI 4](./design/leonardo_ai/berta_leonardo_ai_4.jpg)|![Berta from Leonardo AI 5](./design/leonardo_ai/berta_leonardo_ai_5.jpg)|

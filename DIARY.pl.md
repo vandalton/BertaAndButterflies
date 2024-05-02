@@ -404,3 +404,14 @@ Wgrałem aktualną wersję gry na kartridż i testowałem na prawdziwej konsoli.
 # 2024-04-30 - Dzień #061
 
 Dalej dostrajam poziom trudności...
+
+# 2024-05-01 - Dzień #062
+
+Pobawiłem się trochę Leonardo AI. Wypróbowałem funkcję generowania obrazu na podstawie innego obrazu, aby przerobić mój rysunek Berty. Oto kilka wyników. Dobra, jeden z nich nie był na podstawie innego obrazu :) A pierwszy to ten oryginalny.
+
+|||
+|----------------|---------------|
+|![Original drawing](./design/leonardo_ai/original.png)|![Berta from Leonardo AI 1](./design/leonardo_ai/berta_leonardo_ai.jpg)|
+|![Berta from Leonardo AI 2](./design/leonardo_ai/berta_leonardo_ai_2.jpg)|![Berta from Leonardo AI 3](./design/leonardo_ai/berta_leonardo_ai_3.jpg)|
+|![Berta from Leonardo AI 4](./design/leonardo_ai/berta_leonardo_ai_4.jpg)|![Berta from Leonardo AI 5](./design/leonardo_ai/berta_leonardo_ai_5.jpg)|
+
