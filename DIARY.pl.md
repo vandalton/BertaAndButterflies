@@ -415,3 +415,6 @@ Pobawiłem się trochę Leonardo AI. Wypróbowałem funkcję generowania obrazu 
 |![Berta from Leonardo AI 2](./design/leonardo_ai/berta_leonardo_ai_2.jpg)|![Berta from Leonardo AI 3](./design/leonardo_ai/berta_leonardo_ai_3.jpg)|
 |![Berta from Leonardo AI 4](./design/leonardo_ai/berta_leonardo_ai_4.jpg)|![Berta from Leonardo AI 5](./design/leonardo_ai/berta_leonardo_ai_5.jpg)|
 
+# 2024-05-02 - Dzień #063
+
+Próbowałem zmienić "animację" straconego motylka, ale na koniec wycofałem wszystkie zmiany :) Jestem zbyt przyzwyczajony do oryginalnej.

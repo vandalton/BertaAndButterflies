@@ -413,3 +413,7 @@ I played with Leonardo AI a little bit. I tried its "guided image" function, to 
 |![Original drawing](./design/leonardo_ai/original.png)|![Berta from Leonardo AI 1](./design/leonardo_ai/berta_leonardo_ai.jpg)|
 |![Berta from Leonardo AI 2](./design/leonardo_ai/berta_leonardo_ai_2.jpg)|![Berta from Leonardo AI 3](./design/leonardo_ai/berta_leonardo_ai_3.jpg)|
 |![Berta from Leonardo AI 4](./design/leonardo_ai/berta_leonardo_ai_4.jpg)|![Berta from Leonardo AI 5](./design/leonardo_ai/berta_leonardo_ai_5.jpg)|
+
+# 2024-05-02 - Day #063
+
+I tried to change the lost butterfly "animation", but I reverted all changes eventually :) I'm too used to the original one.
