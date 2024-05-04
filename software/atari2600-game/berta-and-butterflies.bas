@@ -53,18 +53,18 @@
     dim _slowdown_limit = i
 
     dim _butterfly_source = j
-    dim _inactive_sources_count = k
 
-    dim _current_butterflies = l
+    dim _current_butterflies = k
 
-    dim _sound_duration = m
+    dim _sound_duration = l
 
-    dim _after_scored_duration = n
+    dim _after_scored_duration = m
 
-    dim _max_butterflies = o
+    dim _max_butterflies = n
 
-    dim _fail_left = p
-    dim _fail_right = q
+    dim _fail_left = o
+    dim _fail_right = p
+    dim _game_over_signal = q
 
     dim _pausing_source = r
 
@@ -92,6 +92,8 @@
     /* deliberately both aliases are for the same variable */
     dim _title_screen_note = temp7
     dim _temp = temp7
+
+    dim _inactive_sources_count = temp6
 
     _game_mode = 0
 
@@ -523,6 +525,7 @@ end
     %00011000
     %00011000
 end */
+
     if _slowdown <> 20 && _slowdown <> 0 then goto __title_screen_music_handled
     if _sound_duration <> 0 then goto __title_screen_music_handled
 
@@ -559,6 +562,7 @@ __title_screen_counter_handled
     score = 0
     _max_butterflies = 1
     _prev_berta_position = 5
+    _game_over_signal = 255
     
     if switchleftb then _game_mode = 1 : _slowdown_limit = 26 : _pausing_source = (rand & 3)
     if !switchleftb then _game_mode = 2 :  _slowdown_limit = 23 : _pausing_source = 5
@@ -624,6 +628,8 @@ __fail_handled
 
     if pfscore1 > 0 then goto __return_to_the_title_screen_handled
 
+    if _game_over_signal = 255 then _game_over_signal = 40 
+
     if joy0fire || switchreset then _return_to_the_title_screen = 1
 
     if _return_to_the_title_screen = 0 then goto __return_to_the_title_screen_handled
@@ -631,6 +637,17 @@ __fail_handled
     if !joy0fire && !switchreset then _return_to_the_title_screen = 0 : _title_screen_note = 0 : _game_mode = 0
 
 __return_to_the_title_screen_handled
+
+    if _game_over_signal = 0 || _game_over_signal = 255 then goto __game_over_signal_handled
+
+    if _game_over_signal = 40 || _game_over_signal = 30 then _sound_duration = 5 : AUDF0 = 5
+    if _game_over_signal = 20 || _game_over_signal = 10 then _sound_duration = 5 : AUDF0 = 5
+
+    _game_over_signal = _game_over_signal - 1
+
+    goto __inner_loop_end
+
+__game_over_signal_handled
 
     if joy0right && _berta_position = 0 then _berta_position = 1
     if joy0right && _berta_position = 2 then _berta_position = 3
@@ -715,7 +732,7 @@ __high_score_advanced_update
 
 __high_score_advanced_checked
 
-    if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + 5
+    if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if _sc2 < 3 && !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + 5
 
     if _slowdown_limit < 12 then _slowdown_limit = 12
 
