@@ -418,3 +418,11 @@ Pobawiłem się trochę Leonardo AI. Wypróbowałem funkcję generowania obrazu 
 # 2024-05-02 - Dzień #063
 
 Próbowałem zmienić "animację" straconego motylka, ale na koniec wycofałem wszystkie zmiany :) Jestem zbyt przyzwyczajony do oryginalnej.
+
+# 2024-05-03 - Dzień #064
+
+Dziś w Polsce mamy święto, także robię sobie dzień wolny.
+
+# 2024-05-04 - Dzień #065
+
+Zaimplementowałem sygnał dźwiękowy na koniec gry. Miejsca w ROMie starczyło mi na cztery dźwięki - na pięć już nie.

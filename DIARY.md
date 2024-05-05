@@ -417,3 +417,11 @@ I played with Leonardo AI a little bit. I tried its "guided image" function, to 
 # 2024-05-02 - Day #063
 
 I tried to change the lost butterfly "animation", but I reverted all changes eventually :) I'm too used to the original one.
+
+# 2024-05-03 - Day #064
+
+Today we have a holiday in Poland, so I'm taking a day off.
+
+# 2024-05-04 - Day #065
+
+I implemented a sound signal at the end of the game. I had enought ROM space to play four notes. Five is too much.
