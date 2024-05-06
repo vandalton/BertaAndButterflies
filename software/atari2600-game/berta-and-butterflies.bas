@@ -4,7 +4,7 @@
     rem set tv pal
     const font=retroputer
 
-    /* pal colors */
+    /* PAL consts */
     /* const _blue=$B8
     const _blue_gray=$DC
     const _red=$64
@@ -13,9 +13,18 @@
     const _light_yellow=$2E
     const _brown=$42
     const _green=$58
-    const _gray=$0C */
+    const _gray=$0C 
 
-    /* ntsc colors */
+    const _title_screen_slowdown = 17 
+    const _game_slowdown = 33
+    const _slowdown_limit_advanced = 22
+    const _slowdown_limit_beginner = 19
+    const _minimum_slowdown = 10
+    const _long_note = 18
+    const _short_note = 9 */   
+    /* end of PAL consts */
+
+    /* NTSC consts */
     const _blue=$98
     const _blue_gray=$8C
     const _red=$44
@@ -25,6 +34,15 @@
     const _brown=$22
     const _green=$C8
     const _gray=$0C
+
+    const _title_screen_slowdown = 20
+    const _game_slowdown = 40
+    const _slowdown_limit_advanced = 26
+    const _slowdown_limit_beginner = 23
+    const _minimum_slowdown = 12
+    const _long_note = 21
+    const _short_note = 10
+    /* end of NTSC consts */
 
     const pfscore=1
 
@@ -526,7 +544,7 @@ end
     %00011000
 end */
 
-    if _slowdown <> 20 && _slowdown <> 0 then goto __title_screen_music_handled
+    if _slowdown <> _title_screen_slowdown && _slowdown <> 0 then goto __title_screen_music_handled
     if _sound_duration <> 0 then goto __title_screen_music_handled
 
     AUDF0 = __title_music_notes[_title_screen_note]
@@ -537,7 +555,7 @@ end */
 
 __title_screen_music_handled
 
-    _slowdown_limit = 40
+    _slowdown_limit = _game_slowdown
 
     /* display high score for beginner or advanced mode */
     if switchleftb then _sc1 = _high_sc1_beginner : _sc2 = _high_sc2_beginner : _sc3 = _high_sc3_beginner
@@ -564,8 +582,8 @@ __title_screen_counter_handled
     _prev_berta_position = 5
     _game_over_signal = 255
     
-    if switchleftb then _game_mode = 1 : _slowdown_limit = 26 : _pausing_source = (rand & 3)
-    if !switchleftb then _game_mode = 2 :  _slowdown_limit = 23 : _pausing_source = 5
+    if switchleftb then _game_mode = 1 : _slowdown_limit = _slowdown_limit_advanced : _pausing_source = (rand & 3)
+    if !switchleftb then _game_mode = 2 :  _slowdown_limit = _slowdown_limit_beginner : _pausing_source = 5
 
     goto __inner_loop_end
 
@@ -732,9 +750,9 @@ __high_score_advanced_update
 
 __high_score_advanced_checked
 
-    if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if _sc2 < 3 && !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + 5
+    if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if _sc2 <= 9 && !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + 5
 
-    if _slowdown_limit < 12 then _slowdown_limit = 12
+    if _slowdown_limit < _minimum_slowdown then _slowdown_limit = _minimum_slowdown
 
     _max_butterflies = 1
 
@@ -841,5 +859,8 @@ end
 end
 
     data __title_music_lengths
-    21, 21, 21, 21, 10, 10, 10, 10, 21, 21, 21, 21, 21, 21, 10, 10, 10, 10, 21, 21
+    _long_note, _long_note, _long_note, _long_note, 
+    _short_note, _short_note, _short_note, _short_note, _long_note, _long_note, 
+    _long_note, _long_note, _long_note, _long_note, 
+    _short_note, _short_note, _short_note, _short_note, _long_note, _long_note
 end
