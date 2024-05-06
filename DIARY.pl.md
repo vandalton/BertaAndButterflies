@@ -426,3 +426,11 @@ Dziś w Polsce mamy święto, także robię sobie dzień wolny.
 # 2024-05-04 - Dzień #065
 
 Zaimplementowałem sygnał dźwiękowy na koniec gry. Miejsca w ROMie starczyło mi na cztery dźwięki - na pięć już nie.
+
+# 2024-05-05 - Dzień #066
+
+Zrobiłem Bercie sesję fotograficzną. Zdjęcia mają być bazą do rysunku na okładkę kartridża.
+
+|||
+|-|-|
+|![Photo session 1](./static/berta_photo_session_1.jpg)|![Photo session 2](./static/berta_photo_session_2.jpg)|

@@ -425,3 +425,11 @@ Today we have a holiday in Poland, so I'm taking a day off.
 # 2024-05-04 - Day #065
 
 I implemented a sound signal at the end of the game. I had enought ROM space to play four notes. Five is too much.
+
+# 2024-05-05 - Day #066
+
+I made a photo session of Berta. I'm going to use these photos as a base for a drawing for cartridge cover.
+
+|||
+|-|-|
+|![Photo session 1](./static/berta_photo_session_1.jpg)|![Photo session 2](./static/berta_photo_session_2.jpg)|
