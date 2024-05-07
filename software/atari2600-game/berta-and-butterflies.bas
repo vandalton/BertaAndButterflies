@@ -21,7 +21,10 @@
     const _slowdown_limit_beginner = 19
     const _minimum_slowdown = 10
     const _long_note = 18
-    const _short_note = 9 */   
+    const _short_note = 9
+    const _fail_animation_threshold_1 = 50
+    const _fail_animation_threshold_2 = 75
+    const _fail_animation_threshold_3 = 100 */   
     /* end of PAL consts */
 
     /* NTSC consts */
@@ -42,6 +45,9 @@
     const _minimum_slowdown = 12
     const _long_note = 21
     const _short_note = 10
+    const _fail_animation_threshold_1 = 60
+    const _fail_animation_threshold_2 = 90
+    const _fail_animation_threshold_3 = 120
     /* end of NTSC consts */
 
     const pfscore=1
@@ -618,11 +624,11 @@ end
 
     if _fail_left = 0 then goto __fail_left_handled
 
-    if _fail_left = 90 || _fail_left = 60 then _sound_duration = 3 : AUDF0 = 30
+    if _fail_left = _fail_animation_threshold_2 || _fail_left = _fail_animation_threshold_1 then _sound_duration = 3 : AUDF0 = 30
 
-    if _fail_left <= 60 then pfpixel 4 0 on
-    if _fail_left > 60 && _fail_left <= 90 then pfpixel 6 1 on
-    if _fail_left > 90 && _fail_left <= 120 then pfpixel 7 2 on : pfpixel 8 1 on
+    if _fail_left <= _fail_animation_threshold_1 then pfpixel 4 0 on
+    if _fail_left > _fail_animation_threshold_1 && _fail_left <= _fail_animation_threshold_2 then pfpixel 6 1 on
+    if _fail_left > _fail_animation_threshold_2 && _fail_left <= _fail_animation_threshold_3 then pfpixel 7 2 on : pfpixel 8 1 on
 
     _fail_left = _fail_left - 1
 
@@ -630,11 +636,11 @@ __fail_left_handled
 
     if _fail_right = 0 then goto __fail_right_handled
 
-    if _fail_right = 90 || _fail_right = 60 then _sound_duration = 3 : AUDF0 = 30
+    if _fail_right = _fail_animation_threshold_2 || _fail_right = _fail_animation_threshold_1 then _sound_duration = 3 : AUDF0 = 30
 
-    if _fail_right <= 60 then pfpixel 25 0 on
-    if _fail_right > 60 && _fail_right <= 90 then pfpixel 23 1 on
-    if _fail_right > 90 && _fail_right <= 120 then pfpixel 22 2 on : pfpixel 21 1 on
+    if _fail_right <= _fail_animation_threshold_1 then pfpixel 25 0 on
+    if _fail_right > _fail_animation_threshold_1 && _fail_right <= _fail_animation_threshold_2 then pfpixel 23 1 on
+    if _fail_right > _fail_animation_threshold_2 && _fail_right <= _fail_animation_threshold_3 then pfpixel 22 2 on : pfpixel 21 1 on
 
     _fail_right = _fail_right - 1
 
@@ -804,8 +810,8 @@ __release_butterflies
 
     if _game_mode = 1 then _pausing_source = (rand & 3)
 
-    if _butterfly_source = 0 || _butterfly_source = 2 then _fail_left = 120
-    if _butterfly_source = 1 || _butterfly_source = 3 then _fail_right = 120
+    if _butterfly_source = 0 || _butterfly_source = 2 then _fail_left = _fail_animation_threshold_3
+    if _butterfly_source = 1 || _butterfly_source = 3 then _fail_right = _fail_animation_threshold_3
 
     if pfscore1 = 1 then pfscore1 = 0 /* game over */
     if pfscore1 = 5 then pfscore1 = 1
