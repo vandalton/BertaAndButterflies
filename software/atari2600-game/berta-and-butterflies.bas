@@ -24,7 +24,8 @@
     const _short_note = 9
     const _fail_animation_threshold_1 = 50
     const _fail_animation_threshold_2 = 75
-    const _fail_animation_threshold_3 = 100 */   
+    const _fail_animation_threshold_3 = 100
+    const _slowdown_each_100 = 7 */   
     /* end of PAL consts */
 
     /* NTSC consts */
@@ -48,6 +49,7 @@
     const _fail_animation_threshold_1 = 60
     const _fail_animation_threshold_2 = 90
     const _fail_animation_threshold_3 = 120
+    const _slowdown_each_100 = 5
     /* end of NTSC consts */
 
     const pfscore=1
@@ -756,7 +758,8 @@ __high_score_advanced_update
 
 __high_score_advanced_checked
 
-    if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if _sc2 <= 9 && !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + 5
+
+    if !(_sc3 & $0F) then _slowdown_limit = _slowdown_limit - 1 : if _sc2 <= 9 && !(_sc3 & $F0) then _slowdown_limit = _slowdown_limit + _slowdown_each_100
 
     if _slowdown_limit < _minimum_slowdown then _slowdown_limit = _minimum_slowdown
 
