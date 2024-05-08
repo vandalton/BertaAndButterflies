@@ -433,3 +433,13 @@ I made a photo session of Berta. I'm going to use these photos as a base for a d
 |||
 |-|-|
 |![Photo session 1](./static/berta_photo_session_1.jpg)|![Photo session 2](./static/berta_photo_session_2.jpg)|
+
+# 2024-05-06 - Day #067
+
+I decided to create a proper PAL version of the game. So far I worked with NTSC version, which is more comfortable. For example, NTSC is the default in the emulators.
+
+The problem is that in NTSC we have 30 frames per second, while in PAL we have 25. So, we need to adjust timings to have the PAL version working with the same speed as NTSC. And we need to change colors, because colors' palettes are totally different between PAL and NTSC.
+
+# 2024-05-07 - Day #068
+
+I'm still adjusting PAL timings...

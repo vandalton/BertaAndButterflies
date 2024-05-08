@@ -434,3 +434,13 @@ Zrobiłem Bercie sesję fotograficzną. Zdjęcia mają być bazą do rysunku na 
 |||
 |-|-|
 |![Photo session 1](./static/berta_photo_session_1.jpg)|![Photo session 2](./static/berta_photo_session_2.jpg)|
+
+# 2024-05-06 - Dzień #067
+
+Postanowiłem zrobić właściwą wersję PAL gry. Do tej pory pracowałem z wersją NTSC, co jest wygodniejsze. Dla przykładu, NTSC jest domyślna w emulatorach.
+
+Problem polega na tym, że w NTSC mamy 30 klatek na sekundę, a w PAL 25. Należy dostosować czasy różnych wydarzeń, aby wersja PAL działała z taką samą prędkością, jak NTSC. Należy też zmienić kolory, bo palety kolorów są zupełnie inne w PAL i NTSC.
+
+# 2024-05-07 - Dzień #068
+
+Wciąż dostosowuję timingi wersji PAL...
