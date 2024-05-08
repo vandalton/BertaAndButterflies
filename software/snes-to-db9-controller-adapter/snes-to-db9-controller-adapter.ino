@@ -5,7 +5,7 @@
 // 1 - up, 2 - down, 3 - left, 4 - right, 5 - NC 6 - fire
 // 7 - 5V (HIGH), 8 - GND (LOW), 9 - NC
 
-#define MODE_JUMPER 16
+#define MODE_JUMPER 6
 
 #define OUT_UP 8
 #define OUT_DOWN 9
