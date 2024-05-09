@@ -444,3 +444,13 @@ Problem polega na tym, że w NTSC mamy 30 klatek na sekundę, a w PAL 25. Należ
 # 2024-05-07 - Dzień #068
 
 Wciąż dostosowuję timingi wersji PAL...
+
+# 2024-05-08 - Dzień #069
+
+Wersja PAL ukończona! Poza samym tempem muzyczki tytułowej, wylatywania motyli itp. musiałem dostosować także poziom trudności.
+
+# 2024-05-09 - Dzień #070
+
+Berta trafiła na AtariOnline! [Dalton robi grę na A2600](https://atarionline.pl/v01/index.php?subaction=showfull&id=1715228764&archive=&start_from=0&ucat=1&ct=nowinki)
+
+Zrobiłem też nowy release [v0.80.rc1](https://github.com/vandalton/BertaAndButterflies/releases/tag/v0.80.rc1). Gra jest właściwie skończona i nawet, gdybym chciał, nic już więcej nie zmieszczę - zostało 14 bajtów ROMu :)

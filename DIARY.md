@@ -443,3 +443,13 @@ The problem is that in NTSC we have 30 frames per second, while in PAL we have 2
 # 2024-05-07 - Day #068
 
 I'm still adjusting PAL timings...
+
+# 2024-05-08 - Day #069
+
+PAL version is finished! Besides title music and butterflies speed, I needed to adjust also difficulty leve.
+
+# 2024-05-09 - Dzień #070
+
+Berta appeared on AtariOnline! [Dalton makes a game for A2600](https://atarionline.pl/v01/index.php?subaction=showfull&id=1715228764&archive=&start_from=0&ucat=1&ct=nowinki)
+
+I made a new release [v0.80.rc1](https://github.com/vandalton/BertaAndButterflies/releases/tag/v0.80.rc1). The game is actually completed. Even if I wanted to add something, I won't fit it - I have only 14 ROM bytes left :)
