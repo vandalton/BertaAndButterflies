@@ -453,3 +453,11 @@ PAL version is finished! Besides title music and butterflies speed, I needed to 
 Berta appeared on AtariOnline! [Dalton makes a game for A2600](https://atarionline.pl/v01/index.php?subaction=showfull&id=1715228764&archive=&start_from=0&ucat=1&ct=nowinki)
 
 I made a new release [v0.80.rc1](https://github.com/vandalton/BertaAndButterflies/releases/tag/v0.80.rc1). The game is actually completed. Even if I wanted to add something, I won't fit it - I have only 14 ROM bytes left :)
+
+# 2024-05-10 - Dzień #071
+
+Yesterday's article on AtariOnline inspired Santyago to create these beautiful images using AI:
+
+||||
+|-|-|-|
+|![Santyago 1](./static/santyago_berta1.png)|![Santyago 2](./static/santyago_berta2.png)|![Santyago 3](./static/santyago_berta3.png)|

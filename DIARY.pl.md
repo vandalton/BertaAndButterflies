@@ -454,3 +454,11 @@ Wersja PAL ukończona! Poza samym tempem muzyczki tytułowej, wylatywania motyli
 Berta trafiła na AtariOnline! [Dalton robi grę na A2600](https://atarionline.pl/v01/index.php?subaction=showfull&id=1715228764&archive=&start_from=0&ucat=1&ct=nowinki)
 
 Zrobiłem też nowy release [v0.80.rc1](https://github.com/vandalton/BertaAndButterflies/releases/tag/v0.80.rc1). Gra jest właściwie skończona i nawet, gdybym chciał, nic już więcej nie zmieszczę - zostało 14 bajtów ROMu :)
+
+# 2024-05-10 - Dzień #071
+
+Wczorajszy artykuł na AtariOnline zainspirował użytkownika Santyago do stworzenia za pomocą AI takich ładnych obrazków:
+
+||||
+|-|-|-|
+|![Santyago 1](./static/santyago_berta1.png)|![Santyago 2](./static/santyago_berta2.png)|![Santyago 3](./static/santyago_berta3.png)|
