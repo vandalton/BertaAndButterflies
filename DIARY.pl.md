@@ -462,3 +462,9 @@ Wczorajszy artykuł na AtariOnline zainspirował użytkownika Santyago do stworz
 ||||
 |-|-|-|
 |![Santyago 1](./static/santyago_berta1.png)|![Santyago 2](./static/santyago_berta2.png)|![Santyago 3](./static/santyago_berta3.png)|
+
+# 2024-05-11 - Dzień #072
+
+Wciąż próbuję wykonać rysunek Berty. Oto jeden, bazujący na zdjęciu:
+
+![Berta bazowana na zdjęciu](./static/berta_based_on_photo.png)
