@@ -1,3 +1,5 @@
+#include <EEPROM.h>
+
 // Atari joystick pinout - seen from the front
 // \1 2 3 4 5/
 //  \6 7 8 9/
@@ -32,6 +34,10 @@
 #define SNES_BUTTON_L 1024
 #define SNES_BUTTON_R 2048
 
+byte mode = 0;
+byte selectAndStartCurrent = 0;
+byte selectAndStartPrev = 0;
+
 void setup()
 {
     pinMode(MODE_JUMPER, INPUT_PULLUP);
@@ -47,14 +53,15 @@ void setup()
     pinMode(SNES_PAD_CLOCK, OUTPUT);
     pinMode(SNES_PAD_LATCH, OUTPUT);
     pinMode(SNES_PAD_DATA, INPUT);
+
+    mode = EEPROM.read(0) % 3;
 }
 
 void loop()
 {
-    int mode = digitalRead(MODE_JUMPER);
     int state = getButtonsState();
 
-    if (mode == HIGH)
+    if (mode == 0)
     {
       digitalWrite(OUT_FIRE, state & SNES_BUTTON_Y ? LOW : HIGH);
       digitalWrite(OUT_UP, state & (SNES_BUTTON_UP | SNES_BUTTON_X) ? LOW : HIGH);
@@ -62,13 +69,28 @@ void loop()
       digitalWrite(OUT_LEFT, state & (SNES_BUTTON_UP | SNES_BUTTON_DOWN) ? LOW : HIGH);
       digitalWrite(OUT_RIGHT, state & (SNES_BUTTON_X | SNES_BUTTON_B) ? LOW : HIGH);
     } 
-    else {
+    else if (mode == 1) {
       digitalWrite(OUT_FIRE, state & SNES_BUTTON_Y ? LOW : HIGH);
       digitalWrite(OUT_UP, state & (SNES_BUTTON_UP | SNES_BUTTON_B) ? LOW : HIGH);
+    }
+    else if (mode == 2) {
+      digitalWrite(OUT_FIRE, state & SNES_BUTTON_B ? LOW : HIGH);
+      digitalWrite(OUT_UP, state & (SNES_BUTTON_UP | SNES_BUTTON_Y) ? LOW : HIGH);
+    }
+
+    if (mode == 1 || mode == 2) {
       digitalWrite(OUT_DOWN, state & SNES_BUTTON_DOWN ? LOW : HIGH);
       digitalWrite(OUT_LEFT, state & SNES_BUTTON_LEFT ? LOW : HIGH);
       digitalWrite(OUT_RIGHT, state & SNES_BUTTON_RIGHT ? LOW : HIGH);
     }
+
+    selectAndStartCurrent = state & (SNES_BUTTON_START | SNES_BUTTON_SELECT);
+
+    if (selectAndStartCurrent && !selectAndStartPrev) {
+      mode = (mode + 1) % 3;
+      EEPROM.write(0, mode);
+    }
+    selectAndStartPrev = selectAndStartCurrent;
 
     delay(1);
 }
