@@ -468,3 +468,7 @@ Wczorajszy artykuł na AtariOnline zainspirował użytkownika Santyago do stworz
 Wciąż próbuję wykonać rysunek Berty. Oto jeden, bazujący na zdjęciu:
 
 ![Berta bazowana na zdjęciu](./static/berta_based_on_photo.png)
+
+# 2024-05-12 - Dzień #073
+
+Wyeliminowałem użycie zworki w adapterze kontrolera od SNESa. Tryb działania zmienia się teraz wciskając jednocześnie Start i Select. Wybrany tryb jest przechowywany w EPROMie Atmegi.

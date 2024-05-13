@@ -462,8 +462,12 @@ Yesterday's article on AtariOnline inspired Santyago to create these beautiful i
 |-|-|-|
 |![Santyago 1](./static/santyago_berta1.png)|![Santyago 2](./static/santyago_berta2.png)|![Santyago 3](./static/santyago_berta3.png)|
 
-# 2024-05-11 - Dzień #072
+# 2024-05-11 - Day #072
 
 I still try to make Berta drawing. Here is one based on a photo:
 
 ![Berta based on photo](./static/berta_based_on_photo.png)
+
+# 2024-05-12 - Day #073
+
+I eliminated the jumper usage in the SNES controller adapter. Now you can change its mode by pressing Start and Select together. Selected mode is stored in the Atmega EPROM.
