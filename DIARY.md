@@ -471,3 +471,13 @@ I still try to make Berta drawing. Here is one based on a photo:
 # 2024-05-12 - Day #073
 
 I eliminated the jumper usage in the SNES controller adapter. Now you can change its mode by pressing Start and Select together. Selected mode is stored in the Atmega EPROM.
+
+# 2024-05-13 - Day #074
+
+I still try to make a Berta drawing that will be good enought to use it as a cartridge cover. I experiment with Leonardo AI to make an image based on my image. Here are some results:
+
+|||
+|-|-|
+|![Leonardo 1](./static/berta_ai_redone_1.jpg)|![Leonardo 2](./static/berta_ai_redone_2.jpg)|
+|![Leonardo 1](./static/berta_ai_redone_3.jpg)|![Leonardo 2](./static/berta_ai_redone_4.jpg)|
+|![Leonardo 1](./static/berta_ai_redone_5.jpg)|![Leonardo 2](./static/berta_ai_redone_6.jpg)|

@@ -472,3 +472,13 @@ Wciąż próbuję wykonać rysunek Berty. Oto jeden, bazujący na zdjęciu:
 # 2024-05-12 - Dzień #073
 
 Wyeliminowałem użycie zworki w adapterze kontrolera od SNESa. Tryb działania zmienia się teraz wciskając jednocześnie Start i Select. Wybrany tryb jest przechowywany w EPROMie Atmegi.
+
+# 2024-05-13 - Dzień #074
+
+Wciąż próbuję zrobić rysunek Berty, który byłby na tyle dobry, abym go użył na okładkę kartridża. Eksperymentuję z Leonardo AI, aby wykonać obrazek na bazie mojego obrazka. Oto kilka rezultatów.
+
+|||
+|-|-|
+|![Leonardo 1](./static/berta_ai_redone_1.jpg)|![Leonardo 2](./static/berta_ai_redone_2.jpg)|
+|![Leonardo 1](./static/berta_ai_redone_3.jpg)|![Leonardo 2](./static/berta_ai_redone_4.jpg)|
+|![Leonardo 1](./static/berta_ai_redone_5.jpg)|![Leonardo 2](./static/berta_ai_redone_6.jpg)|
