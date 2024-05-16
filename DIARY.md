@@ -481,3 +481,12 @@ I still try to make a Berta drawing that will be good enought to use it as a car
 |![Leonardo 1](./static/berta_ai_redone_1.jpg)|![Leonardo 2](./static/berta_ai_redone_2.jpg)|
 |![Leonardo 1](./static/berta_ai_redone_3.jpg)|![Leonardo 2](./static/berta_ai_redone_4.jpg)|
 |![Leonardo 1](./static/berta_ai_redone_5.jpg)|![Leonardo 2](./static/berta_ai_redone_6.jpg)|
+
+# 2024-05-14 - Day #075
+
+I asked my friend Xed, who has premium account in Leonardo AI, to experiment with Berta picture using different tools (like "Content Reference"). Here are some of his results:
+
+|||
+|-|-|
+|![Xed 1](./static/berta_xed_1.jpg)|![Xed 2](./static/berta_xed_2.jpeg)|
+|![Xed 1](./static/berta_xed_3.jpeg)|![Xed 2](./static/berta_xed_4.jpeg)|
