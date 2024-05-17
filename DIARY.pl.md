@@ -483,7 +483,7 @@ Wciąż próbuję zrobić rysunek Berty, który byłby na tyle dobry, abym go u�
 |![Leonardo 1](./static/berta_ai_redone_3.jpg)|![Leonardo 2](./static/berta_ai_redone_4.jpg)|
 |![Leonardo 1](./static/berta_ai_redone_5.jpg)|![Leonardo 2](./static/berta_ai_redone_6.jpg)|
 
-# 2024-05-14 - Day #075
+# 2024-05-14 - Dzień #075
 
 Poprosiłem kolegę Xeda, który ma konto premium w Leonardo AI, aby poeksperymentował z obrazkiem Berty używając innych narzędzi (na przykład "Content Reference"). Oto kilka jego wyników:
 
@@ -491,3 +491,11 @@ Poprosiłem kolegę Xeda, który ma konto premium w Leonardo AI, aby poeksperyme
 |-|-|
 |![Xed 1](./static/berta_xed_1.jpg)|![Xed 2](./static/berta_xed_2.jpeg)|
 |![Xed 1](./static/berta_xed_3.jpeg)|![Xed 2](./static/berta_xed_4.jpeg)|
+
+# 2024-05-15 - Dzień #076
+
+Sporo ludzi grało w Bertę! Wśród nich był Milan Galcik i X_angel, który przysłał mi to zdjęcie:
+
+![X_angel score](./static/xangel_tests.jpg)
+
+Na razie nikt nie miał problemów, nie dostałem żadnego zgłoszenia buga. Myślę, że wkrótce wydam wersję finalną!

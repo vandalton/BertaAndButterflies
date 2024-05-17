@@ -490,3 +490,11 @@ I asked my friend Xed, who has premium account in Leonardo AI, to experiment wit
 |-|-|
 |![Xed 1](./static/berta_xed_1.jpg)|![Xed 2](./static/berta_xed_2.jpeg)|
 |![Xed 1](./static/berta_xed_3.jpeg)|![Xed 2](./static/berta_xed_4.jpeg)|
+
+# 2024-05-15 - Day #076
+
+Quite a lot people played Berta! Among them were Milan Galcik and X_angel, who sent me this photo:
+
+![X_angel score](./static/xangel_tests.jpg)
+
+So far nobody had any issues, I received no bug reports. I think I'll release the final version soon!
