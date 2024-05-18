@@ -498,3 +498,11 @@ Quite a lot people played Berta! Among them were Milan Galcik and X_angel, who s
 ![X_angel score](./static/xangel_tests.jpg)
 
 So far nobody had any issues, I received no bug reports. I think I'll release the final version soon!
+
+# 2024-05-16 - Day #077
+
+There is a device called [SaveKey](https://atariage.com/store/index.php?l=product_detail&p=1194) for Atari 2600. You can plug it to the second's player joystick port and some games (about 40) will store high-scores on it. 
+
+Although I have no spare space in ROM, I wanted to play with the SaveKey. It's a very simple device and you can find its schematic online, so I've design my own PCB like month ago and today it arrived!
+
+![SaveKey](./static/savekey.jpg)

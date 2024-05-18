@@ -499,3 +499,11 @@ Sporo ludzi grało w Bertę! Wśród nich był Milan Galcik i X_angel, który pr
 ![X_angel score](./static/xangel_tests.jpg)
 
 Na razie nikt nie miał problemów, nie dostałem żadnego zgłoszenia buga. Myślę, że wkrótce wydam wersję finalną!
+
+# 2024-05-16 - Dzień #077
+
+Istnieje urządzenie o nazwie [SaveKey](https://atariage.com/store/index.php?l=product_detail&p=1194) dla Atari 2600. Podłącza się je do portu joysticka gracza drugiego i niektóre gry (około 40) są w stanie zapisać na tym najlepsze wyniki.
+
+Co prawda nie mam już wolnego miejsca w ROMie, chciałem się pobawić SaveKeyem. Jest to bardzo proste urządzenie i można znaleźć jego schemat w Internecie. Zaprojektowałem własną płytkę drukowaną jakiś miesiąc temu i dziś dotarła!
+
+![SaveKey](./static/savekey.jpg)
