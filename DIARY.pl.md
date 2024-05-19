@@ -507,3 +507,11 @@ Istnieje urządzenie o nazwie [SaveKey](https://atariage.com/store/index.php?l=p
 Co prawda nie mam już wolnego miejsca w ROMie, chciałem się pobawić SaveKeyem. Jest to bardzo proste urządzenie i można znaleźć jego schemat w Internecie. Zaprojektowałem własną płytkę drukowaną jakiś miesiąc temu i dziś dotarła!
 
 ![SaveKey](./static/savekey.jpg)
+
+# 2024-05-17 - Dzień #078
+
+Zbudowałem SaveKeya:
+
+![SaveKey zbudowany](./static/savekey_soldered.jpeg)
+
+i przetestowałem go na grze ["Fall Down"](https://atariage.com/store/index.php?l=product_detail&p=308). Zadziałał poprawnie!

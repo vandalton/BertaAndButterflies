@@ -506,3 +506,11 @@ There is a device called [SaveKey](https://atariage.com/store/index.php?l=produc
 Although I have no spare space in ROM, I wanted to play with the SaveKey. It's a very simple device and you can find its schematic online, so I've design my own PCB like month ago and today it arrived!
 
 ![SaveKey](./static/savekey.jpg)
+
+# 2024-05-17 - Day #078
+
+I built SaveKey:
+
+![SaveKey zbudowany](./static/savekey_soldered.jpeg)
+
+and I tested it with the ["Fall Down"](https://atariage.com/store/index.php?l=product_detail&p=308) game. It works fine!
