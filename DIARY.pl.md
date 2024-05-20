@@ -515,3 +515,7 @@ Zbudowałem SaveKeya:
 ![SaveKey zbudowany](./static/savekey_soldered.jpeg)
 
 i przetestowałem go na grze ["Fall Down"](https://atariage.com/store/index.php?l=product_detail&p=308). Zadziałał poprawnie!
+
+# 2024-05-18 - Dzień #079
+
+Dziś z żoną wybraliśmy się na jubileuszowe spotkanie toruńskiego [Java User Group](https://day.torun.jug.pl/). Spotkałem kilku znajomych ze studiów i niektórzy pytali o Bertę! Było to bardzo miłe :)
