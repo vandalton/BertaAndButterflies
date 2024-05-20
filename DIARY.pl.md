@@ -519,3 +519,9 @@ i przetestowałem go na grze ["Fall Down"](https://atariage.com/store/index.php?
 # 2024-05-18 - Dzień #079
 
 Dziś z żoną wybraliśmy się na jubileuszowe spotkanie toruńskiego [Java User Group](https://day.torun.jug.pl/). Spotkałem kilku znajomych ze studiów i niektórzy pytali o Bertę! Było to bardzo miłe :)
+
+# 2024-05-19 - Dzień #080
+
+Poeksperymentowałem z SaveKeyem. Nie ma problemu z implementacją wsparcia dla niego, ale wyszedłbym poza 4KB... Nie widzę możliwości optymalizacji mojego kodu, a zapisywanie najwyższych wyników nie jest dla mnie niezbędne, więc ostatecznie zdecydowałem, że nie będę wspierał SaveKeya.
+
+Jednakże, mam kolejny pomysł. EPROM w SaveKeyu używa protokołu I2C. Tego samego protokołu używają układy RTC. Mógłbym wyświetlać aktualną godzinę na planszy tytułowej - nazwa "Game & Watch" zobowiązuje ;) Do implementacji tego pomysłu potrzebowałbym zaprojektować kolejną płytkę drukowaną, no i oczywiście to także wymagałoby więcej niż 4KB ROMu. Poeksperymentuję z tym pomysłem, jednak to też nie jest niezbędna funkcjonalność. Może kiedyś wydam 8-kilobajtową wersję deluxe ;)

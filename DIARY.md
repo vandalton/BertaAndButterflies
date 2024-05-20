@@ -518,3 +518,9 @@ and I tested it with the ["Fall Down"](https://atariage.com/store/index.php?l=pr
 # 2024-05-18 - Day #079
 
 Today me and my wife attended jubilee meeting of Toruń [Java User Group](https://day.torun.jug.pl/). I meet a few friends from studies and some of them asked about Berta! It was very nice :)
+
+# 2024-05-19 - Day #080
+
+I experimented with SaveKey. There is no problem to implement support for it, however, I'll go beyond 4KB then... I see no way to optimize my code and saving high scores in a persistive way is not a must-have feature for me, so finally I decided not to support it.
+
+However, I have another idea. The EPROM in the SaveKey uses I2C protocol. The same protocol is used by RTC chips. I can display current time on the title screen - the name "Game & Watch" obligues ;) To implement it I need to design another PCB, and obviously it will also take more than 4KB of ROM... I will play with this idea, however, it's also not a must-have feature. Maybe I'll release a deluxe-edition 8KB version at some point ;)
