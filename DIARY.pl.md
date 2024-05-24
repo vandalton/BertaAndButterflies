@@ -528,10 +528,14 @@ Jednakże, mam kolejny pomysł. EPROM w SaveKeyu używa protokołu I2C. Tego sam
 
 # 2024-05-20 - Dzień #081
 
-Zacząłem pracę nad właściwą etykietą na kartridż. Dokładniej mówiąc, stworzyłem svg z warstwami - jedną widzialną, a drugą z wykrojem dla maszyny tnącej.
+Zacząłem pracę nad właściwą etykietą na kartridż. Dokładniej mówiąc, stworzyłem SVG z warstwami - jedną widzialną, a drugą z wykrojem dla maszyny tnącej.
 
 # 2024-05-21 - Dzień #082
 
 Kontynuuję pracę nad etykietą. Oto wynik:
 
 ![Label](./design/cover.pl.png)
+
+# 2024-05-22 - Dzień #083
+
+Jestem zadowolony z okładki. Problem z okładką jest taki, że drukarnie oczekują warstwowych plików PDF, a nie SVG. Z kolei Inkscape, w którym tworzyłem okładkę, nie potrafi wyeksportować warstwowego pliku PDF... Walczyłem trochę próbując, ale bez rezultatu...

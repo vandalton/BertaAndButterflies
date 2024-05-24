@@ -527,10 +527,14 @@ However, I have another idea. The EPROM in the SaveKey uses I2C protocol. The sa
 
 # 2024-05-20 - Day #081
 
-I started working on a proper cartridge label design. I mean, I created svg with layers - one visible and one with patterns for cutting machine.
+I started working on a proper cartridge label design. I mean, I created SVG with layers - one visible and one with patterns for cutting machine.
 
 # 2024-05-21 - Day #082
 
 I carry on with label design. Here is my result:
 
 ![Label](./design/cover.en.png)
+
+# 2024-05-22 - Day #083
+
+I'm satisfied with the cover. The problem is the printing house work with layered PDF files, not SVG. Inkscape, which I used to create the cover, can't export PDF with layers... I struggled a little bit trying to create proper file, to no avail...
