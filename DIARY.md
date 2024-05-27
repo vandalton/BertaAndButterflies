@@ -538,3 +538,19 @@ I carry on with label design. Here is my result:
 # 2024-05-22 - Day #083
 
 I'm satisfied with the cover. The problem is the printing house work with layered PDF files, not SVG. Inkscape, which I used to create the cover, can't export PDF with layers... I struggled a little bit trying to create proper file, to no avail...
+
+# 2024-05-23 - Day #084
+
+I asked my friend Bartas, to covert SVG files to PDF files for me. He did it before, when I released Cisano's ["Invaders from Andromeda"](https://github.com/Cisano/Invaders-From-Andromeda). He used trial version of Adobe Illustrator then. But the trial version expired and he is looking for other options :)
+
+# 2024-05-24 - Day #085
+
+Bartas didn't find other way to convert SVG to PDF than Illustrator, but he's still fighting. I'll fight too.
+
+# 2024-05-25 - Day #086
+
+I started do design RTC for Atari 2600. I was little disappointed with Eagle, because I didn't find DS1307 IC in its library...
+
+# 2024-05-26 - Day #087
+
+Instead of using DS1307 I used generic DIL8 socket. I also lack battery socket, but I think I'll find it in an external component library. However, I didn't find DS1307...

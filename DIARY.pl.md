@@ -539,3 +539,19 @@ Kontynuuję pracę nad etykietą. Oto wynik:
 # 2024-05-22 - Dzień #083
 
 Jestem zadowolony z okładki. Problem z okładką jest taki, że drukarnie oczekują warstwowych plików PDF, a nie SVG. Z kolei Inkscape, w którym tworzyłem okładkę, nie potrafi wyeksportować warstwowego pliku PDF... Walczyłem trochę próbując, ale bez rezultatu...
+
+# 2024-05-23 - Dzień #084
+
+Poprosiłem znajomego, Bartasa, aby przekonwertował mi pliki SVG na PDF. Robił to dla mnie już wcześniej, gdy wydawałem grę ["Invaders from Andromeda"](https://github.com/Cisano/Invaders-From-Andromeda) autorstwa Cisano. Wówczas użył wersji trial programu Adobe Illustrator. Trial jednak wygasł i szuka innych opcji :)
+
+# 2024-05-24 - Dzień #085
+
+Bartas na razie nie znalazł innej możliwości przekonwertowania SVG na PDF, niż Illustrator. Ale jeszcze powalczy. Ja też jeszcze powalczę.
+
+# 2024-05-25 - Dzień #086
+
+Zacząłem projektować zegar dla Atari 2600. Eagle mnie trochę zawiódł, bo w jego bibliotece komponentów brakowało układu DS1307, który chciałem wykorzystać...
+
+# 2024-05-26 - Dzień #087
+
+Zamiast układu DS1307 użyłem generycznej podstawki DIL8. Brakuje mi jednak gniazda na baterię, ale powinienem je znaleźć w jakiejś bibliotece komponentów. Chociaż zegara DS1307 nie znalazłem...
