@@ -554,3 +554,11 @@ I started do design RTC for Atari 2600. I was little disappointed with Eagle, be
 # 2024-05-26 - Day #087
 
 Instead of using DS1307 I used generic DIL8 socket. I also lack battery socket, but I think I'll find it in an external component library. However, I didn't find DS1307...
+
+# 2024-05-27 - Day #088
+
+I'm still trying to create PDF files with covers. I want to order the printouts as soon as possible. I heard that Scribus can create PDF files with layers. But it turned out that it cannot open my SVG files...
+
+# 2024-05-28 - Day #089
+
+Bartas found an original, box edition of Adobe Creative Suite 3 with perpetual licence and lent me it. Despite it's a version from 2007, I created proper PDF files without any problems. Tomorrow I'm going to order the printouts.

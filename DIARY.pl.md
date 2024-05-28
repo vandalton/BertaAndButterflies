@@ -555,3 +555,11 @@ Zacząłem projektować zegar dla Atari 2600. Eagle mnie trochę zawiódł, bo w
 # 2024-05-26 - Dzień #087
 
 Zamiast układu DS1307 użyłem generycznej podstawki DIL8. Brakuje mi jednak gniazda na baterię, ale powinienem je znaleźć w jakiejś bibliotece komponentów. Chociaż zegara DS1307 nie znalazłem...
+
+# 2024-05-27 - Dzień #088
+
+Wciąż usiłuję zrobić pliki PDF z okładką, gdyż chciałbym lada chwila zamówić ich wydruk. Słyszałem, że Scribus potrafi zrobić warstwowe pliki PDF. Okazało się, że nie jest w stanie prawidłowo otworzyć moich SVG...
+
+# 2024-05-28 - Dzień #089
+
+Bartas odkopał oryginalną, pudełkową wersję pakietu Adobe Creative Suite 3 z wieczystą licencją i mi pożyczył. Mimo, że to wersja z 2007 roku, bez problemu utworzyłem w niej właściwe pliki PDF. Jutro zamówię wydruki.
