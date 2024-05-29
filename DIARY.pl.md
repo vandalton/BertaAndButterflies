@@ -563,3 +563,7 @@ Wciąż usiłuję zrobić pliki PDF z okładką, gdyż chciałbym lada chwila za
 # 2024-05-28 - Dzień #089
 
 Bartas odkopał oryginalną, pudełkową wersję pakietu Adobe Creative Suite 3 z wieczystą licencją i mi pożyczył. Mimo, że to wersja z 2007 roku, bez problemu utworzyłem w niej właściwe pliki PDF. Jutro zamówię wydruki.
+
+# 2024-05-29 - Dzień #090
+
+Wydruki zamówione!

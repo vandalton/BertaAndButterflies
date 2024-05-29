@@ -562,3 +562,7 @@ I'm still trying to create PDF files with covers. I want to order the printouts 
 # 2024-05-28 - Day #089
 
 Bartas found an original, box edition of Adobe Creative Suite 3 with perpetual licence and lent me it. Despite it's a version from 2007, I created proper PDF files without any problems. Tomorrow I'm going to order the printouts.
+
+# 2024-05-29 - Day #090
+
+Printouts ordered!
