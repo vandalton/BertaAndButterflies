@@ -566,3 +566,7 @@ Bartas found an original, box edition of Adobe Creative Suite 3 with perpetual l
 # 2024-05-29 - Day #090
 
 Printouts ordered!
+
+I also made a prototype version of RTC for Atari 2600, with crystal soldered directly to the IC's legs:
+
+![RTC proto](./static/rtc_proto.jpeg)

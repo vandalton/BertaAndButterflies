@@ -567,3 +567,7 @@ Bartas odkopał oryginalną, pudełkową wersję pakietu Adobe Creative Suite 3 
 # 2024-05-29 - Dzień #090
 
 Wydruki zamówione!
+
+Wykonałem też prototyp zegara dla Atari 2600, z kwarcem przylutowanym bezpośrednio do nóżek układu scalonego:
+
+![RTC proto](./static/rtc_proto.jpeg)
