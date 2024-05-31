@@ -570,3 +570,7 @@ Printouts ordered!
 I also made a prototype version of RTC for Atari 2600, with crystal soldered directly to the IC's legs:
 
 ![RTC proto](./static/rtc_proto.jpeg)
+
+# 2024-05-30 - Day #091
+
+Today we have a holiday, so I take a day off. I can't wait for the printouts!

@@ -571,3 +571,7 @@ Wydruki zamówione!
 Wykonałem też prototyp zegara dla Atari 2600, z kwarcem przylutowanym bezpośrednio do nóżek układu scalonego:
 
 ![RTC proto](./static/rtc_proto.jpeg)
+
+# 2024-05-30 - Dzień #091
+
+Dziś mamy święto, więc też zrobiłem sobie wolne. Nie mogę się doczekać wykruków!
