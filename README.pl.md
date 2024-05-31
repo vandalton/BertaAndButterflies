@@ -21,7 +21,7 @@ Postać w grze zamieniłem na ulubioną maskotkę z dzieciństwa mojej żony, Al
 
 Oprócz gry, w repozytorium znajdują się dwa podprojekty:
 
-1. Projekt płytki drukowanej umożliwiającej stworzenie najprostszego kartridża z grą 4KB dla Atari 2600.. (**Berta i motyle** zajmuje właśnie 4KB)
+1. Projekt płytki drukowanej umożliwiającej stworzenie najprostszego kartridża z grą 4KB dla Atari 2600 (**Berta i motyle** zajmuje właśnie 4KB) - [szczegóły](./hardware/atari2600-simplest-cart/README.pl.md).
 2. Adapter padów od Super Nintendo, aby sterować Bertą w inny sposób, niż przy użyciu standardowego joysticka.
 
 Co prawda gra jest w trakcie rozwoju, ale jest już grywalna.
@@ -39,6 +39,8 @@ Jeśli nie posiadasz konsoli Atari, możesz użyć emulatora. Jest ich wiele do 
 1. [Javatari](https://javatari.org/) - emulator działający w przeglądarce.
 2. [Stella](https://stella-emu.github.io/) - prawdopodobnie najbardziej znany emulator Atari 2600. Istnieją jego wersje pod Windowsa, MacOSa i Linuksa.
 3. [Gopher2600](https://github.com/JetSetIlly/Gopher2600) - emulator napisany w Go.
+
+Wystarczy, że ściągniesz najświeższą wersję ROMu ze strony [releases](https://github.com/vandalton/BertaAndButterflies/releases) i załadujesz go w emulatorze.
 
 Możesz także użyć urządzenia typu konsolka Anbernic z wbudowanym emulatorem Atari 2600 (wewnętrznie używa emulatora Stella):
 

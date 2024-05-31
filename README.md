@@ -21,7 +21,7 @@ I replaced the character with my wife's Alice favorite stuffed toy from childhoo
 
 Besides the game, there are also two sub-projects within this repository:
 
-1. A printed circut board design to create the simplest cartridge for any 4KB Atari 2600 game. (**Berta And Butterflies** is also 4KB game)
+1. A printed circut board design to create the simplest cartridge for any 4KB Atari 2600 game (**Berta And Butterflies** is also 4KB game) - [more details](./hardware/atari2600-simplest-cart/README.md).
 1. Super Nintendo controller adapter, to control Berta in a different way than with a standard joystick.
 
 Although the game is still in development, it's already playable.
@@ -39,6 +39,8 @@ If you don't have Atari console, you can use emulator. There is plenty of Atari 
 1. [Javatari](https://javatari.org/) - an emulator that works in browser.
 2. [Stella](https://stella-emu.github.io/) - probably the most well-known Atari 2600 emulator. There are versions for Windows, MacOS and Linux.
 3. [Gopher2600](https://github.com/JetSetIlly/Gopher2600) - an emulator written in Go.
+
+Just download the most recent ROM from [releases](https://github.com/vandalton/BertaAndButterflies/releases) page and load it in the emulator.
 
 You can also use a device like Anbernic handheld with built-in Atari 2600 emulator (it uses Stella emulator internally):
 
