@@ -575,3 +575,7 @@ Wykonałem też prototyp zegara dla Atari 2600, z kwarcem przylutowanym bezpośr
 # 2024-05-30 - Dzień #091
 
 Dziś mamy święto, więc też zrobiłem sobie wolne. Nie mogę się doczekać wykruków!
+
+# 2024-05-31 - Dzień #092
+
+Analizowałem protokół I2C i myślałem, w jaki sposób zmodyfikować metody do komunikacji z SaveKeyem, aby komunikowały się z układem zegara. Problem w tym, że jeśli coś zaimplementuję, muszę to wgrać na EPROM i uruchomić na prawdziwej konsoli. Jeśli nie zadziała właściwie, muszę ponowić cały proces, a jest to bardzo czasochłonne. Dlatego przygotowuję się solidnie, aby takich iteracji nie było zbyt wiele.
