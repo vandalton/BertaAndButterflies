@@ -2,27 +2,20 @@
 ; i2c.inc
 ;
 ;
-; AtariVox EEPROM Driver
+; AtariVox DS1307 driver
+; 
+; Based on 24LC256 EPROM driver by Alex Herbert, 2004
+; Modified by Dalton, 2024
 ;
-; By Alex Herbert, 2004
-;
 
+; Debug Constants
 
-
-
-; Debug Constantss
-
-I2C_DEBUGCOLORS equ     0       ; set no non-zero to display timing colours
-
-
+I2C_DEBUGCOLORS equ     1       ; set no non-zero to display timing colours
 
 ; I/O Constants
 
 I2C_SDA_MASK    equ     $04
 I2C_SCL_MASK    equ     $08
-
-
-
 
 ; Debug Macros
 
@@ -32,8 +25,6 @@ I2C_SCL_MASK    equ     $08
         sta     COLUBK
         endif
         endm
-
-
 
 ; Signalling Macros
 
@@ -147,7 +138,7 @@ i2c_startread
         clv                     ; use V to flag if previous byte needs ACK
 
         I2C_START               ; start signal
-        lda     #%10100001      ; eeprom read command
+        lda     #%11010001      ; rtc read command
         bvc     i2c_txbyte      ; transmit
 
 
@@ -156,7 +147,7 @@ i2c_startwrite
         I2C_DEBUGCOL    $8e
 
         I2C_START               ; start signal
-        lda     #%10100000      ; eeprom write command
+        lda     #%11010000      ; rtc write command
 
 
 
