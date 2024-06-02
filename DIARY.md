@@ -578,3 +578,7 @@ Today we have a holiday, so I take a day off. I can't wait for the printouts!
 # 2024-05-31 - Day #092
 
 I was analyzing I2C protocol and I was thinking how to change methods used to communicate with SaveKey to communicate with RTC IC instead. The problem is when I implement something, I need to put it on an EPROM and run it on a real console. If it won't work, I need to repeat whole process, which is very time consuming. That's why I'm preparing myself well. I want to limit the number of trial-and-error iterations :)
+
+# 2024-06-01 - Day #93
+
+I tried to get the seconds from DS1307 and display it as a score, to no avail. So far I used 3 EPROMs :)

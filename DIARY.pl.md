@@ -579,3 +579,7 @@ Dziś mamy święto, więc też zrobiłem sobie wolne. Nie mogę się doczekać 
 # 2024-05-31 - Dzień #092
 
 Analizowałem protokół I2C i myślałem, w jaki sposób zmodyfikować metody do komunikacji z SaveKeyem, aby komunikowały się z układem zegara. Problem w tym, że jeśli coś zaimplementuję, muszę to wgrać na EPROM i uruchomić na prawdziwej konsoli. Jeśli nie zadziała właściwie, muszę ponowić cały proces, a jest to bardzo czasochłonne. Dlatego przygotowuję się solidnie, aby takich iteracji nie było zbyt wiele.
+
+# 2024-06-01 - Dzień #93
+
+Próbowałem pobrać sekundy z DS1307 i wyświetlić je jako wynik, ale bez rezultatu. Na razie użyłem 3 EPROMy :)
