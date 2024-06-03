@@ -579,6 +579,10 @@ Today we have a holiday, so I take a day off. I can't wait for the printouts!
 
 I was analyzing I2C protocol and I was thinking how to change methods used to communicate with SaveKey to communicate with RTC IC instead. The problem is when I implement something, I need to put it on an EPROM and run it on a real console. If it won't work, I need to repeat whole process, which is very time consuming. That's why I'm preparing myself well. I want to limit the number of trial-and-error iterations :)
 
-# 2024-06-01 - Day #93
+# 2024-06-01 - Day #093
 
 I tried to get the seconds from DS1307 and display it as a score, to no avail. So far I used 3 EPROMs :)
+
+# 2024-06-02 - Dzień #094
+
+I read about DS1307 IC. I thought that a battery is used as a backup only, to run the clock when the main power supply is disabled. It turned out that it's necessary! Maybe the communication with the clock is implemented correctly. I'll soon solder a battery and check it.
