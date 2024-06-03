@@ -587,3 +587,10 @@ Próbowałem pobrać sekundy z DS1307 i wyświetlić je jako wynik, ale bez rezu
 # 2024-06-02 - Dzień #094
 
 Czytałem o układzie DS1307. Myślałem, że bateria jest mu potrzebna tylko jako backup, aby godzina odliczała się, gdy nie ma włączonego głównego zasilania. Okazało się, że jest niezbędna! Być może komunikacja z zegarem jest zaprogramowana właściwie. Niedługo podlutuję baterię i sprawdzę to.
+
+# 2024-06-03 - Dzień #095
+
+Zdołałem naprawić dwie z moich sowieckich konsolek! Wymieniłem gumki przewodzące, przeniosłem ekrany pomiędzy konsolkami, a oto rezultat:
+
+![Konsolki Elektronika](./static/elektronika_fixed.jpg)
+

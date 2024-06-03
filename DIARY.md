@@ -583,6 +583,12 @@ I was analyzing I2C protocol and I was thinking how to change methods used to co
 
 I tried to get the seconds from DS1307 and display it as a score, to no avail. So far I used 3 EPROMs :)
 
-# 2024-06-02 - Dzień #094
+# 2024-06-02 - Day #094
 
 I read about DS1307 IC. I thought that a battery is used as a backup only, to run the clock when the main power supply is disabled. It turned out that it's necessary! Maybe the communication with the clock is implemented correctly. I'll soon solder a battery and check it.
+
+# 2024-06-03 - Day #095
+
+I managed to fix two of my soviet consoles! I replaced conductive rubbers, moved screens between some of them, and here they are:
+
+![Elektronika consoles](./static/elektronika_fixed.jpg)

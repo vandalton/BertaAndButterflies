@@ -1,15 +1,15 @@
+# Berta And Butterflies
+
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![pl](https://img.shields.io/badge/lang-pl-green.svg)](./README.pl.md)
 
 ![Title screen](./static/title_international.png)
 
-# Berta And Butterflies
-
 **Berta And Butterflies** is a game for Atari 2600 console.
 
 It's a remake of the LCD game from the original ["Game & Watch"](https://nintendo.fandom.com/wiki/Egg) series from the '80. In Poland original Nintendo games were virtually unknown, but soviet clones made by [Elektronika](https://en.wikipedia.org/wiki/Elektronika) were very popular:
 
-![Elektronika game](./static/elektronika.jpg)
+![Elektronika game](./static/elektronika_working.jpg)
 
 I wanted to write a game for Atari 2600. I know this console is extremely limited. On the other hand, this game is very simple, but still very enjoyable and fun. It looked like a good candidate to port it to Atari.
 

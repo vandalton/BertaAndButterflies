@@ -1,15 +1,15 @@
+# Berta i motyle
+
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![pl](https://img.shields.io/badge/lang-pl-green.svg)](./README.pl.md)
 
 ![Ekran tytułowy](./static/title_polish.png)
 
-# Berta i motyle
-
 **Berta i motyle** to gra na konsolę Atari 2600.
 
 Pomysł polega na przeniesieniu gry z konsoli LCD z oryginalnej serii ["Game & Watch"](https://nintendo.fandom.com/wiki/Egg) z lat 80'. W Polsce oryginalne konsole Nintendo były właściwie nieznane, ale bardzo popularne były sowieckie klony produkcji firmy [Elektronika](https://en.wikipedia.org/wiki/Elektronika):
 
-![Elektronika game](./static/elektronika.jpg)
+![Elektronika game](./static/elektronika_working.jpg)
 
 Chciałem stworzyć grę na Atari 2600. Wiem, że ta konsola ma wybitnie ograniczone możliwości. Z kolei ta gra jest bardzo prosta, ale mimo to jest wciągająca i daje dużo frajdy. Wydała mi się dobrym kandydatem na przeportowanie na Atari.
 
