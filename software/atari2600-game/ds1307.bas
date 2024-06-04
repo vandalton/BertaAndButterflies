@@ -21,22 +21,28 @@
 end
 
 
-  COLUBK = $B8
+  COLUBK = $98
   COLUPF = $64
   COLUP1 = $0E
   scorecolor = $0E
-  a = 200
+  a = 30
 
 main
   a = a - 1
   if a > 0 then goto __a_handled
 
-  a = 200
+  a = 30
   b = ReadSecond()
-  b = b & %00001111
-  sc3 = b
+
+  sc3 = temp2
+  sc2 = temp3
+
+  temp4 = temp4 & %00011111
+  sc1 = temp4
 
 __a_handled
+
+  if joy0fire then COLUBK = $98 : sc3 = 0 : sc2 = 0 : sc1 = 0
   drawscreen
 
   goto main
