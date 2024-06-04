@@ -22,7 +22,7 @@ Postać w grze zamieniłem na ulubioną maskotkę z dzieciństwa mojej żony, Al
 Oprócz gry, w repozytorium znajdują się dwa podprojekty:
 
 1. Projekt płytki drukowanej umożliwiającej stworzenie najprostszego kartridża z grą 4KB dla Atari 2600 (**Berta i motyle** zajmuje właśnie 4KB) - [szczegóły](./hardware/atari2600-simplest-cart/README.pl.md).
-2. Adapter padów od Super Nintendo, aby sterować Bertą w inny sposób, niż przy użyciu standardowego joysticka.
+2. Adapter padów od Super Nintendo, aby sterować Bertą w inny sposób, niż przy użyciu standardowego joysticka - [szczegóły](./hardware/snes-to-db9-controller-adapter/README.pl.md).
 
 Co prawda gra jest w trakcie rozwoju, ale jest już grywalna.
 

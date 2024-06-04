@@ -22,7 +22,7 @@ I replaced the character with my wife's Alice favorite stuffed toy from childhoo
 Besides the game, there are also two sub-projects within this repository:
 
 1. A printed circut board design to create the simplest cartridge for any 4KB Atari 2600 game (**Berta And Butterflies** is also 4KB game) - [more details](./hardware/atari2600-simplest-cart/README.md).
-1. Super Nintendo controller adapter, to control Berta in a different way than with a standard joystick.
+1. Super Nintendo controller adapter, to control Berta in a different way than with a standard joystick - [more details](./hardware/snes-to-db9-controller-adapter/README.md).
 
 Although the game is still in development, it's already playable.
 
