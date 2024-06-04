@@ -601,3 +601,7 @@ To prawda - bateria jest niezbędna, aby DS1307 działał. Przylutowałem ją:
 ![RTC z baterią](./static/rtc_with_battery.jpg)
 
 i napisałem prosty program komunikujący się z DS1307 przy użyciu protokołu I2C i wyświetlający godzinę, minuty i sekundy jako liczbę punktów: [https://youtube.com/shorts/fulqg-NeGTo?feature=share](https://youtube.com/shorts/fulqg-NeGTo?feature=share)
+
+Zacząłem od wykonania kolejnego kartridża dla szybkiego prototypowania. Programowanie EPROMów ciągle od nowa i kasowanie ich przez pół godziny jest zbyt czasochłonne. Wykorzystałem jedną ze starszych płytek drukowanych, która przeznaczona jest na 128 4-kilobajtowych gier na EPROMie 27C4001. Ten EPROM jest prawie pin w pin zgodny z pamięcią flash 39SF040, która nie wymaga kasowania, dzięki czemu mogę pracować efektywniej. Musiałem tylko dokonać kilku małych modyfikacji:
+
+![Kartridż 128 dostosowany do pamięci flash](./static/128_adjusted.jpeg)

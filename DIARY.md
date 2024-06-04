@@ -600,3 +600,7 @@ That's right - battery is necessary for DS1307 to work. So I soldered it:
 ![RTC with battery](./static/rtc_with_battery.jpg)
 
 and wrote a simple program that communicates with DS1307 using I2C protocol and displays hour, minutes and seconds as a game score: [https://youtube.com/shorts/fulqg-NeGTo?feature=share](https://youtube.com/shorts/fulqg-NeGTo?feature=share)
+
+I started with creating another cartridge for fast prototyping. Programming the EPROMS on and on again and erasing them for half an hour was too time consuming. I took one of my previous PCBs, which can store 128 4KB games on 27C4001 EPROM. This EPROM is almost pin-to-pin equivalent with 39SF040 flash memory, which doesn't need erasing and I can work more effective. I just needed to do some small adjustments:
+
+![128 cart adjusted for flash](./static/128_adjusted.jpeg)
