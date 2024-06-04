@@ -28,7 +28,7 @@ Nie trzeba ustawiać żadnych fuse bitów - domyślne są właściwe (zegar 1MHz
 - **IC1** - mikroprocesor Atmega8, Atmega48 albo Atmega88
 - **R1** - 10kOhm
 - **C1** - 100nF
-- **X1** - żeńskie gniazdo DB9
+- **X1** - żeńskie złącze DB9
 - **U1** - gniazdo kontrolera SNES
 
 <!-- ## Wsparcie dla projektu

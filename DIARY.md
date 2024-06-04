@@ -424,7 +424,7 @@ Today we have a holiday in Poland, so I'm taking a day off.
 
 # 2024-05-04 - Day #065
 
-I implemented a sound signal at the end of the game. I had enought ROM space to play four notes. Five is too much.
+I implemented a sound signal at the end of the game. I had enough ROM space to play four notes. Five is too much.
 
 # 2024-05-05 - Day #066
 
@@ -446,7 +446,7 @@ I'm still adjusting PAL timings...
 
 # 2024-05-08 - Day #069
 
-PAL version is finished! Besides title music and butterflies speed, I needed to adjust also difficulty leve.
+PAL version is finished! Besides title music and butterflies speed, I needed to adjust also difficulty level.
 
 # 2024-05-09 - Day #070
 
@@ -474,7 +474,7 @@ I eliminated the jumper usage in the SNES controller adapter. Now you can change
 
 # 2024-05-13 - Day #074
 
-I still try to make a Berta drawing that will be good enought to use it as a cartridge cover. I experiment with Leonardo AI to make an image based on my image. Here are some results:
+I still try to make a Berta drawing that will be good enough to use it as a cartridge cover. I experiment with Leonardo AI to make an image based on my image. Here are some results:
 
 |||
 |-|-|
@@ -541,7 +541,7 @@ I'm satisfied with the cover. The problem is the printing house work with layere
 
 # 2024-05-23 - Day #084
 
-I asked my friend Bartas, to covert SVG files to PDF files for me. He did it before, when I released Cisano's ["Invaders from Andromeda"](https://github.com/Cisano/Invaders-From-Andromeda). He used trial version of Adobe Illustrator then. But the trial version expired and he is looking for other options :)
+I asked my friend Bartas, to convert SVG files to PDF files for me. He did it before, when I released Cisano's ["Invaders from Andromeda"](https://github.com/Cisano/Invaders-From-Andromeda). He used trial version of Adobe Illustrator then. But the trial version expired and he is looking for other options :)
 
 # 2024-05-24 - Day #085
 
@@ -601,6 +601,6 @@ That's right - battery is necessary for DS1307 to work. So I soldered it:
 
 and wrote a simple program that communicates with DS1307 using I2C protocol and displays hour, minutes and seconds as a game score: [https://youtube.com/shorts/fulqg-NeGTo?feature=share](https://youtube.com/shorts/fulqg-NeGTo?feature=share)
 
-I started with creating another cartridge for fast prototyping. Programming the EPROMS on and on again and erasing them for half an hour was too time consuming. I took one of my previous PCBs, which can store 128 4KB games on 27C4001 EPROM. This EPROM is almost pin-to-pin equivalent with 39SF040 flash memory, which doesn't need erasing and I can work more effective. I just needed to do some small adjustments:
+I started with creating another cartridge for fast prototyping. Programming the EPROMs on and on again and erasing them for half an hour was too much time consuming. I took one of my previous PCBs, which can store 128 4KB games on 27C4001 EPROM. This EPROM is almost pin-to-pin equivalent with 39SF040 flash memory, which doesn't need erasing and I can work more effective with it. I just needed to do some small adjustments:
 
 ![128 cart adjusted for flash](./static/128_adjusted.jpeg)
