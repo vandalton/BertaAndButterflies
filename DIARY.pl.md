@@ -594,3 +594,10 @@ Zdołałem naprawić dwie z moich sowieckich konsolek! Wymieniłem gumki przewod
 
 ![Konsolki Elektronika](./static/elektronika_fixed.jpg)
 
+# 2024-06-04 - Dzień #096
+
+To prawda - bateria jest niezbędna, aby DS1307 działał. Przylutowałem ją:
+
+![RTC z baterią](./static/rtc_with_battery.jpg)
+
+i napisałem prosty program komunikujący się z DS1307 przy użyciu protokołu I2C i wyświetlający godzinę, minuty i sekundy jako liczbę punktów: [https://youtube.com/shorts/fulqg-NeGTo?feature=share](https://youtube.com/shorts/fulqg-NeGTo?feature=share)

@@ -592,3 +592,11 @@ I read about DS1307 IC. I thought that a battery is used as a backup only, to ru
 I managed to fix two of my soviet consoles! I replaced conductive rubbers, moved screens between some of them, and here they are:
 
 ![Elektronika consoles](./static/elektronika_fixed.jpg)
+
+# 2024-06-04 - Day #096
+
+That's right - battery is necessary for DS1307 to work. So I soldered it:
+
+![RTC with battery](./static/rtc_with_battery.jpg)
+
+and wrote a simple program that communicates with DS1307 using I2C protocol and displays hour, minutes and seconds as a game score: [https://youtube.com/shorts/fulqg-NeGTo?feature=share](https://youtube.com/shorts/fulqg-NeGTo?feature=share)
