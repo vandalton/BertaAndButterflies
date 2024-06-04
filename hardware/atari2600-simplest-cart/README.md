@@ -23,3 +23,7 @@ In my project I replaced IC with a inverter made of NPN transistor, two resistor
 - **R2** - 1 kOhm
 - **C1** - 100nF
 - **C2** - 1nF
+
+## Support the project
+
+This design is open-source and you can download gerber files and order profesionally made PCBs from any manufacturer. However, you can order them from PCBWay: [https://www.pcbway.com/project/shareproject/4KB_cartridge_for_Atari_2600_4b0ce5e2.html](https://www.pcbway.com/project/shareproject/4KB_cartridge_for_Atari_2600_4b0ce5e2.html) - in this case I'll receive a few pennies, which will support this project or my other projects. Thanks!

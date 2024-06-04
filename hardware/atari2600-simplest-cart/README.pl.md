@@ -23,3 +23,7 @@ W moim projekcie zastąpiłem układ scalony inwerterem złożonym z tranzystora
 - **R2** - 1 kOhm
 - **C1** - 100nF
 - **C2** - 1nF
+
+## Wsparcie dla projektu
+
+Niniejszy projekt jest open-source. Możesz ściągnąć gerbery i zamówić profesjonalnie wykonane płytki drukowane u dowolnego producenta. Możesz je też zamówić w PCBWay: [https://www.pcbway.com/project/shareproject/4KB_cartridge_for_Atari_2600_4b0ce5e2.html](https://www.pcbway.com/project/shareproject/4KB_cartridge_for_Atari_2600_4b0ce5e2.html) - w tym przypadku dostanę z tego kilka groszy, co wspomoże rozwój tego bądź moich innych projektów. Dzięki!
