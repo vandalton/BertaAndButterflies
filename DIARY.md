@@ -604,3 +604,13 @@ and wrote a simple program that communicates with DS1307 using I2C protocol and 
 I started with creating another cartridge for fast prototyping. Programming the EPROMs on and on again and erasing them for half an hour was too much time consuming. I took one of my previous PCBs, which can store 128 4KB games on 27C4001 EPROM. This EPROM is almost pin-to-pin equivalent with 39SF040 flash memory, which doesn't need erasing and I can work more effective with it. I just needed to do some small adjustments:
 
 ![128 cart adjusted for flash](./static/128_adjusted.jpeg)
+
+# 2024-06-05 - Day #097
+
+Yesterday I've received cartridge labels!
+
+![Labels](./static/labels_roll.jpeg)
+
+Now I prepared a first cartridge in the final form:
+
+![Final cartridge](./static/cart_with_label.jpeg)

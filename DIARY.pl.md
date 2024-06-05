@@ -605,3 +605,13 @@ i napisałem prosty program komunikujący się z DS1307 przy użyciu protokołu 
 Zacząłem od wykonania kolejnego kartridża dla szybkiego prototypowania. Programowanie EPROMów ciągle od nowa i kasowanie ich przez pół godziny jest zbyt czasochłonne. Wykorzystałem jedną ze starszych płytek drukowanych, która przeznaczona jest na 128 4-kilobajtowych gier na EPROMie 27C4001. Ten EPROM jest prawie pin w pin zgodny z pamięcią flash 39SF040, która nie wymaga kasowania, dzięki czemu mogę pracować efektywniej. Musiałem tylko dokonać kilku małych modyfikacji:
 
 ![Kartridż 128 dostosowany do pamięci flash](./static/128_adjusted.jpeg)
+
+# 2024-06-05 - Dzień #097
+
+Wczoraj odebrałem naklejki na kartridże!
+
+![Naklejki](./static/labels_roll.jpeg)
+
+A teraz zrobiłem pierwszy kartridż w docelowej formie:
+
+![Docelowy kartridż](./static/cart_with_label.jpeg)
