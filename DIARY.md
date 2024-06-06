@@ -501,7 +501,7 @@ So far nobody had any issues, I received no bug reports. I think I'll release th
 
 # 2024-05-16 - Day #077
 
-There is a device called [SaveKey](https://atariage.com/store/index.php?l=product_detail&p=1194) for Atari 2600. You can plug it to the second's player joystick port and some games (about 40) will store high-scores on it. 
+There is a device called [SaveKey](https://atariage.com/store/index.php?l=product_detail&p=1194) for Atari 2600. You can plug it to the second's player joystick port and some games (about 40) will store high-scores on it.
 
 Although I have no spare space in ROM, I wanted to play with the SaveKey. It's a very simple device and you can find its schematic online, so I've design my own PCB like month ago and today it arrived!
 
@@ -614,3 +614,11 @@ Yesterday I've received cartridge labels!
 Now I prepared a first cartridge in the final form:
 
 ![Final cartridge](./static/cart_with_label.jpeg)
+
+# 2024-06-06 - Day #098
+
+Currently I'm completing the documentation. I also designed front and back for a box. My plan is to use a box like this: [https://www.dpcraft.pl/pl/produkt/pudelko-tekturowe-18x14x4-cm.html](https://www.dpcraft.pl/pl/produkt/pudelko-tekturowe-18x14x4-cm.html). Here are the designs - at the moment only in Polish version:
+
+|Front|Back|
+|-|-|
+|![Box front](./static/box.front.pl.paths.png)|![Box back](./static/box.back.pl.paths.png)|

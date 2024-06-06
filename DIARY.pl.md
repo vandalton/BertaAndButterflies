@@ -615,3 +615,11 @@ Wczoraj odebrałem naklejki na kartridże!
 A teraz zrobiłem pierwszy kartridż w docelowej formie:
 
 ![Docelowy kartridż](./static/cart_with_label.jpeg)
+
+# 2024-06-06 - Dzień #098
+
+Obecnie uzupełniam dokumentację. Zaprojektowałem też przód i tył pudełka. Planuję użyć takiego pudełka:  [https://www.dpcraft.pl/pl/produkt/pudelko-tekturowe-18x14x4-cm.html](https://www.dpcraft.pl/pl/produkt/pudelko-tekturowe-18x14x4-cm.html). Oto projekty - na ten moment wyłącznie po polsku:
+
+|Przód|Tył|
+|-|-|
+|![Box front](./static/box.front.pl.paths.png)|![Box back](./static/box.back.pl.paths.png)|
