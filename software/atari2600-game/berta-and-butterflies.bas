@@ -1,5 +1,3 @@
-    rem include bbavox-eeprom-static.asm
-
     set kernel_options pfcolors no_blank_lines
     rem set tv pal
     const font=retroputer

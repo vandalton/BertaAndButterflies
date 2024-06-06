@@ -33,4 +33,4 @@
 *.lck
 # batari Basic
 software/atari2600-game/bin
-
+software/atari2600-rtc-experiments/bin
