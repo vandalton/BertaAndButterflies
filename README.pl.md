@@ -19,12 +19,13 @@ Postać w grze zamieniłem na ulubioną maskotkę z dzieciństwa mojej żony, Al
 |----------------|---------------|
 |![Oryginalna Berta](./static/berta_orig.jpg)|![Cyfrowa Berta](./static/logo.png)|
 
-Oprócz gry, w repozytorium znajdują się dwa podprojekty:
+Na dzień 6 czerwca 2024 gra jest ukończona i nie planuję dodawać do niej nic nowego. Nawet gdybym chciał, nie mam miejsca w ROMie - nie mogę nawet dodać jednej nutki do muzyki tytułowej :)
+
+Oprócz gry, w repozytorium znajdują się trzy podprojekty:
 
 1. Projekt płytki drukowanej umożliwiającej stworzenie najprostszego kartridża z grą 4KB dla Atari 2600 (**Berta i motyle** zajmuje właśnie 4KB) - [szczegóły](./hardware/atari2600-simplest-cart/README.pl.md).
-2. Adapter padów od Super Nintendo, aby sterować Bertą w inny sposób, niż przy użyciu standardowego joysticka - [szczegóły](./hardware/snes-to-db9-controller-adapter/README.pl.md).
-
-Co prawda gra jest w trakcie rozwoju, ale jest już grywalna.
+1. Adapter padów od Super Nintendo, aby sterować Bertą w inny sposób, niż przy użyciu standardowego joysticka - [szczegóły](./hardware/snes-to-db9-controller-adapter/README.pl.md).
+1. Projekt układu zegara czasu rzeczywistego dla Atari 2600, podłączanego do portu joysticka drugiego gracza (projekt jest w fazie eksperymentalnej).  
 
 ## Jak grać?
 

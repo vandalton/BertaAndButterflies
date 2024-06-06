@@ -19,12 +19,13 @@ I replaced the character with my wife's Alice favorite stuffed toy from childhoo
 |----------------|---------------|
 |![Original Berta](./static/berta_orig.jpg)|![Digital Berta](./static/logo.png)|
 
-Besides the game, there are also two sub-projects within this repository:
+As for 2024-Jun-06 the game is completed and I won't add any new features to it. Even if I wanted to, I have no spare place in the ROM - I can't even add one note more to the title music :)
+
+Besides the game, there are also three sub-projects within this repository:
 
 1. A printed circut board design to create the simplest cartridge for any 4KB Atari 2600 game (**Berta And Butterflies** is also 4KB game) - [more details](./hardware/atari2600-simplest-cart/README.md).
 1. Super Nintendo controller adapter, to control Berta in a different way than with a standard joystick - [more details](./hardware/snes-to-db9-controller-adapter/README.md).
-
-Although the game is still in development, it's already playable.
+1. Real Time Clock circuit design for Atari 2600, attachable to the second player's joystick port (it is at experimental stage).
 
 ## How to play?
 
