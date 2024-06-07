@@ -622,3 +622,11 @@ Currently I'm completing the documentation. I also designed front and back for a
 |Front|Back|
 |-|-|
 |![Box front](./static/box.front.pl.paths.png)|![Box back](./static/box.back.pl.paths.png)|
+
+# 2024-06-07 - Day #099
+
+I made the first prototype of game box:
+
+![Box](./static/box.jpg)
+
+However, I'm not satisfied with the result. Back cover is a little too big and colors on the front printout look different then the same colors on the back.

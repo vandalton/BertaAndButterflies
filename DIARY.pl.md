@@ -623,3 +623,11 @@ Obecnie uzupełniam dokumentację. Zaprojektowałem też przód i tył pudełka.
 |Przód|Tył|
 |-|-|
 |![Box front](./static/box.front.pl.paths.png)|![Box back](./static/box.back.pl.paths.png)|
+
+# 2024-06-07 - Dzień #099
+
+Wykonałem pierwszy prototyp pudełka:
+
+![Box](./static/box.jpg)
+
+Jednak nie jestem zadowolny z wyniku. Tylna układka jest trochę za duża, a kolory części przedniej na wydruku wyglądają inaczej niż te same kolory na części tylniej.
