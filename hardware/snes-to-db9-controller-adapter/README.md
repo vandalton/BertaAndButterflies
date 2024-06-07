@@ -31,6 +31,6 @@ You don't need to set any fuse bits - the default ones are ok (1MHz clock).
 - **X1** - female DB9 connector
 - **U1** - SNES controller socket
 
-<!-- ## Support the project
+## Support the project
 
-This design is open-source and you can download gerber files and order profesionally made PCBs from any manufacturer. However, you can order them from PCBWay: [https://www.pcbway.com/project/shareproject/4KB_cartridge_for_Atari_2600_4b0ce5e2.html](https://www.pcbway.com/project/shareproject/4KB_cartridge_for_Atari_2600_4b0ce5e2.html) - in this case I'll receive a few pennies, which will support this project or my other projects. Thanks! -->
+This design is open-source and you can download gerber files and order profesionally made PCBs from any manufacturer. However, you can order them from PCBWay: [https://www.pcbway.com/project/shareproject/SNES_controller_adapter_for_Atari_2600_DB9_a7f10165.html](https://www.pcbway.com/project/shareproject/SNES_controller_adapter_for_Atari_2600_DB9_a7f10165.html) - in this case I'll receive a few pennies, which will support this project or my other projects. Thanks!

@@ -31,6 +31,6 @@ Nie trzeba ustawiać żadnych fuse bitów - domyślne są właściwe (zegar 1MHz
 - **X1** - żeńskie złącze DB9
 - **U1** - gniazdo kontrolera SNES
 
-<!-- ## Wsparcie dla projektu
+## Wsparcie dla projektu
 
-Niniejszy projekt jest open-source. Możesz ściągnąć gerbery i zamówić profesjonalnie wykonane płytki drukowane u dowolnego producenta. Możesz je też zamówić w PCBWay: [https://www.pcbway.com/project/shareproject/4KB_cartridge_for_Atari_2600_4b0ce5e2.html](https://www.pcbway.com/project/shareproject/4KB_cartridge_for_Atari_2600_4b0ce5e2.html) - w tym przypadku dostanę z tego kilka groszy, co wspomoże rozwój tego bądź moich innych projektów. Dzięki! -->
+Niniejszy projekt jest open-source. Możesz ściągnąć gerbery i zamówić profesjonalnie wykonane płytki drukowane u dowolnego producenta. Możesz je też zamówić w PCBWay: [https://www.pcbway.com/project/shareproject/SNES_controller_adapter_for_Atari_2600_DB9_a7f10165.html](https://www.pcbway.com/project/shareproject/SNES_controller_adapter_for_Atari_2600_DB9_a7f10165.html) - w tym przypadku dostanę z tego kilka groszy, co wspomoże rozwój tego bądź moich innych projektów. Dzięki!
