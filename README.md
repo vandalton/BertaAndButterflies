@@ -65,7 +65,7 @@ Using elements from this repository and a few from outside it, you can make your
 
 - [Cartridge printed circuit board](./hardware/atari2600-simplest-cart/README.md) and a few electronic components, in particular a programmed EPROM memory.
 - A case from [Sikor Soft](http://sikorsoft.waw.pl/hardware/obudowy-na-cartridge-2600-7800/).
-- [Cover stickers](https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/cover.pdf). The PDF file has two layers. One layer contains everything that should be visible, and the second layer contains a pattern for cutting machines.
+- [Cover stickers](https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/cover.en.pdf). The PDF file has two layers. One layer contains everything that should be visible, and the second layer contains a pattern for cutting machines.
 
 ## History
 
