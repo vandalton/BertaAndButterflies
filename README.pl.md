@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![pl](https://img.shields.io/badge/lang-pl-green.svg)](./README.pl.md)
 
-![Ekran tytułowy](./static/title_polish.png)
+[![Ekran tytułowy](./static/title_polish.png)](https://javatari.org/?ROM=https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/berta-and-butterflies.v1.00.ntsc.pl.bin)
 
 **Berta i motyle** to gra na konsolę Atari 2600.
 
@@ -21,13 +21,21 @@ Postać w grze zamieniłem na ulubioną maskotkę z dzieciństwa mojej żony, Al
 |----------------|---------------|
 |![Oryginalna Berta](./static/berta_orig.jpg)|![Cyfrowa Berta](./static/logo.png)|
 
-Na dzień 6 czerwca 2024 gra jest ukończona i nie planuję dodawać do niej nic nowego. Nawet gdybym chciał, nie mam miejsca w ROMie - nie mogę nawet dodać jednej nutki do muzyki tytułowej :)
+Na dzień 6 czerwca 2024 gra jest ukończona i nie planuję dodawać nic nowego do jej standardowej, 4-kilobajtowej wersji. Nawet gdybym chciał, nie mam miejsca w ROMie - nie mogę nawet dodać jednej nutki do muzyki tytułowej :)
+
+Źródła gry znajdują się w folderze [software/atari2600-game](./software/atari2600-game/). Do ich skompilowania potrzebny jest [batari Basic](https://github.com/batari-Basic/batari-Basic), ale w sekcji [releases](https://github.com/vandalton/BertaAndButterflies/releases/) udostępnione są binarne wersje gry.
 
 Oprócz gry, w repozytorium znajdują się trzy podprojekty:
 
 1. Projekt płytki drukowanej umożliwiającej stworzenie najprostszego kartridża z grą 4KB dla Atari 2600 (**Berta i motyle** zajmuje właśnie 4KB) - [szczegóły](./hardware/atari2600-simplest-cart/README.pl.md).
-1. Adapter padów od Super Nintendo, aby sterować Bertą w inny sposób, niż przy użyciu standardowego joysticka - [szczegóły](./hardware/snes-to-db9-controller-adapter/README.pl.md).
-1. Projekt układu zegara czasu rzeczywistego dla Atari 2600, podłączanego do portu joysticka drugiego gracza (projekt jest w fazie eksperymentalnej).  
+
+   ![Kartridż](./static/first_cartridge_small.jpeg)
+2. Adapter padów od Super Nintendo, aby sterować Bertą w inny sposób, niż przy użyciu standardowego joysticka - [szczegóły](./hardware/snes-to-db9-controller-adapter/README.pl.md).
+
+    ![Adapter padów od SNESa](./static/snes_adapter_soldered.jpg)
+3. Projekt układu zegara czasu rzeczywistego dla Atari 2600, podłączanego do portu joysticka drugiego gracza (projekt jest w fazie eksperymentalnej).  
+
+Co prawda gra jest ukończona, planuję kontynuować rozwój projektu i stworzyć wersję 8-kilobajtową ze wsparciem dla zegara czasu rzeczywistego. Aktualna godzina będzie się wyświetlać na ekranie tytułowym. Dzięki temu gra będzie jeszcze bardziej podobna do oryginalnej konsolki "Game & Watch" ;)
 
 ## Jak grać?
 
@@ -35,7 +43,7 @@ Polecam grać w grę na prawdziwej konsoli. Zadziała pod dowolną wersją, oboj
 
 ![Gra na prawdziwej konsoli](./static/cart_on_real_machine.jpeg)
 
-Jeśli posiadasz podstawowe umiejętności lutowania, możesz zamówić płytkę drukowaną i zrobić prawdziwy kartridż. W niedalekiej przyszłości planuję też wydać limitowaną serię kartridży z grą. Jeśli posiadasz "uniwersalny" kartridż typu Harmony albo UnoCart, możesz skopiować ROM na niego i załadować grę (chociaż z tego co wiem, te "uniwersalne" kartridże nie działają z wersją 2600+ konsoli).
+Jeśli posiadasz podstawowe umiejętności lutowania, możesz zamówić płytkę drukowaną i zrobić prawdziwy [kartridż](#kartridż). W niedalekiej przyszłości planuję też wydać limitowaną serię kartridży z grą. Jeśli posiadasz "uniwersalny" kartridż typu Harmony albo UnoCart, możesz skopiować ROM na niego i załadować grę (chociaż z tego co wiem, te "uniwersalne" kartridże nie działają z wersją 2600+ konsoli).
 
 Jeśli nie posiadasz konsoli Atari, możesz użyć emulatora. Jest ich wiele do wyboru:
 
@@ -49,6 +57,16 @@ Możesz także użyć urządzenia typu konsolka Anbernic z wbudowanym emulatorem
 
 ![Anbernic handheld](./static/anbernic.jpg)
 
+## Kartridż
+
+![Finalny kartridż](./static/cart_with_label.jpeg)
+
+Wykorzystując elementy znajdujące się w tym repozytorium oraz kilka spoza, możesz stworzyć prawdziwy kartridż z grą. Wystarczą Ci podstawowe umiejętności lutowania. Będziesz potrzebował:
+
+- [Płytkę drukowaną kartridża](./hardware/atari2600-simplest-cart/README.pl.md), wraz z kilkoma innymi elektronicznymi częściami, w szczególności z zaprogramowaną pamięcią EPROM.
+- Obudowę od [Sikor Soft](http://sikorsoft.waw.pl/hardware/obudowy-na-cartridge-2600-7800/).
+- [Naklejki](https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/cover.pl.pdf). Plik PDF jest warstwowy. Jedna warstwa zawiera to, co powinno być widoczne, a druga wykrój dla maszyn tnących.
+
 ## Historia
 
 Rozpocząłem ten projekt, aby wziąć udział w konkursie [100 Commitów](https://100commitow.pl/).
@@ -58,4 +76,3 @@ Niedawno zafascynowałem się konsolą Atari 2600 i chciałem coś na nią zapro
 Chcę się przekonać, jak trudne to faktycznie jest. Nie mam wcześniejszego doświadczenia z assemblerem 6502/6507, Batari Basicem itp. Konkurs motywuje mnie, aby się ich nauczyć :)
 
 Więcej w [dzienniku](./DIARY.pl.md).
-

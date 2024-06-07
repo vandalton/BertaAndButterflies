@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![pl](https://img.shields.io/badge/lang-pl-green.svg)](./README.pl.md)
 
-![Title screen](./static/title_international.png)
+[![Title screen](./static/title_international.png)](https://javatari.org/?ROM=https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/berta-and-butterflies.v1.00.ntsc.en.bin)
 
 > *TL;DR* If you just want to play the game, click [here](https://javatari.org/?ROM=https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/berta-and-butterflies.v1.00.ntsc.en.bin)
 
@@ -21,13 +21,21 @@ I replaced the character with my wife's Alice favorite stuffed toy from childhoo
 |----------------|---------------|
 |![Original Berta](./static/berta_orig.jpg)|![Digital Berta](./static/logo.png)|
 
-As for 2024-Jun-06 the game is completed and I won't add any new features to it. Even if I wanted to, I have no spare place in the ROM - I can't even add one note more to the title music :)
+As for 06 Jun 2024 the game is completed and I won't add any new features to the standard, 4KB version. Even if I wanted to, I have no spare place in the ROM - I can't even add one note more to the title music :)
+
+The game's source file is in [software/atari2600-game](./software/atari2600-game/) folder. To compile it you'll need [batari Basic](https://github.com/batari-Basic/batari-Basic), however, you can download precompiled, binary version from the [releases](https://github.com/vandalton/BertaAndButterflies/releases/) page.
 
 Besides the game, there are also three sub-projects within this repository:
 
 1. A printed circut board design to create the simplest cartridge for any 4KB Atari 2600 game (**Berta And Butterflies** is also 4KB game) - [more details](./hardware/atari2600-simplest-cart/README.md).
-1. Super Nintendo controller adapter, to control Berta in a different way than with a standard joystick - [more details](./hardware/snes-to-db9-controller-adapter/README.md).
-1. Real Time Clock circuit design for Atari 2600, attachable to the second player's joystick port (it is at experimental stage).
+
+   ![Cartridge](./static/first_cartridge_small.jpeg)
+2. Super Nintendo controller adapter, to control Berta in a different way than with a standard joystick - [more details](./hardware/snes-to-db9-controller-adapter/README.md).
+
+   ![SNES controller adapter](./static/snes_adapter_soldered.jpg)
+3. Real Time Clock circuit design for Atari 2600, attachable to the second player's joystick port (it is at experimental stage).
+
+Although the game is completed, I'm going to develop it further and create 8KB version with RTC support - current time will be displayed on the title screen. That will make the game even more similiar to the original "Game & Watch" ;)
 
 ## How to play?
 
@@ -35,7 +43,7 @@ I recommend to play this game on a real console. It will work with any version, 
 
 ![Game on a real console](./static/cart_on_real_machine.jpeg)
 
-If you have basic soldering skills, you can etch cartridge PCBs and make a real cartridge. There will be also a limited run of physical cartridges released at some point in the near future. If you have a "universal" cartridge like Harmony or UnoCart, you can put the ROM there and load the game from it (however, these "universal" carts don't work with 2600+, as far as I know).
+If you have basic soldering skills, you can etch cartridge PCBs and make a real [cartridge](#cartridge). There will be also a limited run of physical cartridges released at some point in the near future. If you have a "universal" cartridge like Harmony or UnoCart, you can put the ROM there and load the game from it (however, these "universal" carts don't work with 2600+, as far as I know).
 
 If you don't have Atari console, you can use emulator. There is plenty of Atari 2600 emulators to choose from:
 
@@ -48,6 +56,16 @@ Just download the most recent ROM from [releases](https://github.com/vandalton/B
 You can also use a device like Anbernic handheld with built-in Atari 2600 emulator (it uses Stella emulator internally):
 
 ![Anbernic handheld](./static/anbernic.jpg)
+
+## Cartridge
+
+![Final cartridge](./static/cart_with_label.jpeg)
+
+Using elements from this repository and a few from outside it, you can make your own, real cartridge with the game. Only basic soldering skills are needed. You'll need:
+
+- [Cartridge printed circuit board](./hardware/atari2600-simplest-cart/README.md) and a few electronic components, in particular a programmed EPROM memory.
+- A case from [Sikor Soft](http://sikorsoft.waw.pl/hardware/obudowy-na-cartridge-2600-7800/).
+- [Cover stickers](https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/cover.pdf). The PDF file has two layers. One layer contains everything that should be visible, and the second layer contains a pattern for cutting machines.
 
 ## History
 
