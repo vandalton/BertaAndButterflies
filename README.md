@@ -5,6 +5,8 @@
 
 ![Title screen](./static/title_international.png)
 
+> *TL;DR* If you just want to play the game, click [here](https://javatari.org/?ROM=https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/berta-and-butterflies.v1.00.ntsc.en.bin)
+
 **Berta And Butterflies** is a game for Atari 2600 console.
 
 It's a remake of the LCD game from the original ["Game & Watch"](https://nintendo.fandom.com/wiki/Egg) series from the '80. In Poland original Nintendo games were virtually unknown, but soviet clones made by [Elektronika](https://en.wikipedia.org/wiki/Elektronika) were very popular:
@@ -37,7 +39,7 @@ If you have basic soldering skills, you can etch cartridge PCBs and make a real 
 
 If you don't have Atari console, you can use emulator. There is plenty of Atari 2600 emulators to choose from:
 
-1. [Javatari](https://javatari.org/) - an emulator that works in browser.
+1. [Javatari](https://javatari.org/?ROM=https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/berta-and-butterflies.v1.00.ntsc.en.bin) - an emulator that works in browser.
 2. [Stella](https://stella-emu.github.io/) - probably the most well-known Atari 2600 emulator. There are versions for Windows, MacOS and Linux.
 3. [Gopher2600](https://github.com/JetSetIlly/Gopher2600) - an emulator written in Go.
 

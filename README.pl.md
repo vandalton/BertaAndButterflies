@@ -7,6 +7,8 @@
 
 **Berta i motyle** to gra na konsolę Atari 2600.
 
+> *TL;DR* Jeśli chcesz po prostu zagrać w grę, kliknij [tutaj](https://javatari.org/?ROM=https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/berta-and-butterflies.v1.00.ntsc.pl.bin)
+
 Pomysł polega na przeniesieniu gry z konsoli LCD z oryginalnej serii ["Game & Watch"](https://nintendo.fandom.com/wiki/Egg) z lat 80'. W Polsce oryginalne konsole Nintendo były właściwie nieznane, ale bardzo popularne były sowieckie klony produkcji firmy [Elektronika](https://en.wikipedia.org/wiki/Elektronika):
 
 ![Elektronika game](./static/elektronika_working.jpg)
@@ -37,7 +39,7 @@ Jeśli posiadasz podstawowe umiejętności lutowania, możesz zamówić płytkę
 
 Jeśli nie posiadasz konsoli Atari, możesz użyć emulatora. Jest ich wiele do wyboru:
 
-1. [Javatari](https://javatari.org/) - emulator działający w przeglądarce.
+1. [Javatari](https://javatari.org/?ROM=https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/berta-and-butterflies.v1.00.ntsc.pl.bin) - emulator działający w przeglądarce.
 2. [Stella](https://stella-emu.github.io/) - prawdopodobnie najbardziej znany emulator Atari 2600. Istnieją jego wersje pod Windowsa, MacOSa i Linuksa.
 3. [Gopher2600](https://github.com/JetSetIlly/Gopher2600) - emulator napisany w Go.
 
