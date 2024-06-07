@@ -9,11 +9,11 @@
 
 > *TL;DR* Jeśli chcesz po prostu zagrać w grę, kliknij [tutaj](https://javatari.org/?ROM=https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/berta-and-butterflies.v1.00.ntsc.pl.bin)
 
-Pomysł polega na przeniesieniu gry z konsoli LCD z oryginalnej serii ["Game & Watch"](https://nintendo.fandom.com/wiki/Egg) z lat 80'. W Polsce oryginalne konsole Nintendo były właściwie nieznane, ale bardzo popularne były sowieckie klony produkcji firmy [Elektronika](https://en.wikipedia.org/wiki/Elektronika):
+Pomysł polega na przeniesieniu gry z konsoli LCD z oryginalnej serii ["Game & Watch"](https://nintendo.fandom.com/wiki/Egg) z lat 80'. W Polsce konsole Nintendo były właściwie nieznane, ale bardzo popularne były sowieckie klony produkcji firmy [Elektronika](https://en.wikipedia.org/wiki/Elektronika):
 
 ![Elektronika game](./static/elektronika_working.jpg)
 
-Chciałem stworzyć grę na Atari 2600. Wiem, że ta konsola ma wybitnie ograniczone możliwości. Z kolei ta gra jest bardzo prosta, ale mimo to jest wciągająca i daje dużo frajdy. Wydała mi się dobrym kandydatem na przeportowanie na Atari.
+Od jakiegoś czasu chciałem stworzyć grę na Atari 2600. Wiem, że ta konsola ma wybitnie ograniczone możliwości. Natomiast ta gra jest bardzo prosta, ale mimo to wciągająca i dająca dużo frajdy. Wydała mi się dobrym kandydatem na przeportowanie na Atari.
 
 Postać w grze zamieniłem na ulubioną maskotkę z dzieciństwa mojej żony, Alicji - małą słonicę o imieniu Berta.
 
@@ -35,7 +35,7 @@ Oprócz gry, w repozytorium znajdują się trzy podprojekty:
     ![Adapter padów od SNESa](./static/snes_adapter_soldered.jpg)
 3. Projekt układu zegara czasu rzeczywistego dla Atari 2600, podłączanego do portu joysticka drugiego gracza (projekt jest w fazie eksperymentalnej).  
 
-Co prawda gra jest ukończona, planuję kontynuować rozwój projektu i stworzyć wersję 8-kilobajtową ze wsparciem dla zegara czasu rzeczywistego. Aktualna godzina będzie się wyświetlać na ekranie tytułowym. Dzięki temu gra będzie jeszcze bardziej podobna do oryginalnej konsolki "Game & Watch" ;)
+Co prawda gra jest ukończona, ale planuję kontynuować rozwój projektu i stworzyć wersję 8-kilobajtową ze wsparciem dla zegara czasu rzeczywistego. Aktualna godzina będzie się wyświetlać na ekranie tytułowym. Dzięki temu gra będzie jeszcze bardziej podobna do oryginalnej konsolki "Game & Watch" ;)
 
 ## Jak grać?
 
