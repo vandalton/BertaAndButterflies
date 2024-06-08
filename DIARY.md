@@ -630,3 +630,7 @@ I made the first prototype of game box:
 ![Box](./static/box.jpg)
 
 However, I'm not satisfied with the result. Back cover is a little too big and colors on the front printout look different then the same colors on the back.
+
+# 2024-06-08 - Day #100
+
+Today is the last day of the competition! I'm filling documentation, promoting the project on social media and so on. Fortunately, the game is finished. As Steve Jobs once said, "it's not done until it ships". So it means I did it in a 100 days, as the cartridges are about to be shipped on Monday ;)

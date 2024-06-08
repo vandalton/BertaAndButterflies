@@ -631,3 +631,8 @@ Wykonałem pierwszy prototyp pudełka:
 ![Box](./static/box.jpg)
 
 Jednak nie jestem zadowolny z wyniku. Tylna układka jest trochę za duża, a kolory części przedniej na wydruku wyglądają inaczej niż te same kolory na części tylniej.
+
+# 2024-06-08 - Dzień #100
+
+Dziś ostatni dzień konkursu! Uzupełniam dokumentację, promuję projekt w portalach społecznościowych itp. Na szczęście moja gra jest ukończona. Jak powiedział Steve Jobs, "it's not done until it ships" (*Ciężko to przetłumaczyć, ale spróbuję: "Nie jest ukończone, dopóki nie będzie dostarczane*"). Oznacza to, że dowiozłem projekt w 100 dni, gdyż zamierzam rozsyłać kartridże od poniedziałku ;)
+
