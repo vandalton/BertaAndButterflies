@@ -41,7 +41,7 @@ Although the game is completed, I'm going to develop it further and create 8KB v
 
 I recommend to play this game on a real console. It will work with any version, whether it is "Woody" from 1977, "Junior" from 80' or the most recent 2600+ from 2023.
 
-![Game on a real console](./static/cart_on_real_machine.jpeg)
+![Game on a real console](./static/berta_playing_berta.JPG)
 
 If you have basic soldering skills, you can etch cartridge PCBs and make a real [cartridge](#cartridge). There will be also a limited run of physical cartridges released at some point in the near future. If you have a "universal" cartridge like Harmony or UnoCart, you can put the ROM there and load the game from it (however, these "universal" carts don't work with 2600+, as far as I know).
 
