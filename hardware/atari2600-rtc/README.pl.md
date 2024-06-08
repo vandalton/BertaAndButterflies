@@ -5,11 +5,11 @@
 
 W niniejszym folderze znajduje się projekt zegara czasu rzeczywistego dla Atari 2600.
 
-Pliki projektu można otworzyć w programie Eagle. Aktualnie nie udostępniam plików gerber, gdyż projekt jest w fazie eksperymentu.
+Pliki projektu można otworzyć w programie Eagle. Aktualnie nie udostępniam plików gerber, gdyż projekt jest w fazie eksperymentalnej.
 
 ## Pomysł
 
-Zaprojektowałem ten adapter głównie dla mojej gry - **Berta and Butterflies**. Chciałem uczynić grę bardziej podobną do gier LCD "Game & Watch" i wyświetlać aktualną godzinę na ekranie tytułowym. Taki gadżet, nie obowiązkowa funkcja, ale jestem zdeterminowany, aby kiedyś ukończyć ten podprojekt.
+Zaprojektowałem ten adapter głównie dla mojej gry - **Berta and Butterflies**. Chciałem uczynić grę bardziej podobną do gier LCD "Game & Watch" i wyświetlać aktualną godzinę na ekranie tytułowym. Ot, taki gadżet, nie obowiązkowa funkcja, ale jestem zdeterminowany, aby kiedyś ukończyć ten podprojekt.
 
 <!-- ## Wsparcie dla projektu
 
