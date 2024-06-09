@@ -57,6 +57,9 @@ Możesz także użyć urządzenia typu konsolka Anbernic z wbudowanym emulatorem
 
 ![Anbernic handheld](./static/anbernic.jpg)
 
+Gdy jestes na ekranie tytułowym, możesz wybrać poziom trudności używając przełącznika konsoli (F4 w Javatari).
+Chmurka wskazuje poziom trudności. Gdy jest nad literą "B", mamy wybrany poziom łatwy (*beginner*), a gdy nad "A", poziom trudny (*advanced*). Kolejnym wskaźnikiem poziomu jest kolor siatki - w trudnym jest czerwony.
+
 ## Kartridż
 
 ![Finalny kartridż](./static/cart_with_label.jpeg)

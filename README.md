@@ -57,6 +57,8 @@ You can also use a device like Anbernic handheld with built-in Atari 2600 emulat
 
 ![Anbernic handheld](./static/anbernic.jpg)
 
+While you are on the title screen, you can select difficulty level using console's difficulty switch (F4 in Javatari). The cloud is one of the level indicators. If it's over "B" letter it means "beginner", while "A" means "advanced. Another indicator is net's color - it is red in the advanced mode.
+
 ## Cartridge
 
 ![Final cartridge](./static/cart_with_label.jpeg)
