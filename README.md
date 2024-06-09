@@ -6,6 +6,8 @@
 [![Title screen](./static/title_international.png)](https://javatari.org/?ROM=https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/berta-and-butterflies.v1.00.ntsc.en.bin)
 
 > *TL;DR* If you just want to play the game, click [here](https://javatari.org/?ROM=https://github.com/vandalton/BertaAndButterflies/releases/download/v1.00/berta-and-butterflies.v1.00.ntsc.en.bin)
+> 
+> You can also see the demo on Youtube (in Polish): [https://www.youtube.com/shorts/mCUAv41lA1o?feature=share](https://www.youtube.com/shorts/mCUAv41lA1o?feature=share)
 
 **Berta And Butterflies** is a game for Atari 2600 console.
 
@@ -57,7 +59,7 @@ You can also use a device like Anbernic handheld with built-in Atari 2600 emulat
 
 ![Anbernic handheld](./static/anbernic.jpg)
 
-While you are on the title screen, you can select difficulty level using console's difficulty switch (F4 in Javatari). The cloud is one of the level indicators. If it's over "B" letter it means "beginner", while "A" means "advanced. Another indicator is net's color - it is red in the advanced mode.
+While you are on the title screen, you can select difficulty level using console's difficulty switch (F4 in Javatari). The cloud is one of the level indicators. If it's over "B" letter it means "beginner", while "A" means "advanced". Another indicator is net's color - it is red in the advanced mode.
 
 ## Cartridge
 
