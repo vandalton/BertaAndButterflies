@@ -85,3 +85,16 @@ Więcej w [dzienniku](./DIARY.pl.md).
 ### Podsumowanie konkursu
 
 Dziś (8 czerwca 2024) ostatni dzień konkursu. Tyle się wydarzyło przez te 100 dni! Dużo się nauczyłem i stworzyłem pełnoprawny produkt, grę na Atari 2600, w którą da się zagrać i mieć z tego chociaż chwilę radości. Spełniłem też wymaganie postawione przez Żonę - postać Berty w grze miała być możliwa do rozpoznania ;) Berta pojawiła się na Youtube, na kanałach [Zero Page Homebrew](https://youtu.be/SA3xd5n5TF4?t=3413) oraz [DevMentors](https://youtu.be/TQQvmo6iMdc?t=1981), a także w artykule na portalu [AtariOnline](https://atarionline.pl/v01/index.php?subaction=showfull&id=1715228764&archive=&start_from=0&ucat=1&ct=nowinki). Pomimo kilku momentów zwątpienia, spowodowanych ograniczeniami konsoli, doprowadziłem projekt do końca. Nie byłoby to możliwe bez pomocy wielu osób. Alka_ja, Bartass, Kaziu, Milan Galcik, Sikor, x_angel - dziękuję! Dziękuję też za każdą gwiazkę na Githubie, każde testy i wszelkie krytyczne uwagi. Nawet, jeśli nie wejdę do finału, to i tak było warto. Taka masa nowych doświadczeń i umiejętności to najcenniejsza nagroda! Aczkolwiek super byłoby dopisać tu kiedyś ciąg dalszy!
+
+## Jak wnieść wkład?
+
+Wiele osób pomogło mi w pracach nad projektem, aczkolwiek nie poprzez pull-requesty GitHubowe. Pomimo tego, że standardowa wersja gry już się nie zmieni (jest zahardcodowana na wielu kartridżach), mam mnóstwo pomysłów na możliwą, przyszłą wersję rozszerzoną. Jeśli chciałbyś pomóc, zrób forka tego repo i wystaw mi pull-request.
+
+Niektóre z pomysłów:
+
+- Wsparcie dla zegara czasu rzeczywistego (w trakcie, mogę wyświetlić godzinę, ale nie mogę jej ustawić).
+- Optymalizacja wielkości ROMu - chętnie wcisnąłbym grę razem ze wsparciem dla zegara w 4KB :)
+- Tryb dwóch graczy (naprzemienny).
+- Wsparcie dla [SaveKey'a](https://atariage.com/store/index.php?l=product_detail&p=1194) - aczkolwiek nie uważam tego urządzenia za zbyt przydatne ;)
+- Inne warianty kolorystyczne.
+- Rozszerzona muzyczka tytułowa.
