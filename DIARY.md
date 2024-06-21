@@ -634,3 +634,15 @@ However, I'm not satisfied with the result. Back cover is a little too big and c
 # 2024-06-08 - Day #100
 
 Today is the last day of the competition! I'm filling documentation, promoting the project on social media and so on. Fortunately, the game is finished. As Steve Jobs once said, "it's not done until it ships". So it means I did it in a 100 days, as the cartridges are about to be shipped on Monday ;)
+
+# 2024-06-10
+
+I added an English version of the box designs.
+
+# 2024-06-20
+
+Voting stage of the competition has ended yesterday, and here are the results!
+
+![Voting results](./static/voting_results.png)
+
+However, it doesn't mean I won. Now the Jury will choose the winner out of these 10 projects. But it was really nice to see Berta on the first place, it means that other competitors appreciated my project. Thank you!

@@ -636,3 +636,14 @@ Jednak nie jestem zadowolny z wyniku. Tylna układka jest trochę za duża, a ko
 
 Dziś ostatni dzień konkursu! Uzupełniam dokumentację, promuję projekt w portalach społecznościowych itp. Na szczęście moja gra jest ukończona. Jak powiedział Steve Jobs, "it's not done until it ships" (*Ciężko to przetłumaczyć, ale spróbuję: "Nie jest ukończone, dopóki nie będzie dostarczane*"). Oznacza to, że dowiozłem projekt w 100 dni, gdyż zamierzam rozsyłać kartridże od poniedziałku ;)
 
+# 2024-06-10
+
+Dodałem angielską wersję projektów pudełka.
+
+# 2024-06-20
+
+Etap głosowania w konkursie zakończył się wczoraj, a oto wyniki!
+
+![Wyniki głosowania](./static/voting_results.png)
+
+Jednak nie znaczy to, że wygrałem. Teraz Jury wybierze zwycięzcę spośród tych 10 projektów. Ale miło było zobaczyć Bertę na pierwszym miejscu. Oznacza to, że inni zawodnicy docenili mój projekt. Dziękuję!
