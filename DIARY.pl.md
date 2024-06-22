@@ -647,3 +647,12 @@ Etap głosowania w konkursie zakończył się wczoraj, a oto wyniki!
 ![Wyniki głosowania](./static/voting_results.png)
 
 Jednak nie znaczy to, że wygrałem. Teraz Jury wybierze zwycięzcę spośród tych 10 projektów. Ale miło było zobaczyć Bertę na pierwszym miejscu. Oznacza to, że inni zawodnicy docenili mój projekt. Dziękuję!
+
+# 2024-06-21
+
+Dziś imieniny mojej żony. Zrobiłem dla niej pierwszy właściwy egzemplarz pudełkowej wersji gry "Berta i motyle":
+
+![Berta boxed 1](./static/berta_boxed1.jpg)
+
+![Berta boxed 2](./static/berta_boxed2.jpg)
+

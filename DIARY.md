@@ -646,3 +646,11 @@ Voting stage of the competition has ended yesterday, and here are the results!
 ![Voting results](./static/voting_results.png)
 
 However, it doesn't mean I won. Now the Jury will choose the winner out of these 10 projects. But it was really nice to see Berta on the first place, it means that other competitors appreciated my project. Thank you!
+
+# 2024-06-21
+
+Today is my wife's name day. I made the first proper copy of box edition of "Berta and butterflies" for her:
+
+![Berta boxed 1](./static/berta_boxed1.jpg)
+
+![Berta boxed 2](./static/berta_boxed2.jpg)
