@@ -5,7 +5,7 @@
 
 W niniejszym folderze znajduje się program dla Atari 2600 komunikujący się z [zegarem czasu rzeczywistego](../../hardware/atari2600-rtc/README.pl.md).
 
-Projekt jest w fazie eksperymentalnej. Odczytuje aktualny czas z układu i wyświetla jako wynik, ale na razie nie ma możliwości ustawienia zegara.
+Projekt jest w fazie eksperymentalnej. Ale tak jakby działa :)
 
 ## Pomysł
 
