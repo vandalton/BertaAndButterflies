@@ -654,3 +654,7 @@ Today is my wife's name day. I made the first proper copy of box edition of "Ber
 ![Berta boxed 1](./static/berta_boxed1.jpg)
 
 ![Berta boxed 2](./static/berta_boxed2.jpg)
+
+# 2024-06-25
+
+I managed to set the clock from Atari program! At the moment I wrote a separate program for RTC experiments, but I will be able to reuse them in the enhanced version of the game.

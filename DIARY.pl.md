@@ -656,3 +656,6 @@ Dziś imieniny mojej żony. Zrobiłem dla niej pierwszy właściwy egzemplarz pu
 
 ![Berta boxed 2](./static/berta_boxed2.jpg)
 
+# 2024-06-25
+
+Zdołałem ustawić zegar z poziomu programu na Atari! Na ten moment napisałem osobny program do eksperymentów z zegarem, ale będę mógł powstałe metody użyć także w rozszerzonej wersji gry.
