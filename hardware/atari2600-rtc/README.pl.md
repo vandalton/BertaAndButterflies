@@ -5,7 +5,9 @@
 
 W niniejszym folderze znajduje się projekt zegara czasu rzeczywistego dla Atari 2600.
 
-Pliki projektu można otworzyć w programie Eagle. Aktualnie nie udostępniam plików gerber, gdyż projekt jest w fazie eksperymentalnej.
+Pliki projektu można otworzyć w programie Eagle. Aktualnie nie udostępniam plików gerber, gdyż projekt jest w fazie eksperymentalnej. Jednak prototyp działa poprawnie:
+
+![Prototyp zegara](../../static/rtc_with_battery.jpg)
 
 ## Pomysł
 

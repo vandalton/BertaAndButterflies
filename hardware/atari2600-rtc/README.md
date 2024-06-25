@@ -5,7 +5,9 @@
 
 In this folder you can find a design of an real time clock for Atari 2600.
 
-Project files can be opened using Eagle. I don't provide gerber files at the moment, because the project is at experimental stage.
+Project files can be opened using Eagle. I don't provide gerber files at the moment, because the project is at experimental stage. However, the prototype works fine:
+
+![RTC prototype](../../static/rtc_with_battery.jpg)
 
 ## The Idea
 

@@ -35,7 +35,7 @@ Oprócz gry, w repozytorium znajdują się trzy podprojekty:
 2. Adapter padów od Super Nintendo, aby sterować Bertą w inny sposób, niż przy użyciu standardowego joysticka - [szczegóły](./hardware/snes-to-db9-controller-adapter/README.pl.md).
 
     ![Adapter padów od SNESa](./static/snes_adapter_soldered.jpg)
-3. Projekt układu zegara czasu rzeczywistego dla Atari 2600, podłączanego do portu joysticka drugiego gracza (projekt jest w fazie eksperymentalnej).  
+3. Projekt układu zegara czasu rzeczywistego dla Atari 2600, podłączanego do portu joysticka drugiego gracza - [szczegóły](./hardware/atari2600-rtc/README.pl.md) (projekt jest w fazie eksperymentalnej).  
 
 Co prawda gra jest ukończona, ale planuję kontynuować rozwój projektu i stworzyć wersję 8-kilobajtową ze wsparciem dla zegara czasu rzeczywistego. Aktualna godzina będzie się wyświetlać na ekranie tytułowym. Dzięki temu gra będzie jeszcze bardziej podobna do oryginalnej konsolki "Game & Watch" ;)
 

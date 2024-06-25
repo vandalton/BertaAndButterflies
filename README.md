@@ -35,7 +35,7 @@ Besides the game, there are also three sub-projects within this repository:
 2. Super Nintendo controller adapter, to control Berta in a different way than with a standard joystick - [more details](./hardware/snes-to-db9-controller-adapter/README.md).
 
    ![SNES controller adapter](./static/snes_adapter_soldered.jpg)
-3. Real Time Clock circuit design for Atari 2600, attachable to the second player's joystick port (it is at experimental stage).
+3. Real Time Clock circuit design for Atari 2600, attachable to the second player's joystick port - [more details](./hardware/atari2600-rtc/README.md) (it is at experimental stage).
 
 Although the game is completed, I'm going to develop it further and create 8KB version with RTC support - current time will be displayed on the title screen. That will make the game even more similiar to the original "Game & Watch" ;)
 
