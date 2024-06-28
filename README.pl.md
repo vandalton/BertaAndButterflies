@@ -98,3 +98,20 @@ Niektóre z pomysłów:
 - Wsparcie dla [SaveKey'a](https://atariage.com/store/index.php?l=product_detail&p=1194) - aczkolwiek nie uważam tego urządzenia za zbyt przydatne ;)
 - Inne warianty kolorystyczne.
 - Rozszerzona muzyczka tytułowa.
+
+## Chcesz stworzyć własną grę na Atari 2600?
+
+Programowanie gier samo w sobie jest wyzwaniem i daje dużo satysfakcji. Programowanie na Atari 2600 jest jeszcze większym wyzwaniem i satysfakcja też jest dużo większa. Ograniczenia konsoli są olbrzymie i trzeba się mocno nagłówkować, aby wpasować się w nie i stworzyć coś grywalnego. W przypadku Berty samo wyrenderowanie dwukolorowej, dużej postaci było sporą trudnością.
+
+Ci, którzy grali, często pytali mnie, czy Berta może mieć kontur (nie może), czy może mieć oczy nie będące "dziurami" (nie może), czy motyle mogą być innych kolorów (nie mogą). To powinno dać pojęcie o skali ograniczeń :)
+
+W moim przypadku najcenniejsze okazały się następujące źródła wiedzy:
+
+- [batari Basic Commands](https://www.randomterrain.com/atari-2600-memories-batari-basic-commands.html#multikernel)
+- Nick Montfort, Ian Bogost - [Racing the Beam](https://mitpress.mit.edu/9780262539760/racing-the-beam/).
+
+Polecam te dwie pozycje na początek.
+
+Uwaga! Myślenie o pokonaniu ograniczeń konsoli jest nie tylko wyzwaniem, ale może być wręcz uzależniające i niebezpieczne! W artykule [Brickbasher:How The Atari 2600 Almost Killed Me!](https://intotheverticalblank.com/2021/03/13/brickbasher-2600-wip/) autor opisuje swoje przeżycia związane z tworzeniem gry na Atari 2600. Raz tak się zamyślił, że zapomniał o tym, że prowadzi samochód, wjechał na skrzyżowanie na czerwonym świetle i niemal spowodował wypadek.
+
+Mnie na szczęście nic takiego nie spotkało, ale jakby co, ostrzegam! :)

@@ -97,3 +97,20 @@ Some of ideas:
 - [SaveKey](https://atariage.com/store/index.php?l=product_detail&p=1194) support - although I don't find it very useful ;)
 - Different color variations.
 - Expanded title music.
+
+## Would you like to create your own game for the Atari 2600?
+
+Game programming itself is a challenge and provides a lot of satisfaction. Programming for the Atari 2600 is an even greater challenge, but the satisfaction is also much greater. The console’s limitations are enormous, and you need to think creatively to fit within them and create something playable. For example, in the case of Berta, even rendering a two-color, large character was quite difficult.
+
+Players often asked me whether Berta could have an outline (she cannot), whether it could have eyes that aren't "holes" (she cannot), or whether butterflies could be different colors (they cannot). This should give you an idea of the scale of the console’s limitations.
+
+In my experience, the following sources were invaluable:
+
+- [batari Basic Commands](https://www.randomterrain.com/atari-2600-memories-batari-basic-commands.html#multikernel)
+- Nick Montfort, Ian Bogost - [Racing the Beam](https://mitpress.mit.edu/9780262539760/racing-the-beam/).
+
+I recommend starting with these two resources.
+
+Note: Thinking about overcoming console limitations can be not only challenging but also addictive and dangerous! In the article [Brickbasher:How The Atari 2600 Almost Killed Me!](https://intotheverticalblank.com/2021/03/13/brickbasher-2600-wip/) the author describes his experiences related to creating a game for the Atari 2600. Once, he became so engrossed in his thoughts that he forgot he was driving, ran a red light, and almost caused an accident.
+
+Fortunately, I haven’t experienced anything like that, but consider yourself warned!
