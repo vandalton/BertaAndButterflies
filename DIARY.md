@@ -658,3 +658,17 @@ Today is my wife's name day. I made the first proper copy of box edition of "Ber
 # 2024-06-25
 
 I managed to set the clock from Atari program! At the moment I wrote a separate program for RTC experiments, but I will be able to reuse them in the enhanced version of the game.
+
+# 2024-06-29
+
+My project "Berta and Butterflies" took first place in the "100 Commits" competition! I'm very happy! I returned to Toruń with a MacBook Pro, but it wasn't just about the prize. The knowledge I gained during these 100 days of the competition and the new connections I made are much more valuable.
+
+I still can't quite believe that in a 21st-century programming competition, a game from 1977 won!
+
+I must admit that initially, I didn’t want to participate at all. I thought that the freedom to choose the project topic would make the selection of winners too subjective. But I quickly changed my mind and started seeing the flexibility of the topic as the competition’s greatest advantage. For a year, I had been thinking about creating something for the Atari 2600, and since the topic could be anything, why not give it a try within the competition? The requirement to commit every day served as a motivating factor.
+
+Congratulations to everyone who survived the 100 days. The level of the competition is evident from the fact that in the final jury vote, 7 different projects from the top ten received votes! Even though I started from the pole position, I wasn't sure until the very end that I would win in the final stage.
+
+![Winner](./static/winner.jpg)
+
+![Diploma](./static/diploma.jpg)

@@ -659,3 +659,19 @@ Dziś imieniny mojej żony. Zrobiłem dla niej pierwszy właściwy egzemplarz pu
 # 2024-06-25
 
 Zdołałem ustawić zegar z poziomu programu na Atari! Na ten moment napisałem osobny program do eksperymentów z zegarem, ale będę mógł powstałe metody użyć także w rozszerzonej wersji gry.
+
+# 2024-06-29
+
+Projekt "Berta i motyle" zajął pierwsze miejsce w konkursie "100 commitów"!
+
+Bardzo się cieszę! Do Torunia wróciłem z Macbookiem Pro, ale nie o nagrodę w tym wszystkim chodziło. Dużo cenniejsza jest wiedza, jaką nabyłem przez te 100 dni konkursu, a także nowe znajomości.
+
+Wciąż trochę nie dowierzam, że w konkursie programistycznym XXI wieku wygrała gra na konsolę z 1977 roku!
+
+Przyznam, że początkowo w ogóle nie chciałem brać w tym wszystkim udziału. Pomyślałem, że dowolność wyboru tematu projektu oznaczać będzie, że wybór zwycięzców stanie się zbyt subiektywny. Ale szybko się opamiętałem i właśnie dowolność tematu zacząłem odbierać jako największą zaletę konkursu. Od roku chodził za mną pomysł napisania czegoś na Atari 2600, a skoro temat może być dowolny, to dlaczego nie spróbować w ramach konkursu? Konieczność commitowania każdego dnia wykorzystałem jako czynnik dyscyplinujący.
+
+Gratuluję wszystkim, którzy przetrwali 100 dni. O poziomie konkursu niech świadczy fakt, że w finałowym głosowaniu jurorów głosy zebrało aż 7 różnych projektów z finałowej dziesiątki! Mimo, że "jechałem z pole position", do ostatniej chwili wcale nie byłem pewien, że wygram też w ostatnim etapie.
+
+![Winner](./static/winner.jpg)
+
+![Diploma](./static/diploma.jpg)
