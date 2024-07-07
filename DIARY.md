@@ -672,3 +672,13 @@ Congratulations to everyone who survived the 100 days. The level of the competit
 ![Winner](./static/winner.jpg)
 
 ![Diploma](./static/diploma.jpg)
+
+# 2024-07-05
+
+I've ordered RTC PCBs today.
+
+# 2024-07-06
+
+I produced another cartridges with Berta. I'll ship them soon, even abroad!
+
+![Cartridges](./static/cartridges.jpg)

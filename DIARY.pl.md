@@ -675,3 +675,13 @@ Gratuluję wszystkim, którzy przetrwali 100 dni. O poziomie konkursu niech świ
 ![Winner](./static/winner.jpg)
 
 ![Diploma](./static/diploma.jpg)
+
+# 2024-07-05
+
+Dziś zamówiłem płytki do układu zegara.
+
+# 2024-07-06
+
+Wyprodukowałem kolejne kartridże z Bertą. Wyślę je niebawem, także zagranicę!
+
+![Kartridże](./static/cartridges.jpg)
