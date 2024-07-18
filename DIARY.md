@@ -682,3 +682,13 @@ I've ordered RTC PCBs today.
 I produced another cartridges with Berta. I'll ship them soon, even abroad!
 
 ![Cartridges](./static/cartridges.jpg)
+
+# 2024-07-18
+
+PCBs for RTC have just arrived!
+
+![Płytki zegara](./static/rtc_pcbs.jpg)
+
+I soldered the first of them right away. It works the same way the prototype worked, so it's all good :)
+
+![Polutowana płytka zegara](./static/rtc_soldered.jpg)

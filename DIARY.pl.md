@@ -685,3 +685,13 @@ Dziś zamówiłem płytki do układu zegara.
 Wyprodukowałem kolejne kartridże z Bertą. Wyślę je niebawem, także zagranicę!
 
 ![Kartridże](./static/cartridges.jpg)
+
+# 2024-07-18
+
+Dotarły płytki do budowy układu zegara!
+
+![Płytki zegara](./static/rtc_pcbs.jpg)
+
+Od razu polutowałem pierwszą. Działa tak samo, jak działał prototyp, czyli jest dobrze :)
+
+![Polutowana płytka zegara](./static/rtc_soldered.jpg)
