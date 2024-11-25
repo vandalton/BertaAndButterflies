@@ -687,8 +687,32 @@ I produced another cartridges with Berta. I'll ship them soon, even abroad!
 
 PCBs for RTC have just arrived!
 
-![Płytki zegara](./static/rtc_pcbs.jpg)
+![RTC boards](./static/rtc_pcbs.jpg)
 
 I soldered the first of them right away. It works the same way the prototype worked, so it's all good :)
 
-![Polutowana płytka zegara](./static/rtc_soldered.jpg)
+![Complete RTC board](./static/rtc_soldered.jpg)
+
+# 2024-08-11
+
+I sent a few copies of the game to people who helped me with the project. Milan Galcik, who has appeared in the Diary before, sent photos from - probably the first ever - themed meeting dedicated to playing Berta!
+
+The meeting was attended by 6 people, and the game was played on the original console and on the Atari 2600+.
+
+![Meeting 1](./static/party1.jpg)
+
+![Meeting 2](./static/party2.jpg)
+
+![Meeting 3](./static/party3.jpg)
+
+Thank you!
+
+# 2024-10-30
+
+Today, I talked about my experiences programming on the Atari 2600 at a meeting of the Toruń Java User Group: [https://www.meetup.com/torun-jug/events/304099844/](https://www.meetup.com/torun-jug/events/304099844/). Apparently, it went well :) The presentation was recorded, but the video has not been published yet.
+
+About a week before the event, I auctioned a special copy of Berta for charity. The proceeds were donated to the [Kierunek Zdrowie](https://kierunekzdrowie.org/en/) Association. It turned out that the auction was won by.... Łukasz, the organizer of JUG! What's more, he re-auctioned it, created some buzz around the auction, and it sold for 615 zlotys! I'm still rubbing my eyes in amazement!
+
+![Charity version](./static/berta_charity.jpg)
+
+![Auction](./static/charity_auction.png)

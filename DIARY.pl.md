@@ -695,3 +695,34 @@ Dotarły płytki do budowy układu zegara!
 Od razu polutowałem pierwszą. Działa tak samo, jak działał prototyp, czyli jest dobrze :)
 
 ![Polutowana płytka zegara](./static/rtc_soldered.jpg)
+
+# 2024-08-11
+
+Rozesłałem kilka egzemplarzy gry do ludzi, którzy pomogli mi przy projekcie. Milan Galcik, który pojawił się już wcześniej w dzienniczku, podesłał zdjęcia z - prawdopodobnie pierwszego na świecie - tematycznego spotkania spędzonego na grze w Bertę!
+
+W spotkaniu brało udział 6 osób, a gra była uruchamiana na oryginalnej konsoli oraz na Atari 2600+.
+
+![Spotkanie 1](./static/party1.jpg)
+
+![Spotkanie 2](./static/party2.jpg)
+
+![Spotkanie 3](./static/party3.jpg)
+
+Dziękuję!
+
+# 2024-10-30
+
+Dziś opowiadałem o moich doświadczeniach związanych z programowaniem na Atari 2600 na spotkaniu toruńskiej Java User Group: [https://www.meetup.com/torun-jug/events/304099844/](https://www.meetup.com/torun-jug/events/304099844/). Podobno było dobrze :) Wystąpienie było nagrywane, ale film nie został jeszcze opublikowany.
+
+![JUG2](./static/jug2.jpg)
+
+![JUG3](./static/jug3.jpg)
+
+![JUG1](./static/jug1.jpg)
+
+Około tydzień przed wydarzeniem wystawiłem specjalny egzemplarz Berty na cele charytatywne. Zysk przeznaczony był dla Stowarzyszenia [Kierunek Zdrowie](https://kierunekzdrowie.org/en/). Okazało się, że aukcję wygrał.... Łukasz, organizator JUGa! Co więcej, wystawił ją ponownie, zrobił wokół aukcji trochę szumu i zeszła za 615 złotych! Wciąż przecieram oczy ze zdumienia!
+
+![Charytatywna wersja](./static/berta_charity.jpg)
+
+![Aukcja](./static/charity_auction.png)
+
