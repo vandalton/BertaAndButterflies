@@ -201,22 +201,6 @@ __playfield_for_game_set
 
 /*
 
-5:
-
-XXX
-X..
-XXX
-..X
-XXX
-
-6:
-
-XXX
-X..
-XXX
-X.X
-XXX
-
 7:
 
 XXX
@@ -605,10 +589,10 @@ end */
 
 __title_screen_music_handled
 
-    temp1 = 4 /* digit to draw */
+    temp1 = 6 /* digit to draw */
     temp3 = 4 /* x position */
     gosub __draw_digit
-    
+
     _slowdown_limit = _game_slowdown
 
     /* display high score for beginner or advanced mode */
@@ -949,21 +933,31 @@ end
         0, 1,       2, 1,
         0, 2, 1, 2, 2, 2,
                     2, 3,
-                    2, 4
+                    2, 4,
+
+        0, 0, 1, 0, 2, 0,
+        0, 1,
+        0, 2, 1, 2, 2, 2,
+                    2, 3,
+        0, 4, 1, 4, 2, 4,
+
+        0, 0, 1, 0, 2, 0,
+        0, 1,
+        0, 2, 1, 2, 2, 2,
+        0, 3,       2, 3,
+        0, 4, 1, 4, 2, 4
 end
 
     data __digit_edge_indices
-        0, 24, 34, 56, 76
+        0, 24, 34, 56, 76, 94, 116, 140
 end
-
-    data __digit_lengths
-        24, 10, 22, 20, 18
-end    
+ 
 
 __draw_digit
+    temp6 = temp1 + 1
 
     c = __digit_edge_indices[temp1]
-    d = __digit_edge_indices[temp1] + __digit_lengths[temp1]
+    d = __digit_edge_indices[temp6] - 1
 
     for temp6 = c to d step 2 : temp7 = temp6 + 1 : temp4 = temp3 + __digits[temp6] : temp5 = 2 + __digits[temp7] : pfpixel temp4 temp5 on : next
 
