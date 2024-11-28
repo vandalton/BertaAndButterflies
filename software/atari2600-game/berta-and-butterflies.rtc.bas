@@ -199,33 +199,6 @@ __playfield_for_game_set
 
     if _game_mode > 0 then __playfield_for_title_screen_set
 
-/*
-
-7:
-
-XXX
-..X
-..X
-..X
-..X
-
-8:
-
-XXX
-X.X
-XXX
-X.X
-XXX
-
-9:
-
-XXX
-X.X
-XXX
-..X
-XXX
-
-*/
     if _berta_position < 2 then playfield:
     ................................
     ................................
@@ -589,7 +562,7 @@ end */
 
 __title_screen_music_handled
 
-    temp1 = 6 /* digit to draw */
+    temp1 = 9 /* digit to draw */
     temp3 = 4 /* x position */
     gosub __draw_digit
 
@@ -945,11 +918,29 @@ end
         0, 1,
         0, 2, 1, 2, 2, 2,
         0, 3,       2, 3,
+        0, 4, 1, 4, 2, 4,
+
+        0, 0, 1, 0, 2, 0,
+                    2, 1,
+                    2, 2,
+                    2, 3,
+                    2, 4,
+
+        0, 0, 1, 0, 2, 0,
+        0, 1,       2, 1,
+        0, 2, 1, 2, 2, 2,
+        0, 3,       2, 3,
+        0, 4, 1, 4, 2, 4,
+
+        0, 0, 1, 0, 2, 0,
+        0, 1,       2, 1,
+        0, 2, 1, 2, 2, 2,
+                    2, 3,
         0, 4, 1, 4, 2, 4
 end
 
     data __digit_edge_indices
-        0, 24, 34, 56, 76, 94, 116, 140
+        0, 24, 34, 56, 76, 94, 116, 140, 154, 180, 204
 end
  
 
