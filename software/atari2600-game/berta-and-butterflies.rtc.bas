@@ -197,7 +197,7 @@ end
 
 __playfield_for_game_set
 
-    if _game_mode > 0 then __playfield_for_title_screen_set
+    if _game_mode > 0 || _slowdown <> 4 then goto __playfield_for_title_screen_set
 
     if _berta_position < 2 then playfield:
     ................................
@@ -562,9 +562,10 @@ end */
 
 __title_screen_music_handled
 
-    temp1 = 9 /* digit to draw */
-    temp3 = 4 /* x position */
-    gosub __draw_digit
+    if _slowdown = 1 then temp1 = 3 : temp3 = 0 : gosub __draw_digit
+    if _slowdown = 2 then temp1 = 2 : temp3 = 4 : gosub __draw_digit
+    if _slowdown = 3 then temp1 = 7 : temp3 = 10 : gosub __draw_digit
+    if _slowdown = 4 then temp1 = 0 : temp3 = 14 : gosub __draw_digit
 
     _slowdown_limit = _game_slowdown
 
